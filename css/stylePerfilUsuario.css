@@ -1,0 +1,200 @@
+/*Header*/
+/*Menú de navegación*/
+/*Botón activado y desactivado*/
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #01c38e;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #d9d9d9;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #707070;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #707070;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/*Body perfil de usuario*/
+*{
+    margin: 0;
+    margin-top: 10px;
+}
+
+body{
+    display: grid;
+    background-color: #ffffff;
+}
+
+.informacion-personal{
+    display: grid;
+    background-color: #d9d9d9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    grid-area: info;
+}
+
+.formacion-idiomas{
+    display: grid;
+    background-color: #d9d9d9;
+    width: 500px;
+    height: 900px;
+    padding-left: 12px;
+    padding-bottom: 20px;
+    text-align: left;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    grid-area: formacion;
+}
+
+.experiencia-laboral{
+    display: grid;
+    background-color: #d9d9d9;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    width: 900px;
+    text-align: left;
+    padding-left: 12px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    grid-area: expe;
+}
+
+.otros{
+    display: grid;
+    background-color: #d9d9d9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 900px;
+    text-align: left;
+    padding-left: 12px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    grid-area: otros;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'info info info info info' 
+    'formacion formacion expe expe expe'
+    'formacion formacion otros otros otros';
+    margin: 10;
+    border: 10;
+}
+
+.h3-formacion{
+    background-color: #54E0FF;
+    display: inline-flex;
+    border-radius: 3px;
+    text-align: center;
+    padding: 4px;
+    /* margin-right: 20px; */
+}
+
+.h3-idiomas{
+    background-color: #54E0FF;
+    display: inline-flex;
+    border-radius: 3px;
+    text-align: center;
+    padding: 4px;
+    /* margin-right: 20px; */
+}
+
+.h3-experiencia{
+    background-color: #54E0FF;
+    display: inline-flex;
+    border-radius: 3px;
+    text-align: center;
+    padding: 4px;
+    /* margin-right: 20px; */
+}
+
+.h3-otros{
+    background-color: #54E0FF;
+    display: inline-flex;
+    border-radius: 3px;
+    text-align: center;
+    padding: 4px;
+    /* margin-right: 20px; */
+}
+
+.h4-habilidades{
+    background-color: #54E0FF;
+    display: inline-flex;
+    border-radius: 3px;
+    text-align: center;
+    padding: 4px;
+    /* margin-right: 20px; */
+}
+
+.h4-competencias{
+    background-color: #54E0FF;
+    display: inline-flex;
+    border-radius: 3px;
+    text-align: center;
+    padding: 4px;
+    /* margin-right: 20px; */
+}
+
+/*Footer*/
