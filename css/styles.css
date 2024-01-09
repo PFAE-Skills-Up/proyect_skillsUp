@@ -10,6 +10,7 @@ Rev: 0
 /* Listado de variables de los colores */
 
 :root {
+    font-size: 22px;
     font-family: 'Monserrat', sans-serif;
     --azul: #004E6A;
     --blanco: #FFFFFF;
@@ -55,18 +56,9 @@ h6 {
     font-size: 30px;
 }
 
-p {
-    font-size: 22px;
-}
-
 textarea {
     font-size: 20px;
 }
-
-a {
-    font-size: 22px;
-}
-
 
 /* Fin de Estilos de fuentes */
 
@@ -208,7 +200,7 @@ switch {
 }
 
 /* Cajas de texto con titular a destacar */
-div {
+.caja-titular {
     padding: 15px 20px 15px 20px;
     border-radius: 15px;
     border: 0.5px;
@@ -226,7 +218,7 @@ aside {
 
 
 /*Tarjeta aside de perfiles */
-aside {
+.aside-perfiles {
     padding: 15px 20px 15px 20px;
     border-radius: 15px;
     border: 0.5 solid Black;
