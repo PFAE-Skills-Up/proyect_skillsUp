@@ -234,6 +234,161 @@ aside {
 
 /* PERFIL USUARIO */
 
+/* Switch uno */
+
+.switch {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    background: #707070;
+    transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.switch::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    background: 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.switch:active::before {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28), 0 0 0 20px rgba(128, 128, 128, 0.1);
+}
+
+input:checked+.switch {
+    background: #01C38E;
+}
+
+input:checked+.switch::before {
+    left: 27px;
+    background: #d9d9d9;
+}
+
+input:checked+.switch:active::before {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28), 0 0 0 20px rgba(0, 150, 136, 0.2);
+}
+
+/* Fin switch uno */
+
+
+/* Switch 3 posicines */
+
+.contenedor_switch {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.switch3Posiciones {
+    position: relative;
+    width: 60px;
+    /* 50*/
+    height: 25px;
+    /*25*/
+    border-radius: 20px;
+}
+
+.switch3Posiciones #switch1,
+.switch3Posiciones #switch2,
+.switch3Posiciones #switch3 {
+    position: absolute;
+    z-index: 9;
+    -webkit-appearance: none;
+}
+
+.switch3Posiciones #switch1+label::after,
+.switch3Posiciones #switch2+label::after,
+.switch3Posiciones #switch3+label::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.switch3Posiciones #switch1+label::after {
+    left: 0;
+}
+
+.switch3Posiciones #switch1:checked~.switch3Posiciones__inner {
+    background-color: #01c38e;
+    transition: background-color 200ms ease-in-out;
+}
+
+.switch3Posiciones #switch1:checked~.switch3Posiciones__inner::after {
+    left: 0;
+    transition: left 200ms ease-in-out;
+}
+
+.switch3Posiciones #switch2+label::after {
+    left: 20px;
+}
+
+.switch3Posiciones #switch2:checked~.switch3Posiciones__inner {
+    background-color: #707070;
+    transition: background-color 200ms ease-in-out;
+}
+
+.switch3Posiciones #switch2:checked~.switch3Posiciones__inner::after {
+    left: 20px;
+    transition: left 200ms ease-in-out;
+}
+
+.switch3Posiciones #switch3+label::after {
+    left: 40px;
+}
+
+.switch3Posiciones #switch3:checked~.switch3Posiciones__inner {
+    background-color: #004e6a;
+    transition: background-color 200ms ease-in-out;
+}
+
+.switch3Posiciones #switch3:checked~.switch3Posiciones__inner::after {
+    left: 40px;
+    transition: left 200ms ease-in-out;
+}
+
+.switch3Posiciones__inner {
+    position: absolute;  /*Lineas añadidas por fabian*/
+    top: -10px; /*Lineas añadidas por fabian*/
+    width: 65px;
+    /*El largo del switch 60*/
+    height: 25px;
+    /*El ancho del switch 25*/
+    background-color: #d9d9d9;
+    border: solid 1px grey;
+    border-radius: 20px;
+    /* El borde para que quede redondo 4*/
+}
+
+.switch3Posiciones__inner::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 25px;
+    /*20*/
+    height: 25px;
+    /*25*/
+    top: 0;
+    left: 0;
+    background-color: #d9d9d9;
+    border: solid 1px grey;
+    border-radius: 50px;
+    /*4*/
+    transition: left 200ms ease-in-out;
+}
+
 .switch {
     position: relative;
     display: inline-block;
