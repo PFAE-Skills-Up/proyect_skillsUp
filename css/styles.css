@@ -42,7 +42,11 @@ h6 {
 
 /*se elimino el formato de h1 size enero-09-2024 (Natalie) */
 
-h2 {
+/* ========================================== */
+/* He consultado con mis compañeros y se han puesto en comentario los tamaños de los h2,h5,h6 ya que están mal
+y quedan mal a la hora de aplicarlos en la página (Hugo Gordillo) */
+
+/* h2 {
     font-size: 40px;
 }
 
@@ -52,7 +56,7 @@ h5 {
 
 h6 {
     font-size: 30px;
-}
+} */
 
 textarea {
     font-size: 20px;
@@ -275,7 +279,10 @@ input {
 }
 /*Final CSS del modal de registro corto home*/
 
-/*Area de perfiles publicos*/
+
+
+/* Creación 2024-01-09: Hugo Gordillo. */
+/*Área de perfiles publicos*/
 
 .perfiles-contenedor {
     display: flex;
@@ -315,6 +322,8 @@ input {
     line-height: 0px;
 
 }
+
+/*FIN ÁREA DE PERFILES PÚBLICOS*/
 
 /* Cajas de texto con titular a destacar */
 .caja-titular {
