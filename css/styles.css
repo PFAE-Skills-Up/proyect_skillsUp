@@ -40,9 +40,7 @@ h6 {
     font-style: italic;
 }
 
-h1 {
-    font-size: 70px;
-}
+/*se elimino el formato de h1 size enero-09-2024 (Natalie) */
 
 h2 {
     font-size: 40px;
@@ -157,6 +155,125 @@ switch {
 
 /*Body Excepciones*/
 
+/* CSS Autora: Natalie ac 2024-01-09*/
+/* Css Modal de registro corto home*/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    animation: modal-show 0.5s 1 forwards;
+}
+
+.modal-content {
+    position: relative;
+    width: 1000px;
+    height: 345px;
+    padding-left: 98px;
+    padding-right: 98px;
+    padding-bottom: 34px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.modal:target {
+    display: flex;
+}
+
+.modal-show {
+    display: inline-block;
+    padding: 12px;
+    background-color: #f38C41;
+    color: white;
+    font-size: 18px;
+    font-family: "Montserrat";
+    text-decoration: none;
+}
+
+.modal-hide {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes modal-show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+label{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    width:514px;
+    height:30px;
+    margin:10px;
+    border-radius: 8px;
+    background-color: #d5effa;
+    color: black;
+    border-color: black;
+}
+
+.columna1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.columna2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.columnas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botonRegistro {
+    width: 180px;
+    height: 35px;
+    margin:10px;
+    margin-left: 200px;
+    margin-right: 180px;
+    margin-bottom: 20px;
+    background-color: #a9c9d3;
+    border-radius: 10px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#tituloRegistro {
+    text-align: center;
+    color: #ff7918;
+}
+/*Final CSS del modal de registro corto home*/
 
 /*Area de perfiles publicos*/
 
