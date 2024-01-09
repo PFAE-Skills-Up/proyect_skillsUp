@@ -1,3 +1,5 @@
+/* Volcado completo a: styles.css Checked ✅*/ 
+
 /* CSS general de la página */
 
 /* GOOGLE FONTS */
@@ -21,7 +23,7 @@
 }
 
 
-/*Header*/
+/*Header* Checked ✅*/
 header {
     background: var(--azul);
     height: 1920px;
@@ -43,7 +45,7 @@ header {
     width: 90px;
     border: 1px, 0px, 0px, 0px solid, Black #000000;
     border-radius: 15px;
-    padding: 25px, 50px, 25px, 50px;
+    padding: 25px 50px 25px 50px;
 }
 
 
@@ -135,17 +137,17 @@ div {
 
 /* Cajas de texto con titular a destacar */
 div {
-    padding: 15px, 20px, 15px, 20px;
+    padding: 15px 20px 15px 20px;
     border-radius: 15px;
-    border: 0, 5px;
-    box-shadow: 0px, 4px, 4px, 0px;
+    border: 0.5px;
+    box-shadow: 0px 4px 4px 0px;
 }
 
 
 
 /* Tarjetas aside propuestas informativas*/
 aside {
-    padding: 15px, 20px, 15px, 20px;
+    padding: 15px 20px 15px 20px;
     border-radius: 15px;
 }
 
@@ -153,9 +155,9 @@ aside {
 
 /*Tarjeta aside de perfiles */
 aside {
-    padding: 15px, 20px, 15px, 20px;
+    padding: 15px 20px 15px 20px;
     border-radius: 15px;
-    border: 0, 5 Black;
+    border: 0.5 solid Black;
 }
 
 /* BASE DE LA PÁGINA */

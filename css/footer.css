@@ -1,4 +1,4 @@
-/* Codigo del css footer */
+/* Codigo del css footer Checked ✅: volcado en styles.css*/
 /* Este código de CSS del footer es un CSS reutilizado de un footer que ya tenía
 y "adaptado" a este. También hay que revisarlo y agregar y/o eliminar pequeños detalles */
 * {
@@ -62,7 +62,6 @@ y "adaptado" a este. También hay que revisarlo y agregar y/o eliminar pequeños
     width: 40px;
     background-color: #4D4953;
     text-align: center;
-
 }
 
 .footerlinks input textarea {
