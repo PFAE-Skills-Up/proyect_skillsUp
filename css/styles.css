@@ -130,9 +130,173 @@ header {
 
 /*BODY*/
 
-body {
-    background-color: #ffffff;
+/* BOTONES */
+/*Botón para todas las pantallas*/
+.boton1 {
+    height: 200px;
+    width: 50px;
+    border: 1px solid black 15px;
+    padding: 10px;
 }
+
+.boton2 {
+    height: 440px;
+    width: 90px;
+    border: 1px, 0px, 0px, 0px solid, Black #000000;
+    border-radius: 15px;
+    padding: 25px 50px 25px 50px;
+}
+
+
+
+/*Switch*/
+switch {
+    background: var(--verde);
+    background: var(--grisaseo);
+}
+
+
+
+/*Cajas de texto*/
+.CajasTextoTitulares {
+    background: var(--celeste);
+}
+
+
+/*Body Excepciones*/
+
+
+/*Area de perfiles publicos*/
+
+.perfiles-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.perfiles-contenedor>div {
+    margin: 10px;
+    line-height: 75px;
+}
+
+.tarjeta {
+    padding: 15px 20px 15px 20px;
+    border-radius: 15px;
+    border: 0.5px solid black;
+    background-color: #A9C9D3;
+    width: 414px;
+    height: 201px;
+    display: inline-flex;
+}
+
+.circulo {
+    width: 123px;
+    height: 118px;
+    flex-shrink: 0;
+    background-color: #D9D9D9;
+    border-radius: 70px;
+    margin-right: 1em;
+}
+
+.intext {
+    display: flex;
+    /* grap: 1em; */
+}
+
+.texto {
+    line-height: 0px;
+
+}
+
+/* Cajas de texto con titular a destacar */
+div {
+    padding: 15px 20px 15px 20px;
+    border-radius: 15px;
+    border: 0.5px;
+    box-shadow: 0px 4px 4px 0px;
+}
+
+
+
+/* Tarjetas aside propuestas informativas*/
+aside {
+    padding: 15px 20px 15px 20px;
+    border-radius: 15px;
+}
+
+
+
+/*Tarjeta aside de perfiles */
+aside {
+    padding: 15px 20px 15px 20px;
+    border-radius: 15px;
+    border: 0.5 solid Black;
+}
+
+/* PERFIL USUARIO */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #01c38e;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #d9d9d9;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #707070;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #707070;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* CSS Autora: Jennifer 2024-01-09*/
+/* css perfil de usuario*/
 
 /* BOTONES */
 /*Botón para todas las pantallas*/
@@ -304,9 +468,6 @@ input:checked+.slider:before {
 .informacion-personal {
     display: grid;
     background-color: #d9d9d9;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     grid-area: info;
@@ -315,11 +476,7 @@ input:checked+.slider:before {
 .formacion-idiomas {
     display: grid;
     background-color: #d9d9d9;
-    width: 500px;
-    height: 900px;
-    padding-left: 12px;
-    padding-bottom: 20px;
-    text-align: left;
+    padding: 1em;
     border-radius: 8px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -329,13 +486,7 @@ input:checked+.slider:before {
 .experiencia-laboral {
     display: grid;
     background-color: #d9d9d9;
-    margin-top: 12px;
-    margin-bottom: 10px;
-    width: 900px;
-    text-align: left;
-    padding-left: 12px;
-    padding-bottom: 20px;
-    padding-right: 20px;
+    padding: 1em;
     border-radius: 8px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -345,13 +496,8 @@ input:checked+.slider:before {
 .otros {
     display: grid;
     background-color: #d9d9d9;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 900px;
-    text-align: left;
-    padding-left: 12px;
-    padding-bottom: 20px;
-    padding-right: 20px;
+    padding: 1.4em;
+    font-size: 16px;
     border-radius: 8px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -360,67 +506,165 @@ input:checked+.slider:before {
 
 .grid-container {
     display: grid;
-    grid-template-areas:
-        'info info info info info'
-        'formacion formacion expe expe expe'
-        'formacion formacion otros otros otros';
-    margin: 10;
-    border: 10;
+    grid:
+        'info info info info info' 0.6fr
+        'formacion formacion expe expe expe' 1fr
+        'formacion formacion otros otros otros' 1fr
+        /1fr 1fr 1fr 1fr 1fr;
+    gap: 0.6em;
 }
 
-.h3-formacion {
+label {
+    font-size: 16px;
+}
+
+.h3-seccion {
     background-color: #54E0FF;
     display: inline-flex;
     border-radius: 3px;
     text-align: center;
-    padding: 4px;
-    /* margin-right: 20px; */
+    margin-bottom: 0.5em;
+    font-size: 25px;
+    padding: 4px 4px 4px 10px;
+    width: 50%;
+    height: 44%;
 }
 
-.h3-idiomas {
-    background-color: #54E0FF;
-    display: inline-flex;
-    border-radius: 3px;
-    text-align: center;
-    padding: 4px;
-    /* margin-right: 20px; */
-}
 
-.h3-experiencia {
-    background-color: #54E0FF;
-    display: inline-flex;
-    border-radius: 3px;
-    text-align: center;
-    padding: 4px;
-    /* margin-right: 20px; */
-}
-
-.h3-otros {
-    background-color: #54E0FF;
-    display: inline-flex;
-    border-radius: 3px;
-    text-align: center;
-    padding: 4px;
-    /* margin-right: 20px; */
-}
-
-.h4-habilidades {
-    background-color: #54E0FF;
-    display: inline-flex;
-    border-radius: 3px;
-    text-align: center;
-    padding: 4px;
-    /* margin-right: 20px; */
-}
-
+.h4-habilidades,
 .h4-competencias {
+    width: 70%;
     background-color: #54E0FF;
     display: inline-flex;
     border-radius: 3px;
-    text-align: center;
-    padding: 4px;
-    /* margin-right: 20px; */
+    padding: 4px 4px 4px 10px;
+    margin-top: 1, 5px;
+    height: 45%;
 }
+
+.lista{
+    padding-left: 20px;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+
+.nec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nec label {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 1.4em;
+    margin-bottom: 0.5em;
+}
+
+.nec label input {
+    margin-left: 1em;
+    flex: 1;
+}
+
+.form_datos {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+.nacTel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 7px;
+}
+
+.nac {
+    margin-left: 40px;
+}
+
+.guardar {
+    border-radius: 7px;
+    width: 120px;
+    height: 2em;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #01c38e;
+    grid-area: guarda;
+}
+
+.cancelar {
+    border-radius: 7px;
+    color: white;
+    width: 120px;
+    height: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #4C4A4A;
+    grid-area: cancela;
+
+}
+
+.grid-button {
+    display: flex;
+    justify-content: center;
+    gap: 12em;
+}
+
+/* Comenzar un grid en la tabla de formación-idiomas para reorganizar la tabla 
+y que quede con los botones de guardar y cancelar y añadir además los switch */
+
+.form-idms {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5em;
+}
+
+.contenido label{
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 1.4em;
+    margin-bottom: 0.5em;
+}
+
+.contenido textarea {
+    width: auto;
+}
+
+.contenido label input {
+    margin-left: 1em;
+    flex: 1;
+    margin-right: 2em;
+}
+
+/* .hab-com{
+    display: flex;
+    flex-direction: column;
+} */
+
+.icon1 {
+    position: absolute;
+    right: 1em;
+    color: #000000;
+}
+
+.icon2 {
+    position: absolute;
+    right: 1em;
+    color: #000000;
+}
+
+/* FIN css perfil de usuario*/
+
 
 /* FIN PERFIL USUARIO */
 
