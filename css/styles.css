@@ -64,50 +64,64 @@ textarea {
 
 /* Fin de Estilos de fuentes */
 
+
 /*HEADER*/
+
 header {
-    background: var(--azul);
-    height: auto;
-    width: max-content;
-    border-bottom: 1px solid white;
+
+    background-color: #004E6A;
+}
+
+.header {
+    color: white;
+    padding: 10px;
+    border-bottom: 0.2px solid white;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .imagenlogo {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: auto;
 }
 
 .nav {
-    background-color: var(--azul);
+    background-color: #004E6A;
     padding: 0px;
 }
 
 .nav2 {
-    list-style-type: none;
+    list-style-type: none; 
     margin: 0;
     padding: 0;
     overflow: hidden;
-
+    display: flex;
+    justify-content: center; 
 }
 
 .li {
-    float: left;
-    padding-left: 46px;
-    padding-right: 46px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-right: 1px solid var(--blanco);
-    border-left: 1px solid white;
+    padding: 15px 38px 15px 38px;
+    border-right: 0.5px solid white;
+    /* border-left: 0.5px solid white; */
+    font-family: 'Monserrat', sans-serif;
+    font-size: 15px;
+}
 
+#last-li{
+    border: none;
 }
 
 .li:last-child {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-right: none;
+}
+
+.li:first-child {
+    padding-left: none;
 }
 
 .li:hover {
-    background-color: var(--verde);
+    background-color: #33ABA4;
 }
 
 .menu {
@@ -116,6 +130,7 @@ header {
     text-decoration: none;
 }
 
+
 /*FIN HEADER*/
 /* ======================================================= */
 
@@ -123,7 +138,9 @@ header {
 
 
 /*BODY*/
-
+body {
+    margin: 0px;
+}
 /* BOTONES */
 /*Botón para todas las pantallas*/
 .boton1 {
