@@ -964,61 +964,81 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 /*FOOTER*/
 
-footer {
-    width: 100%;
+.footer-Reg {
+    background-color: #004E6A;
+    padding: 15px 0;
+    padding-left: 22%;
+    display: flex;
 }
 
-.footer {
-    background-color: var(--azul);
-    padding: 30px;
-    box-sizing: border-box;
-}
-
-.footer2 {
+.footer2-Reg {
     display: flex;
     flex-wrap: wrap;
-    font-size: 18px;
+    font-size: 15px;
     color: white;
-
 }
 
-.footerlinks {
-    width: 25%;
-    padding: 0 15px;
-
+.footerlinks-Reg {
+    padding: 15px;
 }
 
-.footerlinks h4 {
+.footerlinks-Reg h4 {
     font-size: 20px;
     color: #FF7918;
     margin-bottom: 25px;
     font-weight: 500;
     border-bottom: 2px solid;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     display: inline-block;
+    margin-left: 33%;
 }
 
-.footerlinks ul li a {
-    font-size: 18px;
+.footerlinks-Reg ul li a{
+    font-size: 15px;
     text-decoration: none;
     color: white;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     transition: all .3s ease;
 }
 
-.footerlinks ul li a:hover {
-    color: white;
-    padding-left: 6px;
-}
-
-.redessociales {
+.redessociales-Reg {
     display: inline-block;
     min-height: 40px;
-    width: 40px;
-    background-color: #4D4953;
+    width: 20px;
     text-align: center;
+}
 
+.footerlinks-Reg input,
+.footerlinks-Reg textarea {
+    color: white;
+    margin-bottom: 15px;
+    border: 1px;
+}
+
+.footerlinks-Reg {
+    margin-right: 80px;
+}
+
+
+.footerlinks-Reg ul {
+    list-style: none;
+}
+
+.footerlinks-Reg ul li {
+    margin-bottom: 1px;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    margin-left: 1%;
+    margin-right: 0;
+}
+
+p a {
+    text-decoration: none;
+    color: white;
 }
 
 /*FIN FOOTER*/
