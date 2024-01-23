@@ -20,13 +20,10 @@ html {
  * Remove the margin in all browsers.
  */
 
-<<<<<<< HEAD
 body {
   margin: 0;
 }
 
-=======
->>>>>>> feature_header
 /**
  * Render the `main` element consistently in IE.
  */
@@ -349,4 +346,4 @@ template {
 
 [hidden] {
   display: none;
-}
+} 
