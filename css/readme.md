@@ -1,2 +1,9 @@
-Fusionar todos los css en un solo fichero de "styles.css".
-git commit -m "He volcado todos los ficheros de CSS en un solo 
+# proyect_skillsUp
+Proyecto dentro del PFAE "Skills UP" creación de una plataforma web.
+
+## Tecnologias:
+- HTML
+- CSS
+- JS
+
+![Skills Up - GitHub Profile](https://raw.githubusercontent.com/PFAE-Skills-Up/proyect_skillsUp/tree/main/img/banner-pfae.jpg)
