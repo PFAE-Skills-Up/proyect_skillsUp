@@ -2,6 +2,7 @@
 Creación 2024-01-09: Hugo Gordillo.
 Rev: 1
 Vicky: 2024-01-18 - 8c5634b
+Sinaí: 2024-01-23
 */
 
 /* GOOGLE FONTS */
@@ -31,7 +32,6 @@ Vicky: 2024-01-18 - 8c5634b
 /* ============================= */
 /*        Estilos de fuentes         */
 /* ================================= */
-
 h1,
 h2 {
     font-weight: bolder;
@@ -43,6 +43,7 @@ h5,
 h6 {
     font-style: italic;
 }
+
 
 /*se eliminó el formato de H1 size enero-09-2024 (Natalie) */
 
@@ -61,11 +62,11 @@ textarea {
 
 
 
-                    /*/////////////////
+
+
+/*/////////////////
                    ///////BLOQUES/////
                   /////////////////*/
-
-
 
 /* HEADER */
 
@@ -101,7 +102,6 @@ header {
     padding: 15px 38px 15px 38px;
     border-right: 0.5px solid var(--blanco);
     /* border-left: 0.5px solid var(--blanco); */
-    font-family: 'Monserrat', sans-serif;
     font-size: 15px;
 }
 
@@ -117,19 +117,18 @@ header {
 /* ======================================================= */
 
 /* BODY */
-
-body {
+/* body {
     margin: 0px;
-}
+} */
 
 /* CSS Autora: Natalie ac 2024-01-09*/
 /* MODAL DE REGISTRO CORTO HOME*/
 
-input {
-    width: 514px;
+input { /* revisar no correcto*/
+    /* width: 514px;
     height: 30px;
-    margin: 10px;
-    border-radius: 8px;
+    margin: 10px; */
+    /* border-radius: 8px; */
     background-color: #d5effa;
     color: var(--negro);
     border-color: var(--negro);
@@ -137,11 +136,9 @@ input {
 
 label {
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
 }
 
 /* FIN MODAL DE REGISTRO CORTO HOME*/
-
 
 /* TARJETAS ASIDE PROPUESTAS INFORMATIVAS*/
 aside {
@@ -166,26 +163,24 @@ label {
 }
 
 .h3-seccion {
-    background-color: var(--celeste);
     display: inline-flex;
     border-radius: 3px;
     text-align: center;
     margin-bottom: 0.5em;
     font-size: 25px;
     padding: 4px 4px 4px 10px;
-    width: 50%;
     height: 44%;
 }
 
+
 .h4-habilidades,
 .h4-competencias {
-    width: 70%;
-    background-color: var(--celeste);
+    width: 30%;
+    background-color: #54E0FF;
     display: inline-flex;
     border-radius: 3px;
     padding: 4px 4px 4px 10px;
-    margin-top: 1, 5px;
-    height: 45%;
+    margin-left: -30px;
 }
 
 .form_datos {
@@ -280,12 +275,9 @@ p a {
 
 
 
-
                     /*/////////////////
                    /////ELEMENTOS/////
                   /////////////////*/
-
-
 
 /* HEADER */
 
@@ -312,7 +304,6 @@ p a {
 /* BOTONES */
 
 /* BOTÓN PARA TODAS LAS PANTALLAS */
-
 .boton1 {
     height: 200px;
     width: 50px;
@@ -328,8 +319,61 @@ p a {
     padding: 25px 50px 25px 50px;
 }
 
-/* FIN BOTONES */
+/* Sinaí  */
+.on,
+.off {
+    color: white;
+    /* Color ON-OFF */
+    position: absolute;
+    /* Posicion */
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 25%;
+    font-size: 11px;
+    /* Tamaño de letra */
+    /* font-family: Verdana, sans-serif; Fuente de letra */
+}
 
+.on {
+    display: none;
+    top: 14px;
+    /* Ubicacion Arriba-Abajo de la palabra ON */
+}
+
+
+.off {
+    left: auto;
+    right: -3px;
+    /* Ubicacion Derecha de la palabra OFF */
+    top: 14px;
+    /* Ubicacion Arriba-Abajo de la palabra OFF */
+}
+
+
+/*coloca los cuatro botones de las secciones  */
+.button-guardar {
+    display: flex;
+    justify-content: flex-end;
+    align-self: last baseline;
+    padding-right: 5em;
+    margin-top: 1.4em;
+}
+
+
+.button-principal {
+    border-radius: 7px;
+    width: 120px;
+    height: 2em;
+    color: black;
+    font-weight: bold;
+    background-color: #01c38e;
+    grid-area: guarda;
+    margin-right: -26.6em;
+}
+
+
+
+/* FIN BOTONES */
 /* CAJAS DE TEXTO */
 
 .CajasTextoTitulares {
@@ -384,7 +428,6 @@ p a {
     background-color: var(--h1NoReg);
     color: var(--blanco);
     font-size: 18px;
-    font-family: "Montserrat";
     text-decoration: none;
 }
 
@@ -402,7 +445,6 @@ p a {
     text-align: center;
     color: var(--negro);
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
 }
 
 @keyframes modal-show {
@@ -441,7 +483,6 @@ p a {
     background-color: var(--grisaceo);
     border-radius: 10px;
     font-weight: lighter;
-    font-family: 'Montserrat', sans-serif;
 }
 
 #tituloRegistro {
@@ -493,13 +534,176 @@ p a {
 
 }
 
+/* Sinaí 29-01-2024 */
+
+.movertelefono {
+    margin-top: -20px;
+}
+
+.moverfecha {
+    margin-top: 14px;
+}
+
+.necmorverbajo2 {
+    justify-content: center;
+    gap: 2em;
+}
+
+.colocarinput {
+    width: 150px;
+    top: 20px;
+
+}
+
+.aline {
+    display: inline-block;
+    width: 80px;
+}
+
+/* Es para colocar el titulo de datos personales hacia la izquierda  */
+.movertitulo2 {
+    background-color: var(--celeste);
+    position: relative;
+    left: -24px;
+    width: 400px;
+    height: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding-left: 0.5em;
+}
+
+/* es para mover un elemento a hacia la izquierda  */
+.izquierda {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    margin-right: 4em;
+}
+
+/* Esto es para poder colocar bien los nombres de cada seccion  */
+.movertitulo {
+    background-color: var(--celeste);
+    position: relative;
+    left: -24px;
+    width: 400px;
+    height: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    margin-left: -6px;
+}
+
+.mod-titular {
+    margin-top: 0.8em;
+    left: 10px;
+}
+
+.mod {
+    margin: 1em;
+}
+
+.content-titular {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.otros .content-titular {
+    display: flex;
+    align-items: center;
+}
+
+.contenido .content-titular {
+    display: flex;
+    align-items: center;
+}
+
+.idiomas {
+    display: grid;
+    background-color: #d9d9d9;
+    padding: 1em;
+    border-radius: 8px;
+
+    font-weight: bold;
+    grid-area: idiomas;
+}
+
+.formacion {
+    display: grid;
+    background-color: #d9d9d9;
+    padding: 1em;
+    border-radius: 8px;
+
+    font-weight: bold;
+    grid-area: formacion;
+}
+
+.colocarbot {
+    position: absolute;
+}
+
+.swtich-container2 {
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    /* Anoche del contenedor */
+    height: 30px;
+    /* Alto del contenedor */
+    border-radius: 20px;
+    border: 3px solid rgba(2, 137, 155, 0.050);
+    /* Bordeado fuera del switch */
+    /* puse el left para poder separar el switch a hacia la derecha  */
+    left: 10px;
+    top: -7px;
+}
+.grid-container2 {
+    display: grid;
+    grid:
+        'info info info info info' 0.6fr
+        'formacion formacion expe expe expe' 1fr
+        'idiomas idiomas otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
+    gap: 0.6em;
+}
+
+.footerlinks {
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footer2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    color: white;
+
+}
+
+.footer {
+    background-color: var(--azul);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+}
+
+
+
+
+
+/* Fin Sinai */
+
+
 /* FIN ÁREA DE PERFILES PÚBLICOS */
 
 
 /* PERFIL USUARIO */
 
 /* SWITCH */
-switch {
+.switch {
     background: var(--verde);
     background: var(--grisaceo);
 }
@@ -590,7 +794,7 @@ switch {
     /*Lineas añadidas por fabian*/
     width: 65px;
     /*El largo del switch 60*/
-    height: 25px;
+    height: 27px;
     /*El ancho del switch 25*/
     background-color: var(--gris);
     border: solid 1px var(--grisInactivo);
@@ -615,11 +819,97 @@ switch {
     transition: left 200ms ease-in-out;
 }
 
+.swtich-container2 input {
+    display: none;
+}
+
+/*Slider*/
+/* no esta en el fichero stylesE.css */
+.slider2 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #808080;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.swtich-container2 input {
+    display: none;
+}
+
+.slider2:before {
+    border-radius: 50%;
+}
+
+input:checked+.slider2 .off {
+    display: none;
+}
+
+input:checked+.slider2 .on {
+    display: block;
+}
+
+input:checked+.slider2:before {
+    -webkit-transform: translateX(32px);
+    /* Desplazamiento Webkit*/
+    -ms-transform: translateX(32px);
+    /* Desplazamiento */
+    transform: translateX(32px);
+    /* Desplazamiento */
+}
+
+input:focus+.slider2 {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider2 {
+    background-color: var(--verde);
+}
+
+.slider2 {
+    border-radius: 17px;
+} 
+
+
+
+.slider2:before {
+    border-radius: 50%;
+}
+
+.slider2:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    /* Alto de la bola */
+    width: 24px;
+    /* Ancho de la bola */
+    left: 4px;
+    /* Ubicacion Izquierda de la bola */
+    bottom: 3.5px;
+    /* Ubicacion Arriba-Abajo de la bola */
+    background-color: var(--gris);
+    /* Color de la bola */
+    -webkit-transition: .2s;
+    /* Velicidad de transición */
+    transition: .2s;
+    /* Velicidad de transición de Webkit*/
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+} 
+
 .switch {
     position: relative;
     display: inline-block;
-    width: 90px;
-    height: 35px;
+    /* width: 90px;
+    height: 35px;   Sinaí */
 }
 
 .switch input {
@@ -652,6 +942,14 @@ switch {
     transition: .4s;
 }
 
+input:focus+.slider {
+    box-shadow: 0 0 1px #707070;
+}
+
+input:checked+.slider {
+    background-color: #707070;
+}
+
 /* ROUNDED SLIDERS */
 .slider.round {
     border-radius: 34px;
@@ -669,7 +967,7 @@ switch {
 .informacion-personal {
     display: grid;
     background-color: var(--gris);
-    font-family: 'Montserrat', sans-serif;
+
     font-weight: bold;
     grid-area: info;
 }
@@ -679,7 +977,7 @@ switch {
     background-color: var(--gris);
     padding: 1em;
     border-radius: 8px;
-    font-family: 'Montserrat', sans-serif;
+
     font-weight: bold;
     grid-area: formacion;
 }
@@ -689,18 +987,18 @@ switch {
     background-color: var(--gris);
     padding: 1em;
     border-radius: 8px;
-    font-family: 'Montserrat', sans-serif;
+
     font-weight: bold;
     grid-area: expe;
 }
 
 .otros {
     display: grid;
-    background-color: var(--gris);
-    padding: 1.4em;
+    background-color: #d9d9d9;
+    padding: 1em;
     font-size: 16px;
     border-radius: 8px;
-    font-family: 'Montserrat', sans-serif;
+
     font-weight: bold;
     grid-area: otros;
 }
@@ -708,7 +1006,9 @@ switch {
 .grid-container {
     display: grid;
     grid:
-        'info info info info info' 0.6fr 'formacion formacion expe expe expe' 1fr 'formacion formacion otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
+        'info info info info info' 0.6fr
+        'formacion formacion expe expe expe' 1fr
+        'formacion formacion otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
     gap: 0.6em;
 }
 
@@ -720,6 +1020,7 @@ switch {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
+    margin-right: 4em;
 }
 
 .nec {
@@ -737,7 +1038,7 @@ switch {
 
 .nec label input {
     margin-left: 1em;
-    flex: 1;
+    height: 20px;
 }
 
 .nacTel {
@@ -756,7 +1057,7 @@ switch {
     width: 120px;
     height: 2em;
     color: var(--negro);
-    font-family: 'Montserrat', sans-serif;
+
     font-weight: bold;
     background-color: var(--verde);
     grid-area: guarda;
@@ -767,7 +1068,7 @@ switch {
     color: var(--blanco);
     width: 120px;
     height: 2em;
-    font-family: 'Montserrat', sans-serif;
+
     font-weight: bold;
     background-color: var(--grisInactivo);
     grid-area: cancela;
@@ -785,19 +1086,19 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 .contenido label {
     display: flex;
-    justify-content: space-between;
-    flex: 0 0 1.4em;
+    justify-content: right;
+    flex: 1 0 1.4em;
     margin-bottom: 0.5em;
 }
 
 .contenido textarea {
-    width: auto;
+    width: 71.5%;
 }
 
 .contenido label input {
     margin-left: 1em;
-    flex: 1;
     margin-right: 2em;
+    height: 20px;
 }
 
 /* .hab-com{
@@ -833,6 +1134,14 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     width: 20px;
     text-align: center;
 }
+.redessociales {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: #4D4953;
+    text-align: center;
+
+}
 
 .logo {
     width: 100px;
@@ -856,14 +1165,35 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 .li:hover {
     background-color: var(--verdeHover);
 }
+/* FOOTER */
+.footerlinks ul li a:hover {
+    color: white;
+    padding-left: 6px;
+}
 
-/* FIN HEADER */
-/* ======================================================= */
+.footerlinks ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footerlinks h4 {
+    font-size: 20px;
+    color: #FF7918;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    display: inline-block;
+}
 
 
-/* BODY */
 
-/* PERFIL USUARIO */
+/* FIN FOOTER */
+
 
 /* SWITCH UNO */
 
@@ -908,11 +1238,19 @@ input:checked+.switch:active::before {
     transition: left 200ms ease-in-out;
 }
 
+.switch3Posiciones #switch3:checked~.switch3Posiciones__inner {
+    background-color: #004e6a;
+    transition: background-color 200ms ease-in-out;
+}
+
+.switch3Posiciones #switch3:checked~.switch3Posiciones__inner::after {
+    left: 40px;
+    transition: left 200ms ease-in-out;
+}
 /* FIN SWITCH 3 POSICIONES */
+
 
 /* FIN BODY PERFIL USUARIO */
 
 /* FIN PERFIL USUARIO */
-
-/* FIN BODY */
 /* ======================================================= */
