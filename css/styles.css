@@ -56,6 +56,11 @@ textarea {
     font-size: 20px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* ===================================== */
 /*        FIN Estilos de fuentes         */
 /* ===================================== */
@@ -64,14 +69,13 @@ textarea {
 
 
 
-/*/////////////////
+                    /*//////////////////
                    ///////BLOQUES/////
                   /////////////////*/
 
 /* HEADER */
 
 header {
-
     background-color: var(--azul);
 }
 
@@ -141,16 +145,24 @@ label {
 /* FIN MODAL DE REGISTRO CORTO HOME*/
 
 /* TARJETAS ASIDE PROPUESTAS INFORMATIVAS*/
-aside {
+/* aside {  // Borrar posiblemente.
     padding: 15px 20px 15px 20px;
     border-radius: 15px;
-}
+} */
 
 /* TARJETA ASIDE DE PERFILES */
 .aside-perfiles {
     padding: 15px 20px 15px 20px;
     border-radius: 15px;
     border: 0.5 solid var(--negro);
+}
+
+/* TARJETA ASIDE ORIENTADOR VIRTUAL*/
+.aside {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--col_aside);
+    grid-area: aside;
 }
 
 /* PERFIL USUARIO */
@@ -201,6 +213,233 @@ label {
 /* FIN BODY PERFIL USUARIO */
 
 /* FIN PERFIL USUARIO */
+
+/* BODY ORIENTADOR VIRTUAL */
+
+/* CSS Autora: Jennifer 2024-01-24*/
+
+.h5-pregunta {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: var(--gris);
+    border-radius: 5px;
+    height: 4.6%;
+    width: 45%;
+    font-size: 25px;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.h5-caja {
+    text-indent: 25px;
+}
+
+.button {
+    display: flex;
+    border-radius: 6px;
+    border: none;
+    width: 50%;
+    height: 2.9em;
+    color: #4c4a4a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--grisaceo);
+    margin-left: 37px;
+}
+
+.h5-orientador {
+    display: flex;
+    border-radius: 30px;
+    width: 47%;
+    text-align: center;
+    padding: 8px;
+    height: 2.5em;
+    color: var(--negro);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: var(--gris);
+    border-style: solid;
+    border-color: var(--negro);
+    border-width: 1px;
+    margin: 5px;
+}
+
+.h5-boton-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    border-radius: 18px;
+    border: var(--negro);
+    border-style: solid;
+    border-width: 1px;
+    height: 3em;
+    width: 30em;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.h6-caja-1 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.p-caja-1 {
+    font-size: 10px;
+}
+
+.h6-hard-skills {
+    font-size: 11px;
+}
+
+.h5-pregunta-caja1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: var(--gris);
+    border-radius: 15px;
+    height: 4.6%;
+    width: 25%;
+    font-size: 15px;
+    text-align: center;
+    justify-content: space-around;
+    border: var(--negro);
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 10px;
+}
+
+.h5-caja2 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    border-radius: 16px;
+    height: 97.9%;
+    padding: 5px;
+    width: 62%;
+    font-size: 10px;
+    text-align: left;
+    font-weight: 500;
+    justify-content: space-between;
+    border: var(--negro);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.h5-caja3 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    border-radius: 16px;
+    height: 93.9%;
+    padding: 10px;
+    width: 53%;
+    font-size: 10px;
+    text-align: left;
+    font-weight: 500;
+    border: var(--negro);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.h5-boton-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    border-radius: 18px;
+    border: var(--negro);
+    border-style: solid;
+    border-width: 1px;
+    height: 3em;
+    width: 30em;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.h5-caja3-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    border-radius: 16px;
+    height: 3.7em;
+    padding: 13px;
+    width: 28%;
+    font-size: 10px;
+    text-align: left;
+    font-weight: 500;
+    border: var(--negro);
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 32em;
+    margin-top: -14.2em;
+    margin-right: -30px;
+    margin-bottom: 80px;
+}
+
+.h5-caja1 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    border-radius: 16px;
+    height: 3.8em;
+    padding: 12px;
+    width: 95%;
+    font-size: 10px;
+    text-align: left;
+    font-weight: 500;
+    border: var(--negro);
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 30em;
+}
+
+.h5-boton-3 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    border-radius: 18px;
+    border: var(--negro);
+    border-style: solid;
+    border-width: 1px;
+    height: 3em;
+    width: 30em;
+    /* padding: 8px */
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: space-around;
+    margin-left: 5em;
+}
+
+.h5-boton-4 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    border-radius: 18px;
+    border: var(--negro);
+    border-style: solid;
+    border-width: 1px;
+    height: 3em;
+    width: 30em;
+    /* padding: 8px */
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: space-around;
+    margin-left: 5em;
+    padding: 10px;
+    margin-top: 1.5em;
+    /* margin: 0.5em; */
+}
+
+/* FIN BODY ORIENTADOR VIRTUAL */
 
 /* FIN BODY */
 /* ======================================================= */
@@ -374,6 +613,41 @@ p a {
 
 
 /* FIN BOTONES */
+
+/* CSS Autora: Jennifer 2024-01-24*/
+/* ORIENTADOR VIRTUAL */
+
+/* BOTONES */
+
+/* BOTÓN PARA TODAS LAS PANTALLAS */
+
+.boton-1 {
+    display: flex;
+    border-radius: 30px;
+    width: 100%;
+    padding: 14px;
+    height: 3.6em;
+    color: var(--negro);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: var(--verde);
+    margin: 2px;
+}
+
+.boton-2 {
+    display: flex;
+    border-radius: 30px;
+    width: 100%;
+    padding: 10px;
+    height: 3.6em;
+    color: var(--negro);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: var(--verde);
+}
+
+/* FIN BOTONES */
+
 /* CAJAS DE TEXTO */
 
 .CajasTextoTitulares {
@@ -624,7 +898,6 @@ p a {
     background-color: #d9d9d9;
     padding: 1em;
     border-radius: 8px;
-
     font-weight: bold;
     grid-area: idiomas;
 }
@@ -634,7 +907,6 @@ p a {
     background-color: #d9d9d9;
     padding: 1em;
     border-radius: 8px;
-
     font-weight: bold;
     grid-area: formacion;
 }
@@ -696,6 +968,212 @@ footer {
 
 /* Fin Sinai */
 
+/* CSS Autora: Jennifer 2024-01-24 */
+/* ORIENTADOR VIRTUAL */
+
+.orientador-virtual {
+    display: grid;
+    grid:
+        "aside orientador" 1fr / 1fr 4fr;
+    gap: 8px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    grid-area: formulario;
+}
+
+.orientador {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    font-size: 1em;
+    overflow: scroll;
+    height: 100vh;
+    grid-area: orientador;
+}
+
+.text-destacable {
+    background-color: var(--celeste);
+    font-size: 18px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 4px 4px 4px 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0.8em;
+    margin-left: 0;
+    width: 81%;
+    height: 5%;
+    text-align: center;
+}
+
+.caja-orientador {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    padding: 1em;
+    border-radius: 5px;
+    height: 25%;
+    width: 45%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.puestos {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    width: 80%;
+    height: 60px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    text-indent: 8px;
+    font-size: 12px;
+}
+
+.boton-desplegable {
+    display: flex;
+    border-radius: 10px;
+    width: 75%;
+    height: 2em;
+    color: var(--negro);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: var(--gris);
+    margin-left: 1em;
+    padding-left: 0.5em;
+}
+
+.puesto-boton {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 40px;
+}
+
+.presentacion-orientador {
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    width: 48%;
+    padding: 1.5em;
+    color: var(--negro);
+    font-weight: bold;
+}
+
+.caja-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    border-radius: 18px;
+    border: var(--negro);
+    border-style: solid;
+    border-width: 1px;
+    width: 40em;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 2em;
+}
+
+.cajas-2-3 {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.cajas-1-3 {
+    display: flex;
+    padding: 1em;
+    margin-bottom: 80px;
+}
+
+.caja-3 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    border-radius: 18px;
+    border: var(--negro);
+    border-style: solid;
+    border-width: 1px;
+    height: 20em;
+    width: 40em;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+    justify-content: space-around;
+    padding: 15px;
+    margin: 0.4em;
+    margin-bottom: 6em;
+}
+
+.caja-4-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.caja-4-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.caja-1-4 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    border-radius: 18px;
+    border: var(--negro);
+    border-style: solid;
+    border-width: 1px;
+    height: 12em;
+    width: 40em;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0.4em;
+}
+
+.caja-1-5 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    border-radius: 18px;
+    border: var(--negro);
+    border-style: solid;
+    border-width: 1px;
+    height: 10em;
+    width: 40em;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0.4em;
+    margin-bottom: 1.2em;
+}
+
+.analisis {
+    background-color: var(--celeste);
+    font-size: 18px;
+    padding: 4px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0.8em;
+    width: 36%;
+    height: 5em;
+    text-align: center;
+}
+
+
+/* FIN DEL ORIENTADOR VIRTUAL */
 
 /* FIN ÁREA DE PERFILES PÚBLICOS */
 
@@ -1019,14 +1497,16 @@ input:checked+.slider {
 .contenido {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
-    margin-right: 4em;
+    padding-bottom: 1em;
+    padding-right: 3em;
+    /* margin-bottom: 1em;
+    margin-right: 4em; */
 }
 
 .nec {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .nec label {
@@ -1253,4 +1733,11 @@ input:checked+.switch:active::before {
 /* FIN BODY PERFIL USUARIO */
 
 /* FIN PERFIL USUARIO */
+
+/*BORRAR ESTA CLASE: ORIENTADOR VIRTUAL. JENNIFER*/
+.parrafo {
+    font-size: 12px;
+    font-weight: bold;
+}
+
 /* ======================================================= */

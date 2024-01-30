@@ -4,50 +4,245 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orientador Virtual</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Pantalla Orientador Virtual -->
-    <aside>
-        <div>
-            <button>Tutorial</button>
-            <button>Preguntas Frecuentes</button>
-            <button>Consejo de su Orientador</button>
-            <br><br>
-            <h3>Puesto de trabajo al cual desea aplicar:</h3>
-            <form action="" method="get">
-                <select>
-                    <optgroup label="Opciones a elegir">
-                        <option value="Arucas">opcion 1</option>
-                        <option value="Firgas">opcion 2</option>
-                        <option value="Moya">opcion 3</option>
-                    </optgroup>
+<!-- Header -->
+<header>
+    <div class="header">
+        <img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo">
+    </div>
+    <nav class="nav">
+        <ul class="nav2">
+            <li class="li"><a href="#" class="menu">Área Personal</a></li>
+            <li class="li"><a href="" class="menu">Orientador Virtual</a></li>
+            <li class="li"><a href="" class="menu">Recomendaciones</a></li>
+            <li class="li"><a href="" class="menu">Propuestas de Formación</a></li>
+            <li class="li"><a href="" class="menu">Comparador de Usuarios</a></li>
+            <li class="li"><a href="" class="menu">Perfiles Públicos</a></li>
+            <li class="li" id="last-li"><a href="" class="menu">Mensajería</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+
+<!-- Fin header -->
+
+<!-- Pantalla Orientador Virtual -->
+<div class="orientador-virtual">
+    <aside class="aside">
+        <div class="scroll">
+            <div class="h4-text-destacable">
+                <h4 class="text-destacable">Tutorial</h4>
+                <h4 class="text-destacable">Preguntas Frecuentes</h4>
+                <h4 class="text-destacable">Consejo de su Orientador</h4>
+            </div>
+            <form action="" method="get" class="formulario">
+                <select class="boton-desplegable" id="boton" onchange="opciones()">
+                        <option value="">Seleccionar Puesto</option>
+                        <option value="desarrollador-web">Desarrollador web</option>
+                        <option value="maquetador-web">Maquetador web</option>
                 </select><br><br>
-                <button>Iniciar Orientación</button>
+                <div class="puesto-boton">
+                    <div class="puestos" id="caja1">
+                        <h3>Puesto a los que aspira:</h3>
+                        <p id="cajatexto"></p>
+                    </div>
+                    <button class="button">Iniciar Orientación</button>
+                </div>
             </form>
         </div>
     </aside>
-    <div>
-        <!-- pirmer mensaje -->
-        <div>
+    <main class="orientador">
+        <!-- primer mensaje -->
+        <div class="h5-pregunta">
             <h5>¿Como funciona?</h5>
         </div>
         <!-- segundo mensaje -->
-        <div class="">
-            <h5>Consejo de su orientador/a:</h5>
-            <h6>¿Quieres aprender a hacer un buen currículo y una carta de representación?</h6>
-            <p>xxxxxxxxxxx</p>
-            <h6>¿Tiene una entrevista de trabajo y quiere saber como comportarse?</h6>
+        <div class="caja-orientador">
+            <h5 class="h5-caja">Consejo de su orientador/a:</h5>
+            <h6>¿Quieres aprender a hacer un buen currículo y una carta de presentación?</h6>
+            <p>xxxxxxxxxxx</p><br>
+            <h6>¿Tienes una entrevista de trabajo y quieres saber cómo comportarse?</h6>
             <p>xxxxxxxxxxx</p>
         </div>
-        <!-- tercer mensaje-->
-        <div>
-            <h5>¡Hola! Soy tu orientador laboral</h5>
+        <!-- tercer mensaje -->
+        <div class="presentacion-orientador">
+            <h5 class="h5-orientador">¡Hola! Soy tu orientador laboral</h5>
+            <div class="botones-seleccion">
+                <button class="boton-1">1. Competencias necesarias para el puesto de trabajo</button>
+                <button class="boton-2">2. Analiza tus competencias nombre,te decimos cuales competencias que te hacen falta </button>
+                <button class="boton-1">3. Conoce tu ranking nombre entre todos los candidatos</button>
+            </div>
         </div>
-        <div class="">
-            <button>1. Competencias necesarias para el puesto de trabajo</button>
-            <button>2. Analiza tus competencias nombre,te decimos cuales competencias que te hacen falta </button>
-            <button>3. Conoce tu ranking nombre entre todos los candidatos</button>
+        <!-- BORRAR EL PARRAFO DE ABAJO -->
+        <p class="parrafo">TEXTO EXPLICATIVO(HAY QUE BORRARLO): A continuación, lo que se colocará abajo es lo que sale cuando seleccionas uno de los tres botones que tenemos arriba.</p>
+
+    <p class="parrafo">PRIMERA PANTALLA: Listado de competencias necesarias.</p>
+    <!-- BOTON 1 -->
+    <div class="">
+        <h5 class="h5-boton-1">1. Competencias necesarias para el puesto de trabajo</h5>
+    </div>
+    <div class="caja-1">
+        <h6 class="h6-caja-1">Analizada tu solicitud de puesto de trabajo, estas son las competencias necesarias para el cargo:</h6>
+            <p class="p-caja-1">
+                1. Comunicación <br>
+                2. Empatia <br>
+                3. ....</p><br>
+        <h6 class="h6-hard-skills">Hard Skills</h6>
+            <p class="p-caja-1">1. ...</p>            
+    </div>
+    <h5 class="h5-pregunta-caja1">¿Quieres ver las otras opciones?</h5>
+    <div class="cajas-2-3">
+        <h5 class="h5-caja2">2. Analiza tus competencias Felipe, te decimos cuales son las competencias que te hacen falta.</h5>
+        <h5 class="h5-caja3">3. Conoce tu ranking entre todos los candidatos.</h5>
+    </div>
+    <!-- FIN BOTON 1 -->
+    
+    
+
+    <p class="parrafo">SEGUNDA PANTALLA: Listado de competencias recomendadas.</p>
+    <!-- BOTON 2 -->
+    <div class="">
+        <h5 class="h5-boton-2">2. Analiza tus competencias Felipe, te decimos cuales son las competencias que te hacen falta</h5>
+    </div>
+    <div class="caja-1">
+        <h6 class="h6-caja-1">Analizada tu solicitud de puesto de trabajo, tienes un 50% de las competencias, te faltan los siguientes:</h6>
+            <p class="p-caja-1">
+                1. Comunicación <br>
+                2. ....</p><br>
+        <h6 class="h6-hard-skills">Hard Skills</h6>
+            <p class="p-caja-1">1. ...</p>            
+    </div>
+        <!-- FIN BOTON 2 -->
+        <br><br><br>
+        
+        
+    <p class="parrafo">TERCERA PANTALLA: Ranking.</p>
+        <!-- BOTON 3 -->
+        <div class="div">
+            <div>
+                <div>
+                    <h5 class="h5-boton-3">3. Conoce tu ranking nombre entre todos los candidatos</h5>
+                </div>
+
+                <div class="caja-3">
+                    <!-- <p>Desarrollar web</p> -->
+                    <p class="h6-caja-1">Hola Pepe!!!</p><br>
+                    <p class="h6-caja-1">Hay 10 ofertas!!!!</p><br>
+                    <p class="h6-caja-1">Ofertas publicadas donde se solicita el empleo de Desarrollador Web!</p><br>
+                    <ul>
+                        <li>JavaScript 5</li>
+                        <li>HTML 2</li>
+                        <li>CSS 2</li>
+                        <li>PYTHON 1</li>
+                    </ul><br>
+                    <p class="h6-caja-1">Tu rarking entre todos los usuarios:</p>
+                    <!-- No se sabe si va una imagen o se hace con codigo --><br>
+                    <p class="h6-caja-1">Para llegar al primer lugar te faltan las siguientes competencias:</p>
+                    <p>HTML  CSS  JS  PYTHON</p>
+                </div>
+            </div>
+        </div>
+        <!-- FIN BOTON 3 -->
+
+
+        <!-- CUARTA PANTALLA -->
+        <p class="parrafo">CUARTA PANTALLA: Analisis del orientador completo.</p>
+        <h4 class="analisis">Analisis del Orientador Virtual completado</h4>
+            <div class="caja-4-1">
+                <h5 class="h5-boton-3">1. Competencias necesarias para el puesto de trabajo</h5>
+                <div class="caja-1-4">
+                    <h6 class="h6-caja-1">Analizada tu solicitud de puesto de trabajo, estas son las competencias necesarias para el cargo:</h6>
+                    <p class="p-caja-1">
+                        1. Comunicación <br>
+                        2. Empatia <br>
+                        3. ....</p><br>
+                        <h6 class="h6-hard-skills">Hard Skills</h6>
+                        <p class="p-caja-1">1. ...</p>            
+                    </div>
+            </div>
+            <div class="caja-4-2">
+                <h5 class="h5-boton-4">2. Analiza tus competencias Felipe, te decimos cuales son las competencias que te hacen falta</h5>
+                <div class="caja-1-5">
+                    <h6 class="h6-caja-1">Analizada tu solicitud de puesto de trabajo, tienes un 50% de las competencias, te faltan los siguientes:</h6>
+                    <p class="p-caja-1">
+                        1. Comunicación <br>
+                        2. ....</p><br>
+                <h6 class="h6-hard-skills">Hard Skills</h6>
+                    <p class="p-caja-1">1. ...</p>            
+            </div>
+            <div>
+                <h5 class="h5-boton-4">3. Conoce tu ranking nombre entre todos los candidatos</h5>
+            </div>
+            <div class="caja-3">
+                <!-- <p>Desarrollar web</p> -->
+                <p class="h6-caja-1">Hola Pepe!!!</p><br>
+                <p class="h6-caja-1">Hay 10 ofertas!!!!</p><br>
+                <p class="h6-caja-1">Ofertas publicadas donde se solicita el empleo de Desarrollador Web!</p><br>
+                <ul>
+                    <li>JavaScript 5</li>
+                    <li>HTML 2</li>
+                    <li>CSS 2</li>
+                    <li>PYTHON 1</li>
+                </ul><br>
+                <p class="h6-caja-1">Tu rarking entre todos los usuarios:</p>
+                <!-- No se sabe si va una imagen o se hace con codigo --><br>
+                <p class="h6-caja-1">Para llegar al primer lugar te faltan las siguientes competencias:</p>
+                <p>HTML  CSS  JS  PYTHON</p>
+            </div>
+</div>
+
+</div>
+    </main>
+
+<!-- Footer -->
+<footer class="footer-Reg">
+    <div>
+        <div class="footer2-Reg">
+            <!-- Sección de datos de la Fulp -->
+            <div class="footerlinks-Reg">
+                <img class="logo" src="img/logo fulp faldon.png" alt="Logo FULP">
+                <br><br>
+                <div>
+                    <p><a href="https://www.google.com/maps?q=Calle+Juan+de+Quesada,+29" target="_blank">C/ Juan de Quesada, 29</a></p>
+                    <p>35001 Las Palmas de Gran Canaria</p>
+                    <p><a href="mailto:info@fdivp.es">info@fdivp.es</a></p>
+                    <p><a href="tel:626009577">626 009 577</a> / <a href="tel:608732801">608 732 801</a></p>
+                </div>
+                <div>
+                    <a href="#"><i class=""></i></a>
+                    <a href="#"><i class=""></i></a>
+                    <a href="#"><i class=""></i></a>
+                    <a href="#"><i class=""></i></a>
+                    <a href="#"><i class=""></i></a>
+                </div>
+            </div>
+            <!-- Sección de las políticas -->
+            <div class="footerlinks-Reg">
+                <h4 class="titulo-Reg">Políticas</h4>
+                <ul>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+            <!-- Sección Contáctanos -->
+            <div class="footerlinks-Reg">
+                <h4>Contáctanos</h4>
+                <ul>
+                    <li><a href="#">Contacta con nosotros</a></li>
+                    <li><a href="#">Quejas y sugerencias</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+            <!-- Imágenes de la parte inferior del footer -->
+            <div>
+                <img src="" alt="">
+            </div>
         </div>
     </div>
+</footer>
+<!-- Fin de footer -->
 </body>
 </html>
