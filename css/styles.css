@@ -1773,6 +1773,16 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     color: var(--negro)
 }
 
+/*Clase del input modal registro corto*/
+
+.inputRegistroCorto {
+    width: 514px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 3px;
+}
+
 
 /* .-.-.-.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-. */
 
