@@ -41,7 +41,7 @@ Hugo Gordillo: 2024-02-07
 /* ============================= */
 /*        Estilos de fuentes         */
 /* ================================= */
-h1,
+/* h1,
 h2 {
     font-weight: bolder;
 }
@@ -51,7 +51,7 @@ h4,
 h5,
 h6 {
     font-style: italic;
-}
+} */
 
 
 /*se eliminó el formato de H1 size enero-09-2024 (Natalie) */
