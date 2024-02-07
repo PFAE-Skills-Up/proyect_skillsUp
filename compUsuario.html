@@ -4,30 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comparador de Usuarios</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <!-- Pantalla Comparador de Usuarios -->
-
-    <!-- Hay que corregirlo y está sin terminar ya que el diseño no estaba acabado -->
-    
-    <aside>
-        <div>
-                    <div><p>Puesto de trabajo</p></div>
-                    <div><p>Estos son los 10 mejores perfiles</p></div>
-                    <div><ul>
-                        <li>Profesional técnico TIC</li>
-                        <li>Administrador /a de sistemas</li>
-                        <li>Digital Project Manager</li>
-                        <li>Especialista en marketing digital</li>
-                        <li>Desarrollador/a de software</li>
-                        <li>Desarrollador/a Backend</li>
-                        <li>Aequitecto de software</li>
-                        <li>Especialista SEO & SEM</li>
-                        <li>Consultor/a TIC</li>
-                        <li>Especialista en ciberseguridad</li>
-                    </ul></div>
+    <!-- header completo o doble segun si ha iniciado sesión o no  -->
+    <header>
+        <div class="header">
+            <a href="home.html"><img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo"></a>
         </div>
-    </aside>
+        <nav class="nav">
+            <ul class="nav2">
+                <li class="li"><a href="" class="menu">Área Personal</a></li>
+                <li class="li"><a href="" class="menu">Orientador Virtual</a></li>
+                <li class="li"><a href="" class="menu">Recomendaciones</a></li>
+                <li class="li"><a href="areaPropuestaFormacion.html" class="menu">Propuestas de Formación</a></li>
+                <li class="li li-uso"><a href="#" class="menu">Comparador de Usuarios</a></li>
+                <li class="li"><a href="areaPerfilesPublicos.html" class="menu">Perfiles Públicos</a></li>
+                <li class="li"><a href="mensajeria.html" class="menu">Mensajería</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
 
+    <div class="comp-contenedor">
+        <aside class="comp-aside">
+            <div class="comp-aside-cont">
+                <div class="aside-select">
+                    <select name="Programacion avanzada" id="Formacion" form="Propuestasfor" placeholder="Filtro">
+                        <option value="">Puestos de trabajo</option>
+                        <option value="">Desarrollador web</option>
+                        <option value="">Maquetador Web</option>
+                    </select>
+                </div>
+                <div class="comp-puesto-sel">
+                    <h4>Puesto seleccionado:</h4>
+                    <p>Desarrollador Web</p>
+                </div>
+                <div class="comp-puesto-sel">
+                    <h5>Estos son los 10 mejores perfiles:</h5>
+                </div>
+                <div class="comp-ranking">
+                    <ol class="list-reset">
+                        <div class="comp-ranking-li">
+                            <li class="espacio">Carmen Pérez</li>
+                        </div>
+                        <div class="comp-ranking-li">
+                            <li>David Fernández</li>
+                        </div>
+                        <div class="comp-ranking-li">
+                            <li>Pedro Martínez</li>
+                        </div>
+                        
+                        <div class="comp-ranking-li">
+                            <li>Lucia Sierra</li>
+                        </div>
+                        <div class="comp-ranking-li">
+                            <li>Antonio García</li>
+                        </div>
+                        <div class="comp-ranking-li">
+                            <li>Martín Gallardo</li>
+                        </div>
+                        <div class="comp-ranking-li">
+                            <li>Alonso Jiménez</li>
+                        </div>
+                        <div class="comp-ranking-li">
+                            <li>María González</li>
+                        </div>
+                        <div class="comp-ranking-li">
+                            <li>Belén Guerrero</li>
+                        </div>
+                        <div class="comp-ranking-li">
+                            <li>Mateo Prieto</li>
+                        </div>
+                    </ol>
+                </div>
+            </div>
+        </aside>
+        <main class="comp-main">
+            <div class="comp-perfil">
+                <h2>Su perfil</h2>
+                <h4></h4>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="comp-perfil">
+                <h2>Tu perfil</h2>
+                <h4>Junior en informática</h4>
+                <div class="comp-tarj-cont">
+                    <div class="comp-tarj-int" id="caja2-tarj1">
+                        <p>Programación:</p>
+                        <ul>
+                            <li>Competencias: Desarrollo de código limpio y eficiente en uno o más lenguajes de programación.</li>
+                            <br>
+                            <li>Dónde las adquirió: A través de cursos académicos, proyectos de programación en la universidad y participación en proyectos prácticos o de código abierto.</li>
+                        </ul>
+                    </div>
+                    <div class="comp-tarj-int" id="caja2-tarj2">
+                        <p>Conocimientos Básicos de Sistemas Operativos:</p>
+                        <ul>
+                            <li>Competencias: Comprender y trabajar con sistemas operativos comunes.</li>
+                            <br>
+                            <li>Dónde las adquirió: En cursos académicos de sistemas operativos y a través de la práctica en entornos informáticos durante estudios universitarios.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

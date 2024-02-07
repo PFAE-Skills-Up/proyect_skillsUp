@@ -5,105 +5,322 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área Propuesta de Formación</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body>
+<body class="body-propuesta propuesta">
+    <!-- header completo o doble segun si ha iniciado sesión o no  -->
+    <header>
+        <div class="header">
+            <a href="home.html"><img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo"></a>
+        </div>
+        <nav class="nav">
+            <ul class="nav2">
+                <li class="li"><a href="" class="menu">Área Personal</a></li>
+                <li class="li"><a href="" class="menu">Orientador Virtual</a></li>
+                <li class="li"><a href="" class="menu">Recomendaciones</a></li>
+                <li class="li li-uso"><a href="#" class="menu">Propuestas de Formación</a></li>
+                <li class="li"><a href="compUsuario.html" class="menu">Comparador de Usuarios</a></li>
+                <li class="li"><a href="areaPerfilesPublicos.html" class="menu">Perfiles Públicos</a></li>
+                <li class="li"><a href="mensajeria.html" class="menu">Mensajería</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
     <!-- Pantalla Area Propuesta de Formación -->
-    <div>
-        <div>
-            <button>Añadir Propuestas</button>
-            <h1>Propuestas de formación</h1>
-            <select name="Programacion avanzada" id="Formacion" form="Propuestasfor">
-            </select>
+    <div class="formacion-contenedor">
+        <div class="btn-add-propuestas">
+            <button><a href="addProFormacion.html">Añadir Propuesta</a></button>
         </div>
-        <div>
+        <h1>Propuestas de formación</h1>
+        <div class="btn-filtro-propuestas">
+            <div class="btn-filtro-propuestas-int">
+                <label for="Formacion">Filtrar por:</label>
+                <select name="Programacion avanzada" id="Formacion" form="Propuestasfor" placeholder="Filtro">
+                    <option value="">Opción 1</option>
+                    <option value="">Opción 2</option>
+                    <option value="">Opción 3</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="propuesta-contenedor">
+        <div class="tarjeta-propuesta">
             <!-- 1 -->
-            <div>
-                <h3>Curso de programación avanzada</h3>
-                <h4>instituto xyz</h4>
-                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades solidas de lengua</p>
-                <h5>Juan Perez</h5>
-                <!-- Aqui deberia de ir las estrellas de las valoracion que serian unos iconos -->
+            <div class="cont-tarjeta">
+                <a href="propFormacion.html">
+                    <h3>Curso de programación avanzada</h3>
+                    <h4>Institución xyz</h4>
+                    <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
+                </a>
+                <a href="propFormacionReseña.html">
+                <div class="icon-cont">
+                    
+                    <div class="icon-nom-user">
+                        <h5>Juan Pérez</h5>
+                    </div>
+                    <div class="icon-cont-star">
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star1" checked></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star2"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star3"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star4"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star5"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </a>
             </div>
         </div>
-        <div>
+        <div class="tarjeta-propuesta">
             <!-- 2 -->
-            <div>
+            <div class="cont-tarjeta">
                 <h3>Curso de programación avanzada</h3>
-                <h4>instituto xyz</h4>
-                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades solidas de lengua</p>
-                <h5>Juan Perez</h5>
-                <!-- Aqui deberia de ir las estrellas de las valoracion que serian unos iconos -->
+                <h4>Institución xyz</h4>
+                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
+                <div class="icon-cont">
+                    <div class="icon-nom-user">
+                        <h5>Juan Pérez</h5>
+                    </div>
+                    <div class="icon-cont-star">
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star1" checked></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star2"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star3"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star4"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star5"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
+        <div class="tarjeta-propuesta">
             <!-- 3 -->
-            <div>
+            <div class="cont-tarjeta">
                 <h3>Curso de programación avanzada</h3>
-                <h4>instituto xyz</h4>
-                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades solidas de lengua</p>
-                <h5>Juan Perez</h5>
-                <!-- Aqui deberia de ir las estrellas de las valoracion que serian unos iconos -->
+                <h4>Institución xyz</h4>
+                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
+                <div class="icon-cont">
+                    <div class="icon-nom-user">
+                        <h5>Juan Pérez</h5>
+                    </div>
+                    <div class="icon-cont-star">
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star1" checked></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star2"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star3"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star4"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star5"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
+        <div class="tarjeta-propuesta">
             <!-- 4 -->
-            <div>
+            <div class="cont-tarjeta">
                 <h3>Curso de programación avanzada</h3>
-                <h4>instituto xyz</h4>
-                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades solidas de lengua</p>
-                <h5>Juan Perez</h5>
-                <!-- Aqui deberia de ir las estrellas de las valoracion que serian unos iconos -->
+                <h4>Institución xyz</h4>
+                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
+                <div class="icon-cont">
+                    <div class="icon-nom-user">
+                        <h5>Juan Pérez</h5>
+                    </div>
+                    <div class="icon-cont-star">
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star1" checked></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star2"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star3"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star4"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star5"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
+        <div class="tarjeta-propuesta">
             <!--5 -->
-            <div>
+            <div class="cont-tarjeta">
                 <h3>Curso de programación avanzada</h3>
-                <h4>instituto xyz</h4>
-                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades solidas de lengua</p>
-                <h5>Juan Perez</h5>
-                <!-- Aqui deberia de ir las estrellas de las valoracion que serian unos iconos -->
+                <h4>Institución xyz</h4>
+                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
+                <div class="icon-cont">
+                    <div class="icon-nom-user">
+                        <h5>Juan Pérez</h5>
+                    </div>
+                    <div class="icon-cont-star">
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star1" checked></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star2"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star3"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star4"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star5"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
+        <div class="tarjeta-propuesta">
             <!-- 6 -->
-            <div>
+            <div class="cont-tarjeta">
                 <h3>Curso de programación avanzada</h3>
-                <h4>instituto xyz</h4>
-                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades solidas de lengua</p>
-                <h5>Juan Perez</h5>
-                <!-- Aqui deberia de ir las estrellas de las valoracion que serian unos iconos -->
+                <h4>Institución xyz</h4>
+                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
+                <div class="icon-cont">
+                    <div class="icon-nom-user">
+                        <h5>Juan Pérez</h5>
+                    </div>
+                    <div class="icon-cont-star">
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star1" checked></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star2"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star3"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star4"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star5"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
+        <div class="tarjeta-propuesta">
             <!-- 7 -->
-            <div>
+            <div class="cont-tarjeta">
                 <h3>Curso de programación avanzada</h3>
-                <h4>instituto xyz</h4>
-                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades solidas de lengua</p>
-                <h5>Juan Perez</h5>
-                <!-- Aqui deberia de ir las estrellas de las valoracion que serian unos iconos -->
+                <h4>Institución xyz</h4>
+                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
+                <div class="icon-cont">
+                    <div class="icon-nom-user">
+                        <h5>Juan Pérez</h5>
+                    </div>
+                    <div class="icon-cont-star">
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star1" checked></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star2"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star3"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star4"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star5"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
+        <div class="tarjeta-propuesta">
             <!-- 8 -->
-            <div>
+            <div class="cont-tarjeta">
                 <h3>Curso de programación avanzada</h3>
-                <h4>instituto xyz</h4>
-                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades solidas de lengua</p>
-                <h5>Juan Perez</h5>
-                <!-- Aqui deberia de ir las estrellas de las valoracion que serian unos iconos -->
+                <h4>Institución xyz</h4>
+                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
+                <div class="icon-cont">
+                    <div class="icon-nom-user">
+                        <h5>Juan Pérez</h5>
+                    </div>
+                    <div class="icon-cont-star">
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star1" checked></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star2"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star3"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star4"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star5"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
+        <div class="tarjeta-propuesta">
             <!-- 9 -->
-            <div>
+            <div class="cont-tarjeta">
                 <h3>Curso de programación avanzada</h3>
-                <h4>instituto xyz</h4>
-                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades solidas de lengua</p>
-                <h5>Juan Perez</h5>
-                <!-- Aqui deberia de ir las estrellas de las valoracion que serian unos iconos -->
+                <h4>Institución xyz</h4>
+                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
+                <div class="icon-cont">
+                    <div class="icon-nom-user">
+                        <h5>Juan Pérez</h5>
+                    </div>
+                    <div class="icon-cont-star">
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star1" checked></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star2"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star3"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star4"></i>
+                        </div>
+                        <div class="icon-form-star">
+                            <i class="far fa-star" id="star5"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
