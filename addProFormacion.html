@@ -4,49 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Añadir Propuesta de Formación</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
+<body class="body-propuesta propuesta1">
+    <!-- Header doble -->
+    <header>
+        <div class="header">
+            <img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo">
+        </div>
+        <nav class="nav">
+            <ul class="nav2">
+                <li class="li li-doble"><a href="areaPropuestaFormacion.html" class="menu">Propuestas de Formación</a></li>
+                <li class="li li-doble li-uso"><a href="#" class="menu">Añadir propuesta de Formación</a></li>
+            </ul>
+        </nav>
+    </header>
     <!-- Pantalla Añadir Propuesta de Formación -->
-    <div>
-        <div>
-            <h2>Datos de la Formacion</h2>
-            <form>
-                <div>
-                    <h3>Nombre de la formación</h3>
-                    <label for="name"></label>
-                    <input type="text" id="Datos" name="datosFormacion" />
+    <div class="add-propuestas-contenedor">
+        <div class="add-datos">
+            <h2>Datos de la Formación</h2>
+            <form> <!--Elimine los label ya que están los h3-->
+                <h3>Nombre de la formación:</h3>
+                <input type="text" id="Datos" name="datosFormacion" placeholder="Ingrese el nombre de la formación"/>
+                <h3>Nombre del centro:</h3>
+                <input type="text" id="Lugar1" name="Lugar" placeholder="Ingrese el nombre del centro"/>
+                <h3>Resumen del curso/formación:</h3>
+                <textarea id="cursooformacion" name="cursoFormacion" placeholder="Redacta un breve resumen"></textarea>
+                <h3>Competencias:</h3>
+                <textarea id="compete" name="Competencias" placeholder="Escribe las competencias separándolas por comas ','"></textarea>
+                <br><br>
+                <div class="btn-add-propuestas btn-add-pro">
+                    <button>Añadir Propuesta</button>
                 </div>
-                <div>
-                    <h3>Resumen del Curso/Formacion</h3>
-                    <label for="name"></label>
-                    <input type="text" id="cursooformacion" name="cursoFormacion" />
-                </div>
-                <div>
-                    <h3>Competencias</h3>
-                    <label for="name"></label>
-                    <input type="text" id="compete" name="Competencias" />
-                </div>
-                <div>
-                    <h3>Lugar</h3>
-                    <label for="name"></label>
-                    <input type="text" id="Lugar1" name="Lugar" /><br>
-                </div>
-                <button>Agregar propuesta</button>
             </form>
         </div>
-        <div>
-            <h3>Lista de formación </h3>
-            <div>
+        <div class="lista-formacion">
+            <h3>Lista de formación</h3>
+            <div class="lista-formacion tarjeta-propuesta-form">
                 <h4>Curso de programación avanzada</h4>
-                <h5>instituto xyz</h5>
-                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades solidas de lengua</p>
+                <h5>Instituto xyz</h5>
+                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
                 <h4>Comunicación efectiva</h4>
                 <h4>Resolver Problemas</h4>
             </div>
-            <div>
+            <div class="lista-formacion tarjeta-propuesta-form">
                 <h4>Curso de programación avanzada</h4>
-                <h5>instituto xyz</h5>
-                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades solidas de lengua</p>
+                <h5>Instituto xyz</h5>
+                <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
                 <h4>Comunicación efectiva</h4>
                 <h4>Resolver Problemas</h4>
             </div>
