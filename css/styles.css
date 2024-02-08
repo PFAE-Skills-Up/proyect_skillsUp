@@ -2774,7 +2774,7 @@ un tamaño de fuente determinado... */
 
 .chats-usuarios-caja {
     display: flex;
-    padding: 1em;
+    padding: 1.5em;
     background-color: white;
     justify-content: space-between;
     border: 1px solid black;
