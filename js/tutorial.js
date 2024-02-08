@@ -14,7 +14,7 @@ const contenidoArray = [
 
     '<p class="">En este área podrás ver todos los perfiles públicos de los miembros de la comunidad.</p>',
 
-    '<img src="img/img-chat_ancho.png" alt="imagen del chat">'
+    '<img src="img/img-chat_alto.png" alt="imagen del chat">'
 ];
 
 const contenidoArray2 = [
