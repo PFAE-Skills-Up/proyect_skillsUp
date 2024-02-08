@@ -2342,7 +2342,13 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     padding: 1.5em;
     width: 30%;
     border-radius: 15px;
-    
+}
+
+/* Añadida clase 08/02/2024 */
+
+.prop-formacion-tarjeta a{
+    text-decoration: none;
+    color: var(--negro);
 }
 
 .prop-resenas-tarjeta{
