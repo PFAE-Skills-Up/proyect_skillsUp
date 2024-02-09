@@ -1,40 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Montserrat:wght@500;600;700;800&display=swap');
+
+/* VARIABLES CSS COLORES */
+/* Listado de variables de los colores */
+
+:root {
+    font-size: 16px;
+    font-family: 'Monserrat', sans-serif;
+    --azul: #004E6A;
+    --blanco: #FFFFFF;
+    --verde: #01C38E;
+    --negro: #000000;
+    --naranja: #FF7918;
+    --grisaceo: #A9C9D3;
+    --grisInactivo: #707070;
+    --gris: #D9D9D9;
+    --celeste: #54E0FF;
+    --col_aside: #D1EAF4;
+    --h1NoReg: #F38C41;
+    --h4NoReg: #4D4C7E;
+    --verdeHover: #33ABA4;
+    /* Añadidos colores || Hugo Gordillo 06/02/2024 */
+
+    /* Amarillo de estrellas */
+    --amarillo: #FFC700;
+
+    /* Rojo errores en validaciones del formulario*/
+    --rojo: rgba(255, 0, 0, 0.107);
+}
+
+/* BLOQUES */
+
+/* Cambios: 
+-Eliminados los padding. 
+-Añadido el width
+*/
+
 .footer-Reg {
     background-color: var(--azul);
-    padding: 15px 0;
-    padding-left: 22%;
+    padding: 1em;
+    width: -webkit-fill-available; /* width: auto */
+}
+
+/* Añadida clase footer-cont como contenedor de los dos div
+interiores del footer */
+
+.footer-cont{
     display: flex;
+    flex-direction: column;
+}
+
+/* Añadida clase .footer-img-cont para las imagenes 
+de la parte inferior del footer */
+
+.footer-img-cont{
+    border: 1px solid black;
+
 }
 
 .footer2-Reg {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: space-around; */
+    column-gap: 5em;
+    padding: 2em;
+    padding-left: 15em;
     font-size: 15px;
     color: var(--blanco);
 }
 
-.footerlinks-Reg {
+.footer-section{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    gap: 3em;
+}
+
+/* Puestas en comentario, clases sin sentido */
+
+/* .footerlinks-Reg {
     padding: 15px;
 }
+
+.footerlinks-Reg {
+    margin-right: 80px;
+} */
+
+/* Cambios::
+-Modificado padding-bottom.
+-Eliminado margin-bottom.
+-ADD margin
+
+*/
 
 .footerlinks-Reg h4 {
     font-size: 20px;
     color: var(--naranja);
-    margin-bottom: 25px;
+    margin: 1em;
+    padding-bottom: 0.5em;
+    /* margin-bottom: 25px; */
     font-weight: 500;
-    border-bottom: 2px solid;
-    padding-bottom: 5px;
-    display: inline-block;
-    margin-left: 33%;
+    border-bottom: 2px solid var(--naranja);
+    /* display: inline-block; */
+    /* margin-left: 33%; */
 }
+
+/* Cambios:
+- Padding-left
+-Margin-bottom
+-
+ */
 
 .footerlinks-Reg ul li a {
     font-size: 15px;
     text-decoration: none;
+    padding-left: 2em;
     color: var(--blanco);
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 1.5em;
     transition: all .3s ease;
+    
 }
+
+
+/* Clases innecesarias */
 
 .footerlinks-Reg input,
 .footerlinks-Reg textarea {
@@ -43,18 +131,22 @@
     border: 1px;
 }
 
-.footerlinks-Reg {
+/* Clase sin sentido */
+
+/* .footerlinks-Reg {
     margin-right: 80px;
-}
+} */
 
 
 .footerlinks-Reg ul {
     list-style: none;
 }
 
-.footerlinks-Reg ul li {
+/* No es necesaria esta clase */
+
+/* .footerlinks-Reg ul li {
     margin-bottom: 1px;
-}
+} */
 
 p a {
     text-decoration: none;
@@ -63,6 +155,23 @@ p a {
 
 
 /* Elementos */
+
+/* Creada la clase para quitar los br del html */
+
+.footer-img-logo {
+    padding: 1em;
+}
+
+/* Clase creada para el texto debajo del logo */
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    padding-left: 1em;
+    
+}
+
 
 .footerlinks {
     width: 25%;
