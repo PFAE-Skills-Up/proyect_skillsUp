@@ -488,7 +488,7 @@ label {
 
 /* FOOTER */
 
-.footer-Reg {
+/* .footer-Reg {
     background-color: var(--azul);
     padding: 15px 0;
     padding-left: 22%;
@@ -549,7 +549,7 @@ label {
 p a {
     text-decoration: none;
     color: var(--blanco);
-}
+} */
 
 /*FIN FOOTER*/
 /* ======================================================= */
@@ -1064,7 +1064,7 @@ p a {
     gap: 0.6em;
 }
 
-.footerlinks {
+/* .footerlinks {
     width: 25%;
     padding: 0 15px;
 
@@ -1086,7 +1086,7 @@ p a {
 
 footer {
     width: 100%;
-}
+} */
 
 
 
@@ -3170,7 +3170,7 @@ h6 {
     background-color: var(--verdeHover);
 }
 /* FOOTER */
-.footerlinks ul li a:hover {
+/* .footerlinks ul li a:hover {
     color: white;
     padding-left: 6px;
 }
@@ -3192,7 +3192,7 @@ h6 {
     border-bottom: 2px solid;
     padding-bottom: 10px;
     display: inline-block;
-}
+} */
 
 
 
