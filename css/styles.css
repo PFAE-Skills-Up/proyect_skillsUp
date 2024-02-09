@@ -3,6 +3,9 @@ Creación 2024-01-09: Hugo Gordillo.
 Rev: 1
 Vicky: 2024-01-18 - 8c5634b
 Sinaí: 2024-01-23
+Jeniffer: 2024-01-30
+Hugo Gordillo: 2024-02-07
+Marlene Menaza: 2024-02-09
 */
 
 /* GOOGLE FONTS */
@@ -32,18 +35,6 @@ Sinaí: 2024-01-23
 /* ============================= */
 /*        Estilos de fuentes         */
 /* ================================= */
-h1,
-h2 {
-    font-weight: bolder;
-}
-
-h3,
-h4,
-h5,
-h6 {
-    font-style: italic;
-}
-
 
 /*se eliminó el formato de H1 size enero-09-2024 (Natalie) */
 
@@ -440,6 +431,82 @@ label {
 }
 
 /* FIN BODY ORIENTADOR VIRTUAL */
+
+
+/* CSS Autora: Marlene Menaza - 2024/01/02 */
+/* ====== RECOMENDACIONES ACCIONES DE MEJORA ===== */
+/* CÓDIGO PARA LOS SELECT DE RECOMENDACIONES */
+.div_select {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+.select-opciones {
+    width: 290px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    background-color: var(--gris);
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* FIN CÓDIGO PARA LOS SELECT DE RECOMENDACIONES */
+
+/* PREGUNTAS SOBRE RECOMENDACIONES */
+.input-recomend {
+    grid-area: radio;
+}
+
+/* FIN PREGUNTAS SOBRE RECOMENDACIONES */
+
+/* RADIO BUTTON ACTIVADOS/SELECCIONADOS */
+.input-recomend {
+    display: none;
+
+}
+
+.label-recomend {
+    display: flex;
+    gap: 10px;
+    margin-top: 0.5em;
+
+
+}
+
+/* FIN RADIO BUTTON ACTIVADOS/SELECCIONADOS */
+
+/* RADIO BUTTON INACTIVOS(DISABLED) */
+.input-recomend[disabled]+.label-recomend .radio-button {
+    background-color: var(--gris);
+    border: 2px solid var(--grisInactivo);
+}
+
+/* FIN RADIO BUTTON INACTIVOS(DISABLED) */
+
+/* TEXTAREA NOMBRES DE EMPRESAS */
+.textarea-recomend {
+    display: flex;
+    justify-content: center;
+}
+
+/* FIN TEXTAREA NOMBRES DE EMPRESAS */
+
+/* RESULTADO DE RECOMENDACIONES */
+.select-recomend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#h4-recomend {
+    text-align: left;
+}
+
+/* FIN RESULTADO DE RECOMENDACIONES */
+/* ====== FIN RECOMENDACIONES ACCIONES DE MEJORA ===== */
 
 /* FIN BODY */
 /* ======================================================= */
@@ -1602,6 +1669,133 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 /* FIN PERFIL USUARIO */
 
+
+/* CSS Autora: Marlene Menaza- 2024/01/02 */
+/* ====== RECOMENDACIONES ACCIONES DE MEJORA ===== */
+
+/* PREGUNTAS SOBRE RECOMENDACIONES */
+.preguntas-recomendaciones {
+    display: grid;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    grid-template-areas:
+        'parrafo parrafo'
+        'radio radio';
+}
+
+.pregunta {
+    grid-area: parrafo;
+}
+
+/* FIN PREGUNTAS RECOMENDACIONES */
+
+
+/* RADIO BUTTON ACTIVADOS/SELECCIONADOS */
+.radio {
+    padding-left: 2.5em;
+}
+
+.radio-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--gris);
+    cursor: pointer;
+    position: relative;
+    border: 2px solid var(--verde);
+    margin-left:10px;
+    /* margin-top: 1em; */
+}
+
+/* FIN RADIO BUTTON ACTIVADOS/SELECCIONADOS */
+
+/* TEXTAREA NOMBRES DE EMPRESAS */
+#inside-textarea {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+    resize: none;
+    width: 300px;
+    height: 130px;
+    font-size: 16px;
+}
+
+/* FIN TEXTAREA NOMBRES DE EMPRESAS */
+
+
+/* BOTON ENVIAR */
+/* ACTIVADO */
+.boton-recomend {
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 20px;
+
+}
+
+#buton-recomend {
+    background-color: var(--verde);
+    font-family: 'Montserrat', sans-serif;
+    width: 150px;
+    height: 40px;
+    border: 1px solid var(--negro);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+}
+
+/* FIN ACTIVADO */
+/* FIN BOTON ENVIAR */
+
+/* RESULTADO DE RECOMENDACIONES */
+.result-recomend {
+    
+    width:900px;
+    display: flex; 
+    flex-direction: column;
+    padding: 3em;
+    border: 2px solid var(--negro);
+    background-color: var(--gris);
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+    margin: 3em auto 3em auto;
+    gap:1em;
+  }
+  
+  #lista-recomend {
+    list-style-type: none;
+    padding-left: 2em;
+  }
+  /* FIN RESULTADO DE RECOMENDACIONES */
+
+  /* TARJETA RECOMEDACIONES */
+.recomend-tarjeta-propuesta {
+    display: none;
+    padding: 15px 20px 15px 20px;
+    width: 264.5px;
+    height: 100.8px;
+    background-color: var(--blanco);
+    font-size: 12px;
+    
+  }
+  
+  .recomend-tarjeta-propuesta-enseñar {
+    display: block;
+    position: absolute;
+    float: inline-end;
+    z-index: 9;
+    left: 35%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  /* FIN TARJETA RECOMENDACIONES */
+/* ====== FIN RECOMENDACIONES ACCIONES DE MEJORA ===== */
+
+
+
 /*FIN BODY*/
 /* ======================================================= */
 
@@ -1645,6 +1839,10 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 .li:hover {
     background-color: var(--verdeHover);
 }
+
+/* FIN HEADER */
+
+
 /* FOOTER */
 .footerlinks ul li a:hover {
     color: white;
@@ -1741,3 +1939,50 @@ input:checked+.switch:active::before {
 }
 
 /* ======================================================= */
+
+/* CSS Autora: Marlene Menaza- 2024/01/02 */
+/* ====== RECOMENDACIONES ACCIONES DE MEJORA ===== */
+/* RADIO BUTTON ACTIVADOS/SELECCIONADOS */
+.radio-button::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--verde);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.input-recomend:checked+.label-recomend .radio-button::after {
+    opacity: 1;
+}
+
+/* FIN RADIO BUTTON ACTIVADOS/SELECCIONADOS */
+
+/* RADIO BUTTON INACTIVOS(DISABLED) */
+.input-recomend[disabled]+.label-recomend .radio-button {
+    background-color: var(--gris);
+    border: 2px solid var(--grisInactivo);
+}
+
+/* FIN RADIO BUTTON INACTIVOS/DISABLED */
+
+
+/* BOTÓN ENVIAR */
+/* INACTIVO */
+#buton-recomend:disabled {
+    background-color: var(--grisInactivo);
+    font-family: 'Montserrat', sans-serif;
+    width: 150px;
+    height: 40px;
+    border: 1px solid var(--negro);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+}
+
+/* FIN INACTIVO */
+/* FIN BOTON ENVIAR */
+/* ====== FIN RECOMENDACIONES ACCIONES DE MEJORA ===== */
