@@ -5,6 +5,7 @@ Vicky: 2024-01-18 - 8c5634b
 Sinaí: 2024-01-23
 Jeniffer: 2024-01-30
 Hugo Gordillo: 2024-02-07
+Marlene Menaza: 2024-02-09
 */
 
 /* GOOGLE FONTS */
@@ -34,18 +35,6 @@ Hugo Gordillo: 2024-02-07
 /* ============================= */
 /*        Estilos de fuentes         */
 /* ================================= */
-h1,
-h2 {
-    font-weight: bolder;
-}
-
-h3,
-h4,
-h5,
-h6 {
-    font-style: italic;
-}
-
 
 /*se eliminó el formato de H1 size enero-09-2024 (Natalie) */
 
