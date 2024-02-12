@@ -486,70 +486,78 @@ label {
 /* FIN BODY */
 /* ======================================================= */
 
-/* FOOTER */
+/*FOOTER */
 
-/* .footer-Reg {
+.footer-Reg {
     background-color: var(--azul);
-    padding: 15px 0;
-    padding-left: 22%;
-    display: flex;
+    padding: 1em;
+    width: -webkit-fill-available; /* width: auto */
 }
 
 .footer2-Reg {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: space-around; */
+    column-gap: 5em;
+    padding: 2em;
+    padding-left: 15em;
     font-size: 15px;
     color: var(--blanco);
 }
 
-.footerlinks-Reg {
+
+/* .footerlinks-Reg {
     padding: 15px;
-}
+} */
 
 .footerlinks-Reg h4 {
     font-size: 20px;
     color: var(--naranja);
-    margin-bottom: 25px;
+    margin: 1em;
+    padding-bottom: 0.5em;
+    /* margin-bottom: 25px; */
     font-weight: 500;
-    border-bottom: 2px solid;
-    padding-bottom: 5px;
-    display: inline-block;
-    margin-left: 33%;
+    border-bottom: 2px solid var(--naranja);
+    /* display: inline-block; */
+    /* margin-left: 33%; */
+    width: fit-content;
 }
 
 .footerlinks-Reg ul li a {
     font-size: 15px;
     text-decoration: none;
+    padding-left: 2em;
     color: var(--blanco);
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 1.3em;
     transition: all .3s ease;
 }
 
-.footerlinks-Reg input,
+
+/* .footerlinks-Reg input,
 .footerlinks-Reg textarea {
     color: var(--blanco);
     margin-bottom: 15px;
     border: 1px;
-}
+} */
 
-.footerlinks-Reg {
+/* .footerlinks-Reg {
     margin-right: 80px;
-}
+} */
 
 
 .footerlinks-Reg ul {
     list-style: none;
 }
 
-.footerlinks-Reg ul li {
+/* .footerlinks-Reg ul li {
     margin-bottom: 1px;
-}
+} */
 
 p a {
     text-decoration: none;
     color: var(--blanco);
-} */
+}
 
 /*FIN FOOTER*/
 /* ======================================================= */
@@ -1064,7 +1072,7 @@ p a {
     gap: 0.6em;
 }
 
-/* .footerlinks {
+.footerlinks {
     width: 25%;
     padding: 0 15px;
 
@@ -1086,7 +1094,7 @@ p a {
 
 footer {
     width: 100%;
-} */
+}
 
 
 
@@ -3154,6 +3162,80 @@ h6 {
     margin-right: 0;
 }
 
+/* Añadida clase .footer-img-cont para las imagenes 
+de la parte inferior del footer */
+
+.footer-img-cont{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img-cont img{
+    /* border: 1px solid var(--blanco); */
+    height: 50px;
+    min-width: 150px;
+}
+
+.footer-section{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    gap: 3em;
+}
+
+.footer-img-logo {
+    padding: 1em;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    padding-left: 1em;
+}
+
+.footer-text i{
+    margin-right: 0.5em;
+}
+
+
+
+/* Redes sociales footer */
+
+.social-networks{
+    padding: 1em;
+    width: 250px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 0.5em;
+}
+
+.social-networks a{
+    color: var(--naranja);
+    text-decoration: none;
+}
+
+.social-networks i{
+    /* padding: 0.2em; */
+    font-size: 20px;
+}
+
+.social-networks-int{
+    display: flex;
+    /* border: 1px solid var(--blanco); */
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Fin Redes sociales footer */
+
+
 /* FIN FOOTER */
 /* ======================================================= */
 
@@ -3170,6 +3252,9 @@ h6 {
     background-color: var(--verdeHover);
 }
 /* FOOTER */
+
+/* No se usan */
+
 /* .footerlinks ul li a:hover {
     color: white;
     padding-left: 6px;
@@ -3194,7 +3279,13 @@ h6 {
     display: inline-block;
 } */
 
+/* Redes sociales Footer */
 
+.fab:hover{
+    color: #FFF
+}
+
+/* Fin Redes sociales Footer */
 
 /* FIN FOOTER */
 
