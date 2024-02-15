@@ -78,7 +78,7 @@ textarea {
 
 
 
-                    /*//////////////////
+/*//////////////////
                    ///////BLOQUES/////
                   /////////////////*/
 
@@ -140,7 +140,7 @@ header {
 /* Clase creada para el menú de navegación
 dentro de la página para dejar ver donde estamos */
 
-.li-uso{
+.li-uso {
     background-color: var(--verdeHover);
 }
 
@@ -151,7 +151,7 @@ que contiene el botón de iniciar sesión */
     box-sizing: none;
 }
 
-.header-int{
+.header-int {
     display: flex;
     justify-content: space-around;
     margin-left: 34.6%;
@@ -170,7 +170,8 @@ que contiene el botón de iniciar sesión */
 /* CSS Autora: Natalie ac 2024-01-09*/
 /* MODAL DE REGISTRO CORTO HOME*/
 
-input { /* revisar no correcto*/
+input {
+    /* revisar no correcto*/
     /* width: 514px;
     height: 30px;
     margin: 10px; */
@@ -491,7 +492,8 @@ label {
 .footer-Reg {
     background-color: var(--azul);
     padding: 1em;
-    width: -webkit-fill-available; /* width: auto */
+    width: -webkit-fill-available;
+    /* width: auto */
 }
 
 .footer2-Reg {
@@ -564,7 +566,7 @@ p a {
 
 
 
-                    /*/////////////////
+/*/////////////////
                    /////ELEMENTOS/////
                   /////////////////*/
 
@@ -589,7 +591,7 @@ p a {
 
 /* Añadido: 06/02/2024 || Hugo Gordillo*/
 
-.btn-inicio{
+.btn-inicio {
     background-color: var(--naranja);
     color: var(--blanco);
     font-weight: bold;
@@ -607,7 +609,7 @@ p a {
 
 /* ======== Body Propuestas de fondo (Hay que selecionar menos y renombrarlas) ======== */
 
-.body-propuesta{
+.body-propuesta {
     background-size: 100% 100%;
     /* añadido para hacer el fondo fijo */
     background-attachment: fixed;
@@ -615,50 +617,51 @@ p a {
     height: auto;
 }
 
-.propuesta1{
+.propuesta1 {
     background-image: url(../img/fondo-propuesta.png);
 }
 
-.propuesta2{ 
+.propuesta2 {
     background-image: url(../img/2fondo-propuesta.png);
 }
 
-.propuesta3{
+.propuesta3 {
     background-image: url(../img/3fondo-propuesta.png);
 }
 
-.propuesta4{
+.propuesta4 {
     background-image: url(../img/4fondo-propuesta.png);
 }
 
-.propuesta5{
+.propuesta5 {
     background-image: url(../img/5fondo-propuesta.png);
 }
 
-.propuesta6{
+.propuesta6 {
     background-image: url(../img/6fondo-propuesta.png);
 }
 
-.propuesta7{
+.propuesta7 {
     background-image: url(../img/7fondo-propuesta.png);
 }
 
-.propuesta8{
+.propuesta8 {
     background-image: url(../img/8fondo-propuesta.png);
 }
 
-.propuesta9{
+.propuesta9 {
     background-image: url(../img/9fondo-propuesta.png);
 }
 
-.propuesta10{
+.propuesta10 {
     background-image: url(../img/10fondo-propuesta.png);
 }
 
-.propuesta11{
+.propuesta11 {
     background-image: url(../img/11fondo-propuesta.png);
 }
-.propuesta12{
+
+.propuesta12 {
     background-image: url(../img/12fondo-propuesta.png);
 }
 
@@ -836,7 +839,7 @@ p a {
     font-size: 18px;
     text-decoration: none;
     box-shadow: 0px 4px 4px 0px var(--grisInactivo);
-    margin-top: 1.5em; 
+    margin-top: 1.5em;
 }
 
 .modal-hide {
@@ -1063,12 +1066,11 @@ p a {
     left: 10px;
     top: -7px;
 }
+
 .grid-container2 {
     display: grid;
     grid:
-        'info info info info info' 0.6fr
-        'formacion formacion expe expe expe' 1fr
-        'idiomas idiomas otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
+        'info info info info info' 0.6fr 'formacion formacion expe expe expe' 1fr 'idiomas idiomas otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
     gap: 0.6em;
 }
 
@@ -1484,7 +1486,7 @@ input:checked+.slider2 {
 
 .slider2 {
     border-radius: 17px;
-} 
+}
 
 
 
@@ -1515,7 +1517,7 @@ input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-} 
+}
 
 .switch {
     position: relative;
@@ -1618,9 +1620,7 @@ input:checked+.slider {
 .grid-container {
     display: grid;
     grid:
-        'info info info info info' 0.6fr
-        'formacion formacion expe expe expe' 1fr
-        'formacion formacion otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
+        'info info info info info' 0.6fr 'formacion formacion expe expe expe' 1fr 'formacion formacion otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
     gap: 0.6em;
 }
 
@@ -1740,7 +1740,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 /* === Añadido 06/02/2024 || Hugo Gordillo === */
 
-.home-contenido{
+.home-contenido {
     width: 100%;
     height: fit-content;
     margin-bottom: 150px;
@@ -1776,7 +1776,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     font-size: 22px;
 }
 
-.botonRegistro a{
+.botonRegistro a {
     text-decoration: none;
     color: var(--negro)
 }
@@ -1800,14 +1800,14 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 /* Clase creada para centar el contenido en la página */
 
-.inicio{
+.inicio {
     display: flex;
     justify-content: center;
     margin-top: 200px;
     margin-bottom: 200px;
 }
 
-.inicio-contenedor{
+.inicio-contenedor {
     width: 1000px;
     height: 345px;
     display: flex;
@@ -1850,11 +1850,11 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     border-radius: 15px;
 }
 
-.inicio-columna2 label{
+.inicio-columna2 label {
     align-items: start;
 }
 
-.inicio-modal-btn{
+.inicio-modal-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1870,7 +1870,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 }
 
 .inicio-btn {
-    width: 200px; 
+    width: 200px;
     height: 35px;
     margin: 10px;
     margin-bottom: 10px;
@@ -1879,7 +1879,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     font-weight: lighter;
 }
 
-.inicio-btn a{
+.inicio-btn a {
     text-decoration: none;
     color: var(--negro)
 }
@@ -1949,7 +1949,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 }
 
 .msj-reCort-modalbox-cont-int {
-    margin-left: 110px; 
+    margin-left: 110px;
     margin-right: 100px;
     display: flex;
     flex-direction: row;
@@ -2074,7 +2074,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     box-shadow: 3px 3px 8px var(--negro);
 }
 
-.tutorial-cont-lista{
+.tutorial-cont-lista {
     font-weight: bold;
     padding-left: 2em;
 }
@@ -2097,7 +2097,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     animation: modal-show 0.5s 1 forwards;
 }
 
-.tutorial-modal-posicion{
+.tutorial-modal-posicion {
     width: 100%;
     height: 100%;
     display: flex;
@@ -2137,7 +2137,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     font-weight: bold;
 }
 
-.btn-modal a{
+.btn-modal a {
     text-decoration: none;
     color: white;
 }
@@ -2191,10 +2191,10 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     height: 139.8px;
     background-color: var(--gris);
     font-size: 12px;
-    
+
 }
 
-.tarjeta-propuesta a{
+.tarjeta-propuesta a {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -2219,7 +2219,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     box-shadow: 3px 3px 5px lightblue;
 }
 
-.btn-add-propuestas a{
+.btn-add-propuestas a {
     text-decoration: none;
     color: var(--negro);
 }
@@ -2257,7 +2257,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     box-shadow: 2px 2px 5px var(--grisInactivo);
 }
 
-.prop-form-tarjeta a{
+.prop-form-tarjeta a {
     text-decoration: none;
     color: var(--negro);
 }
@@ -2269,16 +2269,17 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     margin-bottom: 20px;
 }
 
-.prop-form-subtitulo{
+.prop-form-subtitulo {
     border-bottom: 1px solid var(--negro);
     width: fit-content;
 }
 
-.prop-form-subtitulo h4, h3{
+.prop-form-subtitulo h4,
+h3 {
     margin-block-end: 0.5em;
 }
 
-.prop-form-list{
+.prop-form-list {
     list-style: none;
     line-height: 30px;
     padding-inline-start: 10px;
@@ -2339,13 +2340,13 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 /* === Añadido 06/02/2024 || Hugo Gordillo === */
 
-.prop-resena-contenedor{
+.prop-resena-contenedor {
     display: flex;
     justify-content: space-around;
     padding: 30px 50px 50px 50px;
 }
 
-.prop-formacion-tarjeta{
+.prop-formacion-tarjeta {
     background-color: var(--grisaceo);
     padding: 1.5em;
     width: 30%;
@@ -2354,12 +2355,12 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 /* Añadida clase 08/02/2024 */
 
-.prop-formacion-tarjeta a{
+.prop-formacion-tarjeta a {
     text-decoration: none;
     color: var(--negro);
 }
 
-.prop-resenas-tarjeta{
+.prop-resenas-tarjeta {
     width: 1000px;
     max-height: 521px;
     overflow-y: scroll;
@@ -2382,7 +2383,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     gap: 3em;
 }
 
-.add-resen-tarjeta{
+.add-resen-tarjeta {
     width: 35%;
     padding: 2em;
     border-radius: 10px;
@@ -2391,11 +2392,11 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     box-shadow: 2px 2px 5px var(--grisInactivo);
 }
 
-.add-resen-tarjeta h4{
+.add-resen-tarjeta h4 {
     margin-top: 10px;
 }
 
-.add-resena-textarea{
+.add-resena-textarea {
     border-radius: 5px;
     min-width: 468px;
     min-height: 132px;
@@ -2405,7 +2406,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     font-size: 1em;
 }
 
-.add-resena-valo-cont{
+.add-resena-valo-cont {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -2413,11 +2414,11 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     margin-right: 150px;
 }
 
-.add-resena-iconos-cont{
+.add-resena-iconos-cont {
     margin-top: 20px;
 }
 
-.add-resena-valo-icon-caja{
+.add-resena-valo-icon-caja {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2426,18 +2427,18 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     height: 30px;
 }
 
-.add-resena-valo-icon-caja i{
+.add-resena-valo-icon-caja i {
     font-size: 30px;
-    color: var(--amarillo); 
+    color: var(--amarillo);
 }
 
-.add-resena-btn-cont{
+.add-resena-btn-cont {
     display: flex;
     justify-content: center;
 
 }
 
-.add-resena-btn{
+.add-resena-btn {
     padding: 10px 15px 10px 15px;
     background-color: var(--grisaceo);
     border-radius: 10px;
@@ -2470,7 +2471,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     padding: 15px 10px 15px 10px;
 }
 
-.add-datos{
+.add-datos {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -2481,7 +2482,8 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 }
 
 
-.add-datos input, textarea {
+.add-datos input,
+textarea {
     border: 1px solid var(--gris);
     width: 300px;
     height: 25px;
@@ -2490,12 +2492,12 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     background-color: var(--blanco);
 }
 
-.add-datos textarea{
+.add-datos textarea {
     min-height: 75px;
     font-size: 1em;
 }
 
-.lista-formacion{
+.lista-formacion {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -2563,14 +2565,14 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 /* Clase para poner el h4 de la tarjeta de perfil en
 el centro */
 
-.comp-perfil h4{
+.comp-perfil h4 {
     text-align: center;
 }
 
 /* Contenedor de las dos tarjetas pequeñas que hay dentro de
 las grandes*/
 
-.comp-tarj-cont{
+.comp-tarj-cont {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -2580,7 +2582,7 @@ las grandes*/
 
 /* CSS de las tarjetas pequeñas */
 
-.comp-tarj-int{
+.comp-tarj-int {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -2599,7 +2601,7 @@ las grandes*/
 /* Contenedor interno del aside para ubicar las cosas
 donde es necesario*/
 
-.comp-aside-cont{
+.comp-aside-cont {
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -2611,7 +2613,7 @@ donde es necesario*/
 /* Clase para el div que contiene 
 el select que hay en el aside */
 
-.aside-select{
+.aside-select {
     margin-top: 10px;
     text-align: center;
     background-color: var(--gris);
@@ -2622,7 +2624,7 @@ el select que hay en el aside */
 
 /* CSS del select del aside */
 
-.aside-select select{
+.aside-select select {
     background-color: var(--gris);
     max-width: 160px;
     border: none;
@@ -2631,7 +2633,7 @@ el select que hay en el aside */
 /* CSS para el apartado de puesto seleccionado y
 estos son los 10 mejores perfiles */
 
-.comp-puesto-sel{
+.comp-puesto-sel {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -2642,7 +2644,7 @@ estos son los 10 mejores perfiles */
 
 /* CSS div contenedor del ranking */
 
-.comp-ranking{
+.comp-ranking {
     background-color: var(--gris);
     border: 1px solid var(--negro);
     border-radius: 5px;
@@ -2651,24 +2653,25 @@ estos son los 10 mejores perfiles */
 /* Clase para resetear el ol, ponerle un width,
 un tamaño de fuente determinado... */
 
-.list-reset{
+.list-reset {
     padding: 0;
     margin: 0;
-    list-style-position: inside; /*Sirve para que la linea coja todo el contenido*/
+    list-style-position: inside;
+    /*Sirve para que la linea coja todo el contenido*/
     width: 230px;
     font-size: 18px;
 }
 
 /* Clase para los div de la lista */
 
-.comp-ranking-li{
+.comp-ranking-li {
     border-bottom: 1px solid var(--negro);
     margin-top: 5px;
 }
 
 /* Clase para que los li tengan una distancia y estén alineados */
 
-.comp-ranking-li li{
+.comp-ranking-li li {
     margin-left: 40px;
 }
 
@@ -2730,7 +2733,7 @@ un tamaño de fuente determinado... */
     gap: 0.5em;
 }
 
-.perf-pub-text-cont h4{
+.perf-pub-text-cont h4 {
     margin-top: 0.5em;
 }
 
@@ -3033,7 +3036,7 @@ h6 {
 
 /* === Añadido 06/02/2024 || Hugo Gordillo === */
 
-.buscador{
+.buscador {
     width: fit-content;
     height: fit-content;
     border: 1px solid #d9d9d9;
@@ -3053,11 +3056,11 @@ h6 {
 }
 
 
-.buscador input:focus{
+.buscador input:focus {
     outline: none;
 }
 
-.buscador button{
+.buscador button {
     width: 70px;
     height: 35px;
     border: 1px solid #d9d9d9;
@@ -3071,68 +3074,202 @@ h6 {
 /* -.-.- Sección de las estrellas de las tarjetas de
     propuesta de Formación y reseñas de los usuarios -.-.- */
 
-    .icon-cont{
-        display: flex;
-        justify-content: space-between;
-        max-height: 20px;
-        align-items: baseline;
-    }
-    
-    .icon-cont-star{
-        display: flex;
-        margin-right: 10px;
-    }
-    
-    .icon-nom-user h5{
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-    }
-    
-    .icon-form-star{
-        color: var(--amarillo);
-        font-size: 15px;
-    }
+.icon-cont {
+    display: flex;
+    justify-content: space-between;
+    max-height: 20px;
+    align-items: baseline;
+}
+
+.icon-cont-star {
+    display: flex;
+    margin-right: 10px;
+}
+
+.icon-nom-user h5 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.icon-form-star {
+    color: var(--amarillo);
+    font-size: 15px;
+}
 
 /* -.-.-.-.-.- Fin de la sección estrellas -.-.-.-.-.-. */
 
 /* -.-.- CSS de los select del Área de propuestas de 
     formación y de el Área de Perfiles Públicos-.-.- */
 
-    .btn-filtro-propuestas {
-        margin-top: 45px;
-        margin-left: 5px;
-        margin-right: 5px;
-        border: 1px solid var(--negro);
-        padding: 5px auto 5px auto;
-        border-radius: 10px;
-        max-width: max-content;
-        font-size: 12px;
-        font-weight: bold;
-    }
-    
-    .btn-filtro-propuestas select {
-        border: none;
-        background-color: transparent;
-    }
-    
-    .btn-filtro-propuestas-int {
-        padding: 10px 10px 10px 10px;
-    }
-    
-    .btn-perfiles-color{
-        background-color: var(--grisaceo);
-        
-    }
-    
-    .btn-perfiles-color select{
-        background-color: var(--grisaceo);
-        
-    }
-    
-    /* -.-.-.-.-.-.-.- Fin de los select -.-.-.-.-.-.-.-.-.-. */
+.btn-filtro-propuestas {
+    margin-top: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid var(--negro);
+    padding: 5px auto 5px auto;
+    border-radius: 10px;
+    max-width: max-content;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-filtro-propuestas select {
+    border: none;
+    background-color: transparent;
+}
+
+.btn-filtro-propuestas-int {
+    padding: 10px 10px 10px 10px;
+}
+
+.btn-perfiles-color {
+    background-color: var(--grisaceo);
+
+}
+
+.btn-perfiles-color select {
+    background-color: var(--grisaceo);
+
+}
+
+/* -.-.-.-.-.-.-.- Fin de los select -.-.-.-.-.-.-.-.-.-. */
+
+/* -.-.- Modal Preguntas Frecuentes -.-.- */
+
+/* === Añadido 14/02/2024 || Hugo Gordillo === */
+
+.acordeon h1 {
+    text-align: center;
+    /* margin: 40px 0; */
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.acordeon-encabezado {
+    background-color: #A9C9D3;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+/* Establece el ancho del acordeón. Establece el margen a 90px en la parte
+superior e inferior y auto a la izquierda y derecha */
+
+.acordeon {
+    width: 600px;
+    margin: 90px auto;
+    color: black;
+    background-color: white;
+    /* padding: 35px 35px; */
+    border-radius: 15px;
+}
+
+.acordeon-caja-contenedor {
+    max-height: 450.8px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* align-items: baseline; */
+}
+
+.acordeon-caja-contenedor::-webkit-scrollbar {
+    display: none;
+}
+
+.acordeon .acordeon-contenedor {
+    position: relative;
+    margin: 10px 10px;
+}
+
+.acordeon-modal-close {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: -webkit-fill-available;
+}
+
+.acordeon-content {
+    padding: 4px;
+    /* display: none; */
+    /* border: 5px solid #A9C9D3; */
+}
+
+/* Posiciona las estiquetas en relación con el contenedor. Añade relleno en la parte
+superior e inferior y aumenta el tamaño de la fuente. También hace 
+que eñ cursor sea un puntero */
+
+.acordeon .acordeon-title {
+    position: relative;
+    padding: 10px 0;
+    font-size: 20px;
+    /* font-weight: 600; */
+    color: black;
+    cursor: pointer;
+}
+
+/* Posiciona el signo más a 5px de la derecha. Lo centra utilizando la propiedad transform */
+
+.acordeon .acordeon-title::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    /* top: 50%; da fallo */
+    right: -5px;
+    font-size: 30px;
+    /* transform: translateY(50%); da fallo */
+}
+
+/* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
+
+.acordeon .acordeon-content {
+    position: relative;
+    background: white;
+    /* height: 0px; */
+    display: none;
+    /* font-size: 20px; */
+    text-align: justify;
+    width: 535px;
+    overflow: hidden;
+    /* transition: 0.5s; */
+    /* opacity: 0; */
+    /* transition: opacity 0.5 ease; */
+}
+
+/* Añade una línea horizontal entre los contenidos */
+
+.acordeon hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+}
+
+/* Muestra la parte de contenido cuando está activa. Establece la altura */
+
+.acordeon .acordeon-contenedor.activa .acordeon-content {
+    /* max-height: fit-content; */
+    /* height: fit-content; */
+    /* height: 150px; */
+    display: block;
+    animation: modal-show 0.5s ease;
+    /* transition: margin-left 4s ease-in-out 1s; */
+    border: 5px solid #A9C9D3;
+}
+
+/* Cambia el signo positivo a negativo una vez activado */
+
+.acordeon .acordeon-contenedor.activa .acordeon-title::before {
+    content: '-';
+    font-size: 30px;
+}
 
 
-
+/* -.-.- Fin Modal Preguntas Frecuentes  -.-.- */
 
 /*FIN BODY*/
 /* ======================================================= */
@@ -3146,6 +3283,7 @@ h6 {
     width: 20px;
     text-align: center;
 }
+
 .redessociales {
     display: inline-block;
     min-height: 40px;
@@ -3165,20 +3303,20 @@ h6 {
 /* Añadida clase .footer-img-cont para las imagenes 
 de la parte inferior del footer */
 
-.footer-img-cont{
+.footer-img-cont {
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer-img-cont img{
+.footer-img-cont img {
     /* border: 1px solid var(--blanco); */
     height: 50px;
     min-width: 150px;
 }
 
-.footer-section{
+.footer-section {
     display: flex;
     width: 50%;
     justify-content: space-around;
@@ -3189,14 +3327,14 @@ de la parte inferior del footer */
     padding: 1em;
 }
 
-.footer-text{
+.footer-text {
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
     padding-left: 1em;
 }
 
-.footer-text i{
+.footer-text i {
     margin-right: 0.5em;
 }
 
@@ -3204,7 +3342,7 @@ de la parte inferior del footer */
 
 /* Redes sociales footer */
 
-.social-networks{
+.social-networks {
     padding: 1em;
     width: 250px;
     display: flex;
@@ -3212,17 +3350,17 @@ de la parte inferior del footer */
     gap: 0.5em;
 }
 
-.social-networks a{
+.social-networks a {
     color: var(--naranja);
     text-decoration: none;
 }
 
-.social-networks i{
+.social-networks i {
     /* padding: 0.2em; */
     font-size: 20px;
 }
 
-.social-networks-int{
+.social-networks-int {
     display: flex;
     /* border: 1px solid var(--blanco); */
     width: 40px;
@@ -3241,7 +3379,7 @@ de la parte inferior del footer */
 
 
 
-                    /*///////////////////////
+/*///////////////////////
                    ///////MODIFICADORES/////
                   ///////////////////////*/
 
@@ -3251,6 +3389,7 @@ de la parte inferior del footer */
 .li:hover {
     background-color: var(--verdeHover);
 }
+
 /* FOOTER */
 
 /* No se usan */
@@ -3281,7 +3420,7 @@ de la parte inferior del footer */
 
 /* Redes sociales Footer */
 
-.fab:hover{
+.fab:hover {
     color: #FFF
 }
 
@@ -3324,7 +3463,7 @@ de la parte inferior del footer */
 
 /* === Añadido 06/02/2024 || Hugo Gordillo === */
 
-.resena-valora:hover{
+.resena-valora:hover {
     opacity: 1;
 }
 
@@ -3338,7 +3477,7 @@ de la parte inferior del footer */
 
 /* Clase para quitar el border-bottom del último li */
 
-.comp-ranking-li:last-child{
+.comp-ranking-li:last-child {
     border-bottom: none;
 }
 
@@ -3415,6 +3554,7 @@ input:checked+.switch:active::before {
     left: 40px;
     transition: left 200ms ease-in-out;
 }
+
 /* FIN SWITCH 3 POSICIONES */
 
 
