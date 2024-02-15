@@ -67,7 +67,7 @@ textarea {
 
 
 
-                    /*//////////////////
+/*//////////////////
                    ///////BLOQUES/////
                   /////////////////*/
 
@@ -129,7 +129,7 @@ header {
 /* Clase creada para el menú de navegación
 dentro de la página para dejar ver donde estamos */
 
-.li-uso{
+.li-uso {
     background-color: var(--verdeHover);
 }
 
@@ -140,7 +140,7 @@ que contiene el botón de iniciar sesión */
     box-sizing: none;
 }
 
-.header-int{
+.header-int {
     display: flex;
     justify-content: space-around;
     margin-left: 34.6%;
@@ -159,7 +159,8 @@ que contiene el botón de iniciar sesión */
 /* CSS Autora: Natalie ac 2024-01-09*/
 /* MODAL DE REGISTRO CORTO HOME*/
 
-input { /* revisar no correcto*/
+input {
+    /* revisar no correcto*/
     /* width: 514px;
     height: 30px;
     margin: 10px; */
@@ -621,7 +622,7 @@ p a {
 
 
 
-                    /*/////////////////
+/*/////////////////
                    /////ELEMENTOS/////
                   /////////////////*/
 
@@ -646,7 +647,7 @@ p a {
 
 /* Añadido: 06/02/2024 || Hugo Gordillo*/
 
-.btn-inicio{
+.btn-inicio {
     background-color: var(--naranja);
     color: var(--blanco);
     font-weight: bold;
@@ -664,7 +665,7 @@ p a {
 
 /* ======== Body Propuestas de fondo (Hay que selecionar menos y renombrarlas) ======== */
 
-.body-propuesta{
+.body-propuesta {
     background-size: 100% 100%;
     /* añadido para hacer el fondo fijo */
     background-attachment: fixed;
@@ -672,54 +673,57 @@ p a {
     height: auto;
 }
 
-.propuesta1{
+.propuesta1 {
     background-image: url(../img/fondo-propuesta.png);
 }
 
-.propuesta2{ 
+.propuesta2 {
     background-image: url(../img/2fondo-propuesta.png);
 }
 
-.propuesta3{
+.propuesta3 {
     background-image: url(../img/3fondo-propuesta.png);
 }
 
-.propuesta4{
+.propuesta4 {
     background-image: url(../img/4fondo-propuesta.png);
 }
 
-.propuesta5{
+.propuesta5 {
     background-image: url(../img/5fondo-propuesta.png);
 }
 
-.propuesta6{
+.propuesta6 {
     background-image: url(../img/6fondo-propuesta.png);
 }
 
-.propuesta7{
+.propuesta7 {
     background-image: url(../img/7fondo-propuesta.png);
 }
 
-.propuesta8{
+.propuesta8 {
     background-image: url(../img/8fondo-propuesta.png);
 }
 
-.propuesta9{
+.propuesta9 {
     background-image: url(../img/9fondo-propuesta.png);
 }
 
-.propuesta10{
+.propuesta10 {
     background-image: url(../img/10fondo-propuesta.png);
 }
 
-.propuesta11{
+.propuesta11 {
     background-image: url(../img/11fondo-propuesta.png);
 }
-.propuesta12{
+
+.propuesta12 {
     background-image: url(../img/12fondo-propuesta.png);
 }
 
 /* ======== Fin body Propuestas de fondo ======== */
+
+
 
 /* BOTONES */
 
@@ -893,7 +897,7 @@ p a {
     font-size: 18px;
     text-decoration: none;
     box-shadow: 0px 4px 4px 0px var(--grisInactivo);
-    margin-top: 1.5em; 
+    margin-top: 1.5em;
 }
 
 .modal-hide {
@@ -1120,12 +1124,11 @@ p a {
     left: 10px;
     top: -7px;
 }
+
 .grid-container2 {
     display: grid;
     grid:
-        'info info info info info' 0.6fr
-        'formacion formacion expe expe expe' 1fr
-        'idiomas idiomas otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
+        'info info info info info' 0.6fr 'formacion formacion expe expe expe' 1fr 'idiomas idiomas otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
     gap: 0.6em;
 }
 
@@ -1541,7 +1544,7 @@ input:checked+.slider2 {
 
 .slider2 {
     border-radius: 17px;
-} 
+}
 
 
 
@@ -1572,7 +1575,7 @@ input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-} 
+}
 
 .switch {
     position: relative;
@@ -1675,9 +1678,7 @@ input:checked+.slider {
 .grid-container {
     display: grid;
     grid:
-        'info info info info info' 0.6fr
-        'formacion formacion expe expe expe' 1fr
-        'formacion formacion otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
+        'info info info info info' 0.6fr 'formacion formacion expe expe expe' 1fr 'formacion formacion otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
     gap: 0.6em;
 }
 
@@ -1803,7 +1804,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 15px;
-
+    text-align: center;
     grid-template-areas:
         'parrafo parrafo'
         'radio radio';
@@ -1830,7 +1831,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     cursor: pointer;
     position: relative;
     border: 2px solid var(--verde);
-    margin-left:10px;
+    margin-left: 10px;
     /* margin-top: 1em; */
 }
 
@@ -1858,7 +1859,6 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     justify-content: center;
     padding-top: 35px;
     padding-bottom: 20px;
-
 }
 
 #buton-recomend {
@@ -1876,25 +1876,28 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 /* RESULTADO DE RECOMENDACIONES */
 .result-recomend {
-    
-    width:900px;
-    display: flex; 
+
+    width: 900px;
+    display: flex;
     flex-direction: column;
+    margin-top: 40px;
+    color: var(--h4NoReg);
     padding: 3em;
     border: 2px solid var(--negro);
     background-color: var(--gris);
     box-shadow: 2px 2px 5px var(--grisInactivo);
     margin: 3em auto 3em auto;
-    gap:1em;
-  }
-  
-  #lista-recomend {
+    gap: 1em;
+}
+
+#lista-recomend {
     list-style-type: none;
     padding-left: 2em;
-  }
-  /* FIN RESULTADO DE RECOMENDACIONES */
+}
 
-  /* TARJETA RECOMEDACIONES */
+/* FIN RESULTADO DE RECOMENDACIONES */
+
+/* TARJETA RECOMEDACIONES */
 .recomend-tarjeta-propuesta {
     display: none;
     padding: 15px 20px 15px 20px;
@@ -1902,10 +1905,10 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     height: 100.8px;
     background-color: var(--blanco);
     font-size: 12px;
-    
-  }
-  
-  .recomend-tarjeta-propuesta-enseñar {
+
+}
+
+.recomend-tarjeta-propuesta-enseñar {
     display: block;
     position: absolute;
     float: inline-end;
@@ -1913,12 +1916,12 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     left: 35%;
     margin-top: 15px;
     margin-bottom: 15px;
-  }
-  
-  /* FIN TARJETA RECOMENDACIONES */
+}
+
+/* FIN TARJETA RECOMENDACIONES */
 
   /* PARRAFO RECOMENDACIONES (SUPUESTO DE SIN PUESTO AÑADIDO) */
-#parrafo-recomend{
+  #parrafo-recomend{
     color: red;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -1946,11 +1949,1388 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
   }
   
   /* FIN PARRAFO RECOMENDACIONES (SUPUESTO DE SIN PUESTO AÑADIDO) */
-  
-  /* ====== FIN RECOMENDACIONES ACCIONES DE MEJORA ===== */
+
 /* ====== FIN RECOMENDACIONES ACCIONES DE MEJORA ===== */
 
+/*=====> Clases perdidas en el merge <==========*/
 
+/* ========== PANTALLA HOME ============= */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+
+.home-contenido{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 150px;
+}
+
+.home-titulo {
+    color: var(--naranja);
+    text-shadow: 4px 4px 4px var(--negro);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* margin-top: 60px; */
+}
+
+.home-contenedor {
+    display: flex;
+}
+
+.home-img {
+    position: absolute;
+    right: 50px;
+    top: 200px;
+    z-index: -1;
+}
+
+.home-caja {
+    width: 30%;
+    text-align: center;
+    padding: 40px 5px 40px 5px;
+    margin-left: 35px;
+    color: var(--azul);
+    font-size: 22px;
+}
+
+.botonRegistro a{
+    text-decoration: none;
+    color: var(--negro)
+}
+
+/*Clase del input modal registro corto*/
+
+.inputRegistroCorto {
+    width: 514px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 3px;
+}
+/* .-.-.-.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* === Apartado de inicio de sesión === */
+
+/*  Añadido 06/02/2024 || Hugo Gordillo */
+
+/* Clase creada para centar el contenido en la página */
+
+.inicio{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio-contenedor{
+    width: 1000px;
+    height: 345px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio-label {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.inicio-input {
+    width: 400px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #d5effa;
+    color: var(--negro);
+    border-color: var(--negro);
+}
+
+.inicio-columna1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio-columna2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    row-gap: 0.2em;
+    background-color: rgba(135, 135, 135, 0.104);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.inicio-columna2 label{
+    align-items: start;
+}
+
+.inicio-modal-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--h4NoReg);
+    margin-top: 10px;
+}
+
+.inicio-columnas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6em;
+}
+
+.inicio-btn {
+    width: 200px; 
+    height: 35px;
+    margin: 10px;
+    margin-bottom: 10px;
+    background-color: var(--grisaceo);
+    border-radius: 10px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.inicio-btn a{
+    text-decoration: none;
+    color: var(--negro)
+}
+
+#inicio-titulo {
+    text-align: center;
+    color: var(--naranja);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* === Fin apartado de inicio de sesión === */
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* === Modal con el mensaje final del registro corto === */
+
+/* Añadido 06/02/2024 || Vicky y Dulce || Hugo Gordillo */
+
+/*Efecto*/
+
+.msj-reCort-modalmask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/*Formato de la ventana*/
+
+.msj-reCort-modalbox {
+    width: 600px;
+    height: auto;
+    position: relative;
+    padding: 1.5em;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+    border-radius: 10px;
+    border: 1px solid var(--negro);
+}
+
+.msj-reCort-modalbox-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+.msj-reCort-modalbox-content h2 {
+    color: var(--naranja);
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.msj-reCort-modalbox-content p {
+    color: var(--h4NoReg);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.msj-reCort-modalbox-cont-int {
+    margin-left: 110px; 
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.msj-reCort-icono {
+    position: absolute;
+    bottom: 40%;
+    left: 15%;
+    font-size: 35px;
+}
+
+.msj-reCort-btn-modal-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    margin: 15px;
+    font-weight: lighter;
+}
+
+.msj-reCort-btn-modal {
+    background-color: var(--grisaceo);
+    padding: 5px 50px 5px 50px;
+    text-decoration: none;
+    color: var(--negro);
+    font-weight: 400;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+    border: 1px solid var(--negro);
+}
+
+/* === Fin Modal con el mensaje final del registro corto === */
+
+/* ========== FIN PANTALLA HOME ============= */
+
+
+/* ======================================================= */
+
+/* ============= Área del tutorial ============= */
+
+/*  Creación 15/01/2024 || Añadido 06/02/2024 || Hugo Gordillo */
+
+.tutorial-contenedor {
+    display: grid;
+}
+
+.tutorial-contenedor button {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    padding: 20px;
+}
+
+.tutorial-img {
+    display: flex;
+    column-gap: 1em;
+    height: 100px;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.tutorial-grid-item {
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-flecha {
+    width: 60px;
+    display: inline-flex;
+}
+
+#img-flecha-1,
+#img-flecha-2,
+#img-flecha-3,
+#img-flecha-4,
+#img-flecha-5,
+#img-flecha-6 {
+    display: none;
+}
+
+.tutorial-caja1-contenedor {
+    padding: 0px 70px 70px;
+    display: flex;
+    gap: 5em;
+    margin-top: 10px;
+    min-height: 306px;
+}
+
+.tutorial-caja2-contenedor {
+    align-self: flex-end;
+    margin-top: 110px;
+}
+
+.tutorial-caja-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 2em;
+    width: fit-content;
+    font-size: 14px;
+    height: fit-content;
+    border: 1px solid var(--negro);
+    background: linear-gradient(316deg, rgba(0, 78, 106, 0.75) -23.86%, #E7F8FE 36.44%);
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px var(--grisInactivo);
+}
+
+.tutorial-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+}
+
+.tutorial-btn button {
+    border-radius: 15px;
+    background-color: var(--naranja);
+    padding: 16px;
+    color: var(--blanco);
+    border: none;
+    box-shadow: 3px 3px 8px var(--negro);
+}
+
+.tutorial-cont-lista{
+    font-weight: bold;
+    padding-left: 2em;
+}
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* === Modal de el final del tutorial === */
+
+.tutorial-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    animation: modal-show 0.5s 1 forwards;
+}
+
+.tutorial-modal-posicion {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutorial-modal-content {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 120px;
+    padding: 1.5em;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.btn-modal-tutorial {
+    display: flex;
+    margin-top: 25px;
+}
+
+.btn-modal {
+    width: 200px;
+    height: 35px;
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    background-color: var(--naranja);
+    color: var(--blanco);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    box-shadow: 3px 3px 2px var(--grisInactivo);
+    font-weight: bold;
+}
+
+.btn-modal a {
+    text-decoration: none;
+    color: white;
+}
+
+#tutorial-modal-title {
+    text-align: center;
+    color: var(--negro);
+}
+
+/* === Fin modal del final del tutorial === */
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* ============= Fin área del tutorial ============= */
+
+/* ====================================== */
+
+/* ============ Área de Propuestas de Formación ============ */
+
+/* Añadido 06/02/2024 || Hugo Gordillo */
+
+.formacion-contenedor {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 3em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formacion-contenedor h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.propuesta-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.tarjeta-propuesta {
+    padding: 1.5em;
+    width: 264.5px;
+    height: 139.8px;
+    background-color: var(--gris);
+    font-size: 12px;
+
+}
+
+.tarjeta-propuesta a {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.btn-add-propuestas {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: flex-end;
+}
+
+.btn-add-propuestas button {
+    background-color: var(--grisaceo);
+    border: none;
+    border-radius: 10px;
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+    box-shadow: 3px 3px 5px lightblue;
+}
+
+.btn-add-propuestas a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.cont-tarjeta {
+    /* margin-top: 0.5em; */
+    max-height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* -.-.- Propuesta de Formación -.-.- */
+
+/* === Creación 11/01/2024 || Añadido 06/02/2024 || Hugo Gordillo === */
+
+.prop-form-title {
+    text-align: center;
+}
+
+.prop-form-cont {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.prop-form-tarjeta {
+    padding: 2em;
+    width: 840px;
+    border-radius: 10px;
+    height: auto;
+    background-color: var(--grisaceo);
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+}
+
+.prop-form-tarjeta a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.prop-form-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 20px;
+}
+
+.prop-form-subtitulo {
+    border-bottom: 1px solid var(--negro);
+    width: fit-content;
+}
+
+.prop-form-subtitulo h4,
+h3 {
+    margin-block-end: 0.5em;
+}
+
+.prop-form-list {
+    list-style: none;
+    line-height: 30px;
+    padding-inline-start: 10px;
+}
+
+.resena-valora-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.resena-valora {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    padding: 14px;
+    width: 240px;
+    height: 153px;
+    background-color: var(--gris);
+    font-size: 14px;
+    border-radius: 6px;
+    opacity: 0.75;
+}
+
+.resena-valora p {
+    margin-top: 3px;
+}
+
+.resena-comentario {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+
+.resena-img {
+    width: 35px;
+    height: 35px;
+    background-color: var(--grisInactivo);
+    border-radius: 20px;
+    margin: auto;
+}
+
+.resena-texto-int {
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+}
+
+/* -.-.- Fin propuesta de Formación -.-.- */
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* -.-.- Propuesta de Formación (Reseñas) -.-.- */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+
+.prop-resena-contenedor {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 50px 50px 50px;
+}
+
+.prop-formacion-tarjeta {
+    background-color: var(--grisaceo);
+    padding: 1.5em;
+    width: 30%;
+    border-radius: 15px;
+}
+
+/* Añadida clase 08/02/2024 */
+
+.prop-formacion-tarjeta a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.prop-resenas-tarjeta {
+    width: 1000px;
+    max-height: 521px;
+    overflow-y: scroll;
+}
+
+/* -.-.-.-.- Se reutilizan clases de otra Pantallas -.-.-.-.- */
+
+/* -.-.- Fin propuesta de Formación (Reseñas) -.-.- */
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* -.-.- Añadir Reseña de la formación -.-.- */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+
+.resena-contenedor {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 3em;
+}
+
+.add-resen-tarjeta {
+    width: 35%;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: var(--gris);
+    height: auto;
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+}
+
+.add-resen-tarjeta h4 {
+    margin-top: 10px;
+}
+
+.add-resena-textarea {
+    border-radius: 5px;
+    min-width: 468px;
+    min-height: 132px;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid black;
+    font-size: 1em;
+}
+
+.add-resena-valo-cont {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.add-resena-iconos-cont {
+    margin-top: 20px;
+}
+
+.add-resena-valo-icon-caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+
+.add-resena-valo-icon-caja i {
+    font-size: 30px;
+    color: var(--amarillo);
+}
+
+.add-resena-btn-cont {
+    display: flex;
+    justify-content: center;
+
+}
+
+.add-resena-btn {
+    padding: 10px 15px 10px 15px;
+    background-color: var(--grisaceo);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* -.-.-.-.- Se reutilizan clases de otra Pantallas -.-.-.-.- */
+
+/* -.-.- Fin añadir Reseña de la formación -.-.- */
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* -.-.- Añadir Propuesta de la formación -.-.- */
+
+/* === Creación 12/01/2024 || Añadido 06/02/2024 || Hugo Gordillo === */
+
+.add-propuestas-contenedor {
+    display: flex;
+    gap: 10em;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-add-pro {
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px 15px 10px;
+}
+
+.add-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.add-datos h3 {
+    margin-top: 0.5em;
+}
+
+
+.add-datos input,
+textarea {
+    border: 1px solid var(--gris);
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--blanco);
+}
+
+.add-datos textarea {
+    min-height: 75px;
+    font-size: 1em;
+}
+
+.lista-formacion {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tarjeta-propuesta-form {
+    padding: 1.5em;
+    width: 264.5px;
+    height: auto;
+    background-color: var(--gris);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* -.-.- Fin añadir Propuesta de la formación -.-.- */
+
+/* ============ Fin Área de Propuestas de Formación ============ */
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* ============ Comparador de Usuarios  ============ */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+
+.comp-contenedor {
+    display: flex;
+    height: 100%;
+}
+
+/* Contenedor del Aside de la pantalla comparador de usuarios */
+
+.comp-aside {
+    width: 400px;
+    height: auto;
+    background-color: var(--grisaceo);
+}
+
+/* Contenedor del main de la pantalla comparador de usuarios */
+
+.comp-main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+/* Css de la tarjetas grandes para ambos perfiles */
+
+.comp-perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 450px;
+    height: auto;
+    background-color: var(--gris);
+    padding: 2em;
+    border-radius: 15px;
+    border: 1px solid var(--negro);
+}
+
+/* Clase para poner el h4 de la tarjeta de perfil en
+el centro */
+
+.comp-perfil h4 {
+    text-align: center;
+}
+
+/* Contenedor de las dos tarjetas pequeñas que hay dentro de
+las grandes*/
+
+.comp-tarj-cont {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    row-gap: 1em;
+}
+
+/* CSS de las tarjetas pequeñas */
+
+.comp-tarj-int {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: auto;
+    background-color: var(--gris);
+    width: 350px;
+    padding: 1em;
+    border: 1px solid var(--negro);
+    border-radius: 15px;
+}
+
+.comp-tarj-int ul {
+    padding-left: 2em;
+}
+
+/* Contenedor interno del aside para ubicar las cosas
+donde es necesario*/
+
+.comp-aside-cont {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2em;
+}
+
+/* Clase para el div que contiene 
+el select que hay en el aside */
+
+.aside-select {
+    margin-top: 10px;
+    text-align: center;
+    background-color: var(--gris);
+    padding: 10px 20px 10px 20px;
+    border: 1px solid var(--negro);
+    border-radius: 10px;
+}
+
+/* CSS del select del aside */
+
+.aside-select select {
+    background-color: var(--gris);
+    max-width: 160px;
+    border: none;
+}
+
+/* CSS para el apartado de puesto seleccionado y
+estos son los 10 mejores perfiles */
+
+.comp-puesto-sel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: var(--gris);
+    padding: 1em;
+    border: 1px solid var(--negro);
+}
+
+/* CSS div contenedor del ranking */
+
+.comp-ranking {
+    background-color: var(--gris);
+    border: 1px solid var(--negro);
+    border-radius: 5px;
+}
+
+/* Clase para resetear el ol, ponerle un width,
+un tamaño de fuente determinado... */
+
+.list-reset {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    /*Sirve para que la linea coja todo el contenido*/
+    width: 230px;
+    font-size: 18px;
+}
+
+/* Clase para los div de la lista */
+
+.comp-ranking-li {
+    border-bottom: 1px solid var(--negro);
+    margin-top: 5px;
+}
+
+/* Clase para que los li tengan una distancia y estén alineados */
+
+.comp-ranking-li li {
+    margin-left: 40px;
+}
+
+/* ============ Fin comparador de Usuarios  ============ */
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* ============ Área de Perfiles Públicos  ============ */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+
+.perf-pub-title-cont {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1em;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+
+.perf-pub-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+}
+
+.perf-pub-cont>div {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.perf-pub-tarjeta {
+    padding: 15px 20px 15px 20px;
+    border-radius: 15px;
+    border: 0.5px solid black;
+    background-color: #A9C9D3;
+    width: 290px;
+    height: 170px;
+    font-size: 14px;
+    display: inline-flex;
+}
+
+.perf-user-ft {
+    width: 89.1px;
+    height: 90px;
+    flex-shrink: 0;
+    background-color: #D9D9D9;
+    border-radius: 70px;
+    margin-right: 1em;
+}
+
+.perf-pub-text-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.perf-pub-text-cont h4 {
+    margin-top: 0.5em;
+}
+
+.perf-pub-text {
+    display: flex;
+    gap: 1em;
+}
+
+.perf-pub-btn-sig {
+    text-align: right;
+    margin-top: 0.5em;
+}
+
+/* ============ Fin área de Perfiles Públicos  ============ */
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* ============ Mensajería  ============ */
+
+/* === Añadido 06/02/2024 || Vicky, Dulce, Hugo Gordillo === */
+
+.mensajeria-container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    column-gap: 5em;
+}
+
+.mensajes-cont {
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    height: 600px;
+    gap: 0.5em;
+}
+
+.mensaje-buscador {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: 1em;
+}
+
+.search-container {
+    display: flex;
+}
+
+.chats-usuarios {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3em;
+    overflow-y: scroll;
+}
+
+.chats-usuarios-caja {
+    display: flex;
+    padding: 1.5em;
+    background-color: white;
+    justify-content: space-between;
+    border: 1px solid black;
+    height: 150px;
+}
+
+.chats-usuario-cont {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.chats-usuario-icono {
+    width: 3%;
+}
+
+.imagen-contenedor {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-usuario {
+    width: 80px;
+    height: 80px;
+    background-color: var(--grisInactivo);
+}
+
+.mensajeria-chat-cont {
+    height: 600px;
+    max-width: 55%;
+    border: 1px solid black;
+    background-color: var(--col_aside);
+    border-radius: 10px;
+}
+
+.chat-part-superior {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--negro);
+}
+
+.chat-part-superior h4 {
+    margin-left: 20px;
+}
+
+.img-user-chat-cont {
+    display: flex;
+    align-items: center;
+}
+
+.chat-part-inferior {
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--negro);
+    border-radius: 10px;
+}
+
+.input-chat-class {
+    padding: 10px;
+    width: 600px;
+    background-color: var(--col_aside);
+    border: none;
+}
+
+.btn-chat-enviar {
+    margin-right: 15px;
+}
+
+.chat-cont {
+    height: 480px;
+    min-width: 55%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 1em;
+    padding: 10px 10px 10px 10px;
+}
+
+.mensaje-recibido {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mensaje-enviado {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mensaje {
+    width: fit-content;
+    max-width: 50%;
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+    height: fit-content;
+}
+
+.mensaje p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.msj-recibido {
+    border-radius: 5px 5px 5px 0px;
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.msj-enviado {
+    border-radius: 5px 5px 0px 5px;
+    background-color: var(--grisaceo);
+}
+
+.mensaje-titulo h1,
+h6 {
+    margin-block-start: 0px;
+}
+
+.msj-hora-envio {
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--negro);
+}
+
+.msj-hora-envio p {
+    margin-block-start: 0px;
+    margin-block-end: 2px;
+}
+
+.input-chat {
+    height: fit-content;
+}
+
+.btn-chat-cont button {
+    background-color: #33ABA4;
+    font-size: 20px;
+    border-radius: 7px;
+    color: var(--negro);
+    border: 1px solid black;
+    width: 40px;
+    padding: 5px;
+}
+
+.img-user-chat i {
+    background-color: #33ABA4;
+    border-radius: 50%;
+    padding: 7px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+/* Clases para el textarea del chat */
+.textarea {
+    display: block;
+    width: 600px;
+    overflow: hidden;
+    resize: both;
+    min-height: 40px;
+    line-height: 20px;
+    border: 1px solid #ccc;
+    padding: 1px 6px;
+    font-size: inherit;
+}
+
+.textarea[contenteditable]:empty::before {
+    content: "Escribir el mensaje...";
+    color: gray;
+}
+
+/* -.-.- CSS select dentro del buscador mensajeria -.-.- */
+.buscador-input:focus+.select-container {
+    display: block;
+}
+
+.select-buscador {
+    margin-left: -185px;
+    width: 150px;
+    border: none;
+}
+
+/* -.-.- fin css select dentro del buscador mensajeria -.-.- */
+
+/* -.-.- Modal eliminar mensaje/chat -.-.- */
+
+/* === Creación (?) || Añadido 06/02/2024 || Vicky === */
+
+/* -.-.-.-.- Se reutilizan clases de otra Pantallas -.-.-.-.- */
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.btn-left {
+    margin-left: 100px;
+}
+
+.btn-right {
+    margin-right: 110px;
+}
+
+/* icono eliminar */
+.chats-usuarios button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin-bottom: auto;
+}
+
+.chats-usuarios button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -.-.- Fin modal eliminar mensaje/chat -.-.- */
+
+/* ============ Fin mensajería  ============ */
+
+/* -.-.- CSS buscador general y/o Area de Perfiles Publicos || Mensajeria -.-.- */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+.buscador {
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+}
+
+.buscador input {
+    border: none;
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    background-color: var(--blanco);
+}
+
+
+.buscador input:focus {
+    outline: none;
+}
+
+.buscador button {
+    width: 70px;
+    height: 35px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
+
+/* -.-.- Fin buscador-.-.- */
+
+/* -.-.- Sección de las estrellas de las tarjetas de
+    propuesta de Formación y reseñas de los usuarios -.-.- */
+.icon-cont {
+    display: flex;
+    justify-content: space-between;
+    max-height: 20px;
+    align-items: baseline;
+}
+
+.icon-cont-star {
+    display: flex;
+    margin-right: 10px;
+}
+
+.icon-nom-user h5 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.icon-form-star {
+    color: var(--amarillo);
+    font-size: 15px;
+}
+
+/* -.-.-.-.-.- Fin de la sección estrellas -.-.-.-.-.-. */
+
+/* -.-.- CSS de los select del Área de propuestas de 
+    formación y de el Área de Perfiles Públicos-.-.- */
+.btn-filtro-propuestas {
+    margin-top: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid var(--negro);
+    padding: 5px auto 5px auto;
+    border-radius: 10px;
+    max-width: max-content;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-filtro-propuestas select {
+    border: none;
+    background-color: transparent;
+}
+
+.btn-filtro-propuestas-int {
+    padding: 10px 10px 10px 10px;
+}
+
+.btn-perfiles-color {
+    background-color: var(--grisaceo);
+
+}
+
+.btn-perfiles-color select {
+    background-color: var(--grisaceo);
+}
+
+/* -.-.-.-.-.-.-.- Fin de los select -.-.-.-.-.-.-.-.-.-. */
+
+/*=====>  Clases perdidas en el merge <==========*/
 
 /*FIN BODY*/
 /* ======================================================= */
@@ -1963,7 +3343,10 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     min-height: 40px;
     width: 20px;
     text-align: center;
+    font-weight: 600;
+    font-size: 18px;
 }
+
 .redessociales {
     display: inline-block;
     min-height: 40px;
@@ -1985,7 +3368,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 
 
-                    /*///////////////////////
+/*///////////////////////
                    ///////MODIFICADORES/////
                   ///////////////////////*/
 
@@ -2053,6 +3436,8 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 .tutorial-modal:target {
     display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 /* === Fin modal con el mensaje final del Tutorial === */
@@ -2063,11 +3448,11 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 /* === Añadido 06/02/2024 || Hugo Gordillo === */
 
-.resena-valora:hover{
+.resena-valora:hover {
     opacity: 1;
 }
 
-/* -.-.- Fin ropuesta de Formación -.-.- */
+/* -.-.- Fin propuesta de Formación -.-.- */
 
 /* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
 
@@ -2077,7 +3462,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 /* Clase para quitar el border-bottom del último li */
 
-.comp-ranking-li:last-child{
+.comp-ranking-li:last-child {
     border-bottom: none;
 }
 
@@ -2154,6 +3539,7 @@ input:checked+.switch:active::before {
     left: 40px;
     transition: left 200ms ease-in-out;
 }
+
 /* FIN SWITCH 3 POSICIONES */
 
 
