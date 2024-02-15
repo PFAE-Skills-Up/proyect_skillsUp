@@ -723,6 +723,8 @@ p a {
 
 /* ======== Fin body Propuestas de fondo ======== */
 
+
+
 /* BOTONES */
 
 /* BOTÓN PARA TODAS LAS PANTALLAS */
@@ -1917,6 +1919,37 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 }
 
 /* FIN TARJETA RECOMENDACIONES */
+
+  /* PARRAFO RECOMENDACIONES (SUPUESTO DE SIN PUESTO AÑADIDO) */
+  #parrafo-recomend{
+    color: red;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    opacity: 0;
+    font-weight: bold;
+  }
+  
+  .parrafo-fades{
+      display:block;
+      -webkit-animation: fadeinout 4s linear forwards;
+      animation: fadeinout 8s linear forwards;
+  
+  
+  }
+  
+  @-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0;
+  }
+  50% { opacity: 1; }
+  }
+  
+  @keyframes fadeinout {
+  0%,100% { opacity: 0;}
+  50% { opacity: 1; }
+  }
+  
+  /* FIN PARRAFO RECOMENDACIONES (SUPUESTO DE SIN PUESTO AÑADIDO) */
+
 /* ====== FIN RECOMENDACIONES ACCIONES DE MEJORA ===== */
 
 /*=====> Clases perdidas en el merge <==========*/
