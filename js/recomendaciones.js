@@ -83,7 +83,7 @@ function turnOff() {
         document.getElementById("parrafo-recomend").classList.add('parrafo-fades')
         setTimeout(() => { document.getElementById("parrafo-recomend").classList.remove('parrafo-fades') }, 3000)
 
-        //En caso que se cumpla la condición, los elementos quedan activos
+        //En caso que se incumpla la condición, los elementos quedan activos
     } else {
         console.log('desactivando')
         textRec.forEach((element) => {
