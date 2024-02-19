@@ -3,7 +3,7 @@ Creación 2024-01-09: Hugo Gordillo.
 Rev: 1
 Vicky: 2024-01-18 - 8c5634b
 Sinaí: 2024-01-23
-Jeniffer: 2024-01-30
+Jennifer: 2024-02-19
 Hugo Gordillo: 2024-02-07
 Marlene Menaza: 2024-02-09
 */
@@ -67,7 +67,7 @@ textarea {
 
 
 
-/*//////////////////
+                    /*/////////////////
                    ///////BLOQUES/////
                   /////////////////*/
 
@@ -202,8 +202,18 @@ label {
 /* CSS Autora: Jennifer  2024-01-09 */
 /* BODY PERFIL USUARIO */
 
+/* CSS Autores: Jennifer y Sinaí 2024-02-09*/
+/*PERFIL DE USUARIO, ÁREA PERSONAL Y PERFIL PÚBLICO 
+(*EN EL ÁREA PERSONAL Y PERFIL DE USUARIO HAY PEQUEÑOS 
+CAMBIOS HECHOS CON AYUDA DE HUGO MOLINA)*/
+
 label {
     font-size: 16px;
+}
+
+.body-perfil_usuario {
+    display: grid;
+    background-color: var(--blanco);
 }
 
 .h3-seccion {
@@ -213,18 +223,42 @@ label {
     margin-bottom: 0.5em;
     font-size: 25px;
     padding: 4px 4px 4px 10px;
-    height: 44%;
+    /* height: 44%; */
 }
 
+.h3-datos{
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--celeste);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 25px;
+    padding: 6px;
+    width: 14em;
+    height: 1.1em;
+}
+
+.h4-habilidades1,
+.h4-competencias1 {
+    width: 70%;
+    background-color: var(--celeste);
+    display: inline-flex;
+    border-radius: 3px;
+    padding: 9px 4px 4px 10px;
+    /* margin-top: 1, 5px; */
+    /* height: 36%; */
+}
 
 .h4-habilidades,
 .h4-competencias {
     width: 30%;
-    background-color: #54E0FF;
+    background-color: var(--celeste);
     display: inline-flex;
     border-radius: 3px;
     padding: 4px 4px 4px 10px;
+    /* margin-left: -30px; */
     margin-left: -30px;
+    height: 20px;
 }
 
 .form_datos {
@@ -235,6 +269,13 @@ label {
     gap: 2em;
 }
 
+.form_datos1 {
+    padding: 0.5em 0em 1em 0em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
 .form-idms {
     display: flex;
     flex-direction: column;
@@ -242,13 +283,86 @@ label {
     gap: 1.5em;
 }
 
-/* FIN BODY PERFIL USUARIO */
+.b{
+    font-weight: bold;
+}
+
+.h3-seccion1 {
+    background-color: var(--celeste);
+    display: inline-flex;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 25px;
+    padding: 4px 4px 4px 10px;
+    width: 50%;
+}
+
+.h3-seccion1-otros{
+    height: 54%;
+}
+
+.marg-com{
+    margin-left: -16px;
+}
+
+.textarea-perfil_usuario{
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    resize: none;
+}
+
+.input-datos{
+    width: 15em;
+}
+
+.input-form_idm {
+    width: 17em;
+    /* font-size: 1em; */
+}
+
+.p{
+    font-weight: 100;
+    padding-bottom: 0.8em;
+    padding-left: 0.5em;
+}
+
+/* FIN BODY PERFIL USUARIO, ÁREA PERSONAL Y PERFIL PÚBLICO */
 
 /* FIN PERFIL USUARIO */
 
+/*CSS Autora: Jennifer 2024-02-07*/
+/*ÁREA PERSONAL*/
+
+.h3-secc{
+    background-color: #54E0FF;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 50%;
+}
+
+.h3-exp{
+    display: inline-flex;
+    background-color: #54E0FF;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 25px;
+    text-align: left;
+    padding: 4px 4px 4px 10px;
+    width: 50%;
+    height: 6%;
+}
+
+.h3-area{
+    margin-left: -15px;
+}
+
+/*FIN ÁREA PERSONAL*/
+
 /* BODY ORIENTADOR VIRTUAL */
 
-/* CSS Autora: Jennifer 2024-01-24*/
+/* CSS Autora: Jennifer 2024-01-24 / 2024-02-19*/
 
 .h5-pregunta {
     display: flex;
@@ -272,14 +386,15 @@ label {
     display: flex;
     border-radius: 6px;
     border: none;
-    width: 50%;
-    height: 2.9em;
-    color: #4c4a4a;
+    width: auto;
+    color: #000;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 16px;
-    background-color: var(--grisaceo);
-    margin-left: 37px;
+    background-color: var(--verde);
+    padding: 1em;
+    justify-self: center;
+    justify-content: space-around;
 }
 
 .h5-orientador {
@@ -288,7 +403,7 @@ label {
     width: 47%;
     text-align: center;
     padding: 8px;
-    height: 2.5em;
+    /* height: 2.5em; */
     color: var(--negro);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -331,18 +446,20 @@ label {
 .h5-pregunta-caja1 {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    /* align-content: center; */
     background-color: var(--gris);
     border-radius: 15px;
-    height: 4.6%;
-    width: 25%;
+    /* height: 4.6%; */
+    /* width: 25%; */
     font-size: 15px;
     text-align: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     border: var(--negro);
     border-style: solid;
     border-width: 1px;
     margin-bottom: 10px;
+    padding: 1em;
+    /* align-self: center; */
 }
 
 .h5-caja2 {
@@ -622,7 +739,7 @@ p a {
 
 
 
-/*/////////////////
+                    /*/////////////////
                    /////ELEMENTOS/////
                   /////////////////*/
 
@@ -788,9 +905,9 @@ p a {
     border-radius: 7px;
     width: 120px;
     height: 2em;
-    color: black;
+    color: var(--negro);
     font-weight: bold;
-    background-color: #01c38e;
+    background-color: var(--verde);
     grid-area: guarda;
     margin-right: -26.6em;
 }
@@ -822,8 +939,20 @@ p a {
 .boton-2 {
     display: flex;
     border-radius: 30px;
-    width: 100%;
+    /* width: 100%; */
     padding: 10px;
+    height: 3.6em;
+    color: var(--negro);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: var(--verde);
+}
+
+.boton-3 { 
+    display: flex;
+    border-radius: 30px;
+    /* width: 100%; */
+    padding: 6px;
     height: 3.6em;
     color: var(--negro);
     font-family: 'Montserrat', sans-serif;
@@ -1004,6 +1133,7 @@ p a {
 }
 
 /* Sinaí 29-01-2024 */
+/*Jennifer y Hugo Molina hicieron pequeños cambios al perfil público*/
 
 .movertelefono {
     margin-top: -20px;
@@ -1019,9 +1149,17 @@ p a {
 }
 
 .colocarinput {
-    width: 150px;
-    top: 20px;
+    width: 17em;
+    /* top: 20px; */
+}
 
+.colinput{
+    width: 20em;
+}
+
+.colocarinput2 {
+    width: 17em;
+    /* top: 20px; */
 }
 
 .aline {
@@ -1032,6 +1170,8 @@ p a {
 /* Es para colocar el titulo de datos personales hacia la izquierda  */
 .movertitulo2 {
     background-color: var(--celeste);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     position: relative;
     left: -24px;
     width: 400px;
@@ -1044,15 +1184,19 @@ p a {
 
 /* es para mover un elemento a hacia la izquierda  */
 .izquierda {
-    display: flex;
-    flex-wrap: wrap;
     flex-grow: 3;
-    margin-right: 4em;
+    display: flex;
+    /* margin-right: 4em; */
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3em;
 }
 
 /* Esto es para poder colocar bien los nombres de cada seccion  */
 .movertitulo {
     background-color: var(--celeste);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     position: relative;
     left: -24px;
     width: 400px;
@@ -1061,6 +1205,19 @@ p a {
     flex-wrap: wrap;
     align-content: flex-end;
     margin-left: -6px;
+}
+
+.movertitulo1{ /*Esto se añade a div formación ya que se ve muy pegado al borde*/
+    background-color: var(--celeste);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: relative;
+    left: -16px;
+    width: 400px;
+    height: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
 }
 
 .mod-titular {
@@ -1090,7 +1247,7 @@ p a {
 
 .idiomas {
     display: grid;
-    background-color: #d9d9d9;
+    background-color: var(--gris);
     padding: 1em;
     border-radius: 8px;
     font-weight: bold;
@@ -1099,7 +1256,7 @@ p a {
 
 .formacion {
     display: grid;
-    background-color: #d9d9d9;
+    background-color: var(--gris);
     padding: 1em;
     border-radius: 8px;
     font-weight: bold;
@@ -1108,6 +1265,10 @@ p a {
 
 .colocarbot {
     position: absolute;
+}
+
+.alto{
+    height: 44%;
 }
 
 .swtich-container2 {
@@ -1128,7 +1289,9 @@ p a {
 .grid-container2 {
     display: grid;
     grid:
-        'info info info info info' 0.6fr 'formacion formacion expe expe expe' 1fr 'idiomas idiomas otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
+        'info info info info info' 0.6fr
+        'formacion formacion expe expe expe' 1fr
+        'idiomas idiomas otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
     gap: 0.6em;
 }
 
@@ -1156,13 +1319,9 @@ footer {
     width: 100%;
 }
 
-
-
-
-
 /* Fin Sinai */
 
-/* CSS Autora: Jennifer 2024-01-24 */
+/* CSS Autora: Jennifer 2024-01-24 / 2024-02-19*/
 /* ORIENTADOR VIRTUAL */
 
 .orientador-virtual {
@@ -1175,7 +1334,7 @@ footer {
 .formulario {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    /* gap: 12px; */
     grid-area: formulario;
 }
 
@@ -1220,13 +1379,14 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: var(--gris);
-    width: 80%;
-    height: 60px;
+    width: auto;
+    /* height: 60px; */
     border-style: solid;
     border-color: black;
     border-width: 1px;
     text-indent: 8px;
     font-size: 12px;
+    padding: 0.6em;
 }
 
 .boton-desplegable {
@@ -1247,7 +1407,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-left: 40px;
+    margin: 2em;
 }
 
 .presentacion-orientador {
@@ -1361,16 +1521,102 @@ footer {
     padding: 4px;
     font-family: 'Montserrat', sans-serif;
     margin: 0.8em;
-    width: 36%;
-    height: 5em;
+    width: 70%;
+    height: 1.6em;
     text-align: center;
+    display: none;
 }
 
+.analisis-show{
+    display: block;
+}
+
+#firstpan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#secondpan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#thirdpan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-caja3{
+    padding-left: 1em;
+}
 
 /* FIN DEL ORIENTADOR VIRTUAL */
 
 /* FIN ÁREA DE PERFILES PÚBLICOS */
 
+/* CSS Autora: Jennifer 2024-02-07 */
+/* ÁREA PERSONAL */
+
+.prrafo{
+    padding-top: 1em;
+}
+
+.año{
+    font-weight: 300;
+    font-size: 14px;
+    /* padding-right: 20em; */
+    padding-bottom: 1em;
+}
+
+.lis{
+    font-weight: 100;
+}
+
+/* .info-per{
+    padding-top: 1em;
+} */
+
+.grid2por2{
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.experiencia{
+    padding: 1.5em 1em 1em 0em;
+}
+
+.otro{
+    padding: 1.5em 1em 1em 0em;
+}
+
+.habili .competen {
+    margin-top: 1, 5px; 
+}
+
+.lista1 {
+    padding-left: 2em;
+}
+
+.contenido1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    align-items: flex-start;
+    /* padding-left: 1.5em; */
+}
+
+.contenido-1{
+    padding: 1.5em 1em 4em 1em;
+}
+
+.idio{
+    height: 6%;
+}
+
+/* FIN ÁREA PERSONAL */
 
 /* PERFIL USUARIO */
 
@@ -1379,7 +1625,6 @@ footer {
     background: var(--verde);
     background: var(--grisaceo);
 }
-
 
 /* SWITCH UNO */
 
@@ -1416,6 +1661,29 @@ footer {
 .contenedor_switch {
     display: flex;
     justify-content: flex-end;
+    /* bottom: 4.3em; */
+    /* right: inherit; */
+}
+
+.switch_area{ /*switch del área personal*/
+    gap: 1em;
+    padding-top: 2.4em;
+    padding-right: 7em;
+}
+
+.switch_contenedor{ /* switch de editar perfil */
+    gap: 1em;
+    position: relative;
+    bottom: 5em;
+    right: inherit;
+}
+
+.switch-contenedor{ /* switch de editar perfil público */
+    gap: 1em;
+    position: relative;
+    top: 1em;
+    /* right: inherit; */
+    left: 40em;
 }
 
 .switch3Posiciones {
@@ -1425,6 +1693,10 @@ footer {
     height: 25px;
     /*25*/
     border-radius: 20px;
+}
+
+.switch3Posiciones_var1{
+    bottom: -0.3em;
 }
 
 .switch3Posiciones #switch1,
@@ -1546,8 +1818,6 @@ input:checked+.slider2 {
     border-radius: 17px;
 }
 
-
-
 .slider2:before {
     border-radius: 50%;
 }
@@ -1639,7 +1909,6 @@ input:checked+.slider {
 .informacion-personal {
     display: grid;
     background-color: var(--gris);
-
     font-weight: bold;
     grid-area: info;
 }
@@ -1649,7 +1918,6 @@ input:checked+.slider {
     background-color: var(--gris);
     padding: 1em;
     border-radius: 8px;
-
     font-weight: bold;
     grid-area: formacion;
 }
@@ -1659,7 +1927,6 @@ input:checked+.slider {
     background-color: var(--gris);
     padding: 1em;
     border-radius: 8px;
-
     font-weight: bold;
     grid-area: expe;
 }
@@ -1670,7 +1937,6 @@ input:checked+.slider {
     padding: 1em;
     font-size: 16px;
     border-radius: 8px;
-
     font-weight: bold;
     grid-area: otros;
 }
@@ -1678,7 +1944,9 @@ input:checked+.slider {
 .grid-container {
     display: grid;
     grid:
-        'info info info info info' 0.6fr 'formacion formacion expe expe expe' 1fr 'formacion formacion otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
+        'info info info info info' 0.4fr
+        'formacion formacion expe expe expe' 1fr
+        'idiomas idiomas otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
     gap: 0.6em;
 }
 
@@ -1689,22 +1957,65 @@ input:checked+.slider {
 .contenido {
     display: flex;
     flex-direction: column;
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
     padding-right: 3em;
     /* margin-bottom: 1em;
     margin-right: 4em; */
 }
 
+.experiencia-rellenar{
+    padding-left: 1em;
+}
+
+.experiencia-rellenado{
+    padding-left: 1em;
+}
+
+.desplegable{
+    background-color: var(--col_aside);
+}
+
 .nec {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+.nec1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    align-self: center;
+    padding-bottom: 2em;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.nec2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    align-self: center;
+    padding-bottom: 2em;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.nec1_var{
+    align-self: center;
+    justify-self: right;
+    padding-right: 3em;
+    padding-bottom: 1em;
+}
+
+.nec1_varvar{
+    padding-bottom: 1em;
 }
 
 .nec label {
     display: flex;
-    justify-content: space-between;
-    flex: 0 0 1.4em;
+    /* justify-content: flex-end; */
+    /* flex: 0 0 1.4em; */
     margin-bottom: 0.5em;
 }
 
@@ -1729,22 +2040,19 @@ input:checked+.slider {
     width: 120px;
     height: 2em;
     color: var(--negro);
-
     font-weight: bold;
     background-color: var(--verde);
     grid-area: guarda;
 }
 
-.cancelar {
+/*.cancelar {
     border-radius: 7px;
     color: var(--blanco);
     width: 120px;
     height: 2em;
-
     font-weight: bold;
     background-color: var(--grisInactivo);
     grid-area: cancela;
-
 }
 
 .grid-button {
@@ -1759,18 +2067,133 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 .contenido label {
     display: flex;
     justify-content: right;
-    flex: 1 0 1.4em;
-    margin-bottom: 0.5em;
+    /* flex: 1 0 1.4em; REVISAR EN EL PERFIL PÚBLICO */
+    margin-bottom: 0.2em;
 }
 
 .contenido textarea {
     width: 71.5%;
 }
 
+.h3-seccion-datos{
+    padding-top: 1em;
+}
+
+.formacion1 {
+    display: grid;
+    background-color: var(--gris);
+    padding: 1.5em 1em 1em 0em;
+    border-radius: 8px;
+    font-weight: bold;
+    grid-area: formacion;
+}
+
+.idiomas1{
+    display: grid;
+    background-color: var(--gris);
+    padding: 1.5em 1em 1em 0em;
+    border-radius: 8px;
+    font-weight: bold;
+    grid-area: idiomas;
+}
+
+.experiencia-laboral1 {
+    display: grid;
+    background-color: var(--gris);
+    padding: 1.5em 1em 1em 0em;
+    border-radius: 8px;
+    font-weight: bold;
+    grid-area: expe;
+}
+
+.otros1 {
+    display: grid;
+    background-color: var(--gris);
+    padding: 1.5em 1em 1em 0em;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    grid-area: otros;
+}
+
+.conte {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.sw1{
+    left: 10em;
+}
+
+.sw2{
+    left: 6.5em;
+}
+
+.sw3{
+    left: 9.3em;
+}
+
+.sw4{
+    left: 8.9em;
+}
+
+.sw5{
+    left: 9em;
+}
+
+.sw6{
+    left: 10.7em;
+}
+
+.sw7{
+    left: 12.1em;
+}
+
+.sw8{
+    left: 20.2em;
+}
+
+.sw9{
+    left: 31.1em;
+}
+
+.sw10{
+    left: 22.5em;
+}
+
+.sw11{
+    left: 26.8em;
+}
+
+.sw12{
+    left: -2em;
+}
+
+.sw13{
+    left: 1.6em;
+}
+
+.sw14{
+    left: 11em;
+}
+
+.sw15{
+    left: 5em;
+}
+
 .contenido label input {
     margin-left: 1em;
     margin-right: 2em;
     height: 20px;
+}
+
+.contenido label textarea {
+    font-size: 1em;
+    width: 19.2em;
+    margin-left: 1em;
+    margin-right: 1.9em
+    /* flex: 1; */
 }
 
 /* .hab-com{
@@ -1780,14 +2203,147 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 .icon1 {
     position: absolute;
-    right: 1em;
+    right: 2.5em;
+    top: 38em;
+    font-size: 22px;
     color: var(--negro);
 }
 
 .icon2 {
     position: absolute;
     right: 1em;
+    font-size: 22px;
     color: var(--negro);
+}
+
+.icon3{
+    position: relative;
+    font-size: 22px;
+    color: var(--negro);
+    right: -20.2em;
+    top: -3em;
+}
+
+.icon4{
+    position: relative;
+    font-size: 22px;
+    color: var(--negro);
+    right: -20em;
+    top: -3em;
+}
+
+.icon5{
+    position: relative;
+    font-size: 22px;
+    color: var(--negro);
+    left: 64.4em;
+    top: 11em;
+}
+
+.icon6{
+    position: absolute;
+    padding-left: 17.5em;
+    font-size: 20px;
+}
+
+.icon7{
+    position: relative;
+    left: 22em;
+    bottom: 1.8em;
+    font-size: 20px;
+}
+
+.pst{
+    padding-bottom: 1.5em;
+}
+
+/* .puesto-aspira{
+    padding-left: 1em;
+} */
+
+.puesto-aspira form{
+    padding-left: 1em;
+}
+
+.contenido-text textarea {
+    /* text-align: start;
+    font-size: medium;
+    width: 20em;
+    display: flex;
+    justify-content: right; */
+    display: flex;
+    justify-content: right;
+    /* flex: 0 0 1.4em; */
+    margin-bottom: 1em;
+}
+
+.prrf{
+    padding-top: 4em;
+}
+
+.linea{
+    border-bottom: var(--grisInactivo) solid 1px;
+    margin-left: 2em;
+    margin-top: 1em;
+    /* padding: 1.4em; */
+    width: 50em;
+}
+
+.guardar-exp{ 
+    border-radius: 7px;
+    width: 120px;
+    height: 2em;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--grisaceo);
+    grid-area: guarda;
+}
+
+.exp-boton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.datos-boton{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+.guardar-datos{
+    border-radius: 7px;
+    width: 120px;
+    height: 2em;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--grisaceo);
+}
+
+.otros-boton{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.form-idms-boton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.guardar-form-idms{
+    border-radius: 7px;
+    width: 120px;
+    height: 2em;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--grisaceo);
 }
 
 /* FIN BODY PEFIL DE USUARIO */
@@ -1921,33 +2477,33 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 /* FIN TARJETA RECOMENDACIONES */
 
   /* PARRAFO RECOMENDACIONES (SUPUESTO DE SIN PUESTO AÑADIDO) */
-  #parrafo-recomend{
+    #parrafo-recomend{
     color: red;
     margin-top: 15px;
     margin-bottom: 15px;
     opacity: 0;
     font-weight: bold;
-  }
-  
-  .parrafo-fades{
-      display:block;
-      -webkit-animation: fadeinout 4s linear forwards;
-      animation: fadeinout 8s linear forwards;
-  
-  
-  }
-  
-  @-webkit-keyframes fadeinout {
-  0%,100% { opacity: 0;
-  }
-  50% { opacity: 1; }
-  }
-  
-  @keyframes fadeinout {
-  0%,100% { opacity: 0;}
-  50% { opacity: 1; }
-  }
-  
+}
+
+.parrafo-fades{
+    display:block;
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 8s linear forwards;
+
+
+}
+
+@-webkit-keyframes fadeinout {
+0%,100% { opacity: 0;
+}
+50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+0%,100% { opacity: 0;}
+50% { opacity: 1; }
+}
+
   /* FIN PARRAFO RECOMENDACIONES (SUPUESTO DE SIN PUESTO AÑADIDO) */
 
 /* ====== FIN RECOMENDACIONES ACCIONES DE MEJORA ===== */
@@ -3368,7 +3924,7 @@ h6 {
 
 
 
-/*///////////////////////
+                    /*///////////////////////
                    ///////MODIFICADORES/////
                   ///////////////////////*/
 
@@ -3548,10 +4104,10 @@ input:checked+.switch:active::before {
 /* FIN PERFIL USUARIO */
 
 /*BORRAR ESTA CLASE: ORIENTADOR VIRTUAL. JENNIFER*/
-.parrafo {
+/* .parrafo {
     font-size: 12px;
     font-weight: bold;
-}
+} */
 
 /* ======================================================= */
 
