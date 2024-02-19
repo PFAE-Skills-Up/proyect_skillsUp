@@ -1,132 +1,291 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elaboracion del perfil público</title>
+    <title>Estructura del Perfil Público</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
-<header>
-    <div class="header">
-        <img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo">
-    </div>
-    <nav class="nav">
-        <ul class="nav2">
-            <li class="li"><a href="" class="menu">Área Personal</a></li>
-            <li class="li"><a href="" class="menu">Orientador Virtual</a></li>
-            <li class="li"><a href="" class="menu">Recomendaciones</a></li>
-            <li class="li"><a href="" class="menu">Propuestas de Formación</a></li>
-            <li class="li"><a href="" class="menu">Comparador de Usuarios</a></li>
-            <li class="li"><a href="" class="menu">Perfiles Públicos</a></li>
-            <li class="li" id="last-li"><a href="" class="menu">Mensajería</a></li>
-        </ul>
-    </nav>
-    </div>
-</header>
-
 <body>
-
-    <div class="grid-container2">
-        <div class="informacion-personal">
-            <div class="content-titular">
-                <div class="movertitulo2">
-                    <h5 class="h3-seccion">Datos Personales</h5>
-                </div>
-            </div>
-            <form action="" method="post" class="form_datos">
-                <div class="nec">
-                        <div> <label>Nombre: <input class="colocarinput" type="text" name="nombre"></label>
-                        </div>
-                        <div> <label>Edad: <input class="colocarinput" type="number" name="edad"></label>
-                        </div>
-                        <div> <label>Ciudad: <input class="colocarinput" type="text" name="ciudad"></label>
-                        </div>
-                </div>
-                <!-- <div class="nacTel"> -->
-                <div class="nec">
-                    <!-- insertar html switch -->
-                    <div class="contenedor_switch">
-                        <div class="switch3Posiciones">
-                            <input type="radio" id="switch1" name="switch3Posiciones" />
+    <header>
+        <div class="header">
+            <img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo">
+        </div>
+        <nav class="nav">
+            <ul class="nav2">
+                <li class="li li-doble"><a href="" class="menu">Editar Perfil Público</a></li>
+                <li class="li li-doble"><a href="" class="menu">Editar Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+        <div class="grid-container2">
+            <div class="informacion-personal">
+                <div class="content-titular">
+                    <div class="movertitulo2">
+                        <h5 class="h3-seccion alto">Datos Personales</h5>
+                    </div>
+                    <div class="contenedor_switch switch-contenedor">
+                        <span class="editar">Editar perfil</span>
+                        <div class="switch3Posiciones switch3Posiciones_var1">
+                            <input type="radio" id="switch1" name="switch3Posiciones" class="switchOption"/>
                             <label for="switch1"></label>
-                            <input type="radio" id="switch2" name="switch3Posiciones" checked />
+                            <input type="radio" id="switch2" name="switch3Posiciones" class="switchOption" checked/>
                             <label for="switch2"></label>
-                            <input type="radio" id="switch3" name="switch3Posiciones" />
+                            <input type="radio" id="switch3" name="switch3Posiciones" class="switchOption"/>
                             <label for="switch3"></label>
                             <div class="switch3Posiciones__inner"></div>
                         </div>
+                        <span class="editar">Ed. perfil público</span>
                     </div>
-                    <div class="">
-                        <label>Fecha de nacimiento: <input class="colocarinput" type="date" name="fecha-nac">
-                            <span>
-                                <label class="swtich-container2">
-                                    <input type="checkbox" id="nombre-centro">
-                                    <div class="slider2">
-                                        <span class="on">Si</span>
-                                        <span class="off">No</span>
-                                    </div>
-                                </label>
-                            </span>
-                        </label>
+                </div>
+                <form action="" method="post" class="form_datos">
+                    <div class="nec">
+                            <div> 
+                            <label>Nombre: <p class="p"> Felipe Jimenez Rodriguez</p>
+                                <span>
+                                    <label class="swtich-container2 sw13">
+                                        <input type="checkbox" id="nombre-centro">
+                                        <div class="slider2">
+                                            <span class="on">Si</span>
+                                            <span class="off">No</span>
+                                        </div>
+                                    </label>
+                                </span>
+                            </label>
+                            </div>
+                            <div> 
+                            <label>Edad: <p class="p"> 22 años</p>
+                                <span>
+                                    <label class="swtich-container2 sw14">
+                                        <input type="checkbox" id="nombre-centro">
+                                        <div class="slider2">
+                                            <span class="on">Si</span>
+                                            <span class="off">No</span>
+                                        </div>
+                                    </label>
+                                </span>
+                            </label>
+                            </div>
+                            <div> 
+                            <label>Ciudad: <p class="p"> Las Palmas de Gran Canaria</p>
+                                <span>
+                                    <label class="swtich-container2">
+                                        <input type="checkbox" id="nombre-centro">
+                                        <div class="slider2">
+                                            <span class="on">Si</span>
+                                            <span class="off">No</span>
+                                        </div>
+                                    </label>
+                                </span>
+                            </label>
+                            </div>
                     </div>
-                    <div class="">
-                        <label>Teléfono: <input class="colocarinput" type="text" name="telefono">
-                            <span>
-                                <label class="swtich-container2">
-                                    <input type="checkbox" id="nombre-centro">
-                                    <div class="slider2">
-                                        <span class="on">Si</span>
-                                        <span class="off">No</span>
-                                    </div>
-                                </label>
-                            </span>
-                        </label>
-                    </div>
+                    <!-- <div class="nacTel"> -->
+                    <div class="nec">
+                        <!-- insertar html switch -->
+                        <!-- <div class="contenedor_switch">
+                            <div class="switch3Posiciones">
+                                <input type="radio" id="switch1" name="switch3Posiciones" />
+                                <label for="switch1"></label>
+                                <input type="radio" id="switch2" name="switch3Posiciones" checked />
+                                <label for="switch2"></label>
+                                <input type="radio" id="switch3" name="switch3Posiciones" />
+                                <label for="switch3"></label>
+                                <div class="switch3Posiciones__inner"></div>
+                            </div>
+                        </div> -->
 
-                    <div class=" button-guardar">
+                        <div class="nec">
+                            <label>Fecha de nacimiento: <p class="p"> 23-12-2000</p>
+                                <span>
+                                    <label class="swtich-container2">
+                                        <input type="checkbox" id="nombre-centro">
+                                        <div class="slider2">
+                                            <span class="on">Si</span>
+                                            <span class="off">No</span>
+                                        </div>
+                                    </label>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="nec">
+                            <label>Email: <p class="p"> felipe@gmail.com</p>
+                                <span>
+                                    <label class="swtich-container2 sw15">
+                                        <input type="checkbox" id="nombre-centro">
+                                        <div class="slider2">
+                                            <span class="on">Si</span>
+                                            <span class="off">No</span>
+                                        </div>
+                                    </label>
+                                </span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class=" nec button-guardar">
                         <button class="button-principal">Guardar</button>
                     </div>
-                </div>
-            </form>
-        </div>
-        <div class="formacion">
-            <!-- <form action="" method="post"> -->
-            <div class="contenido">
-                <div id="formacion" class="contenido">
-                    <div class="content-titular">
-                        <div class="movertitulo">
-                            <h3 class="h3-seccion">Formación</h3>
+                </form>
+            </div>
+            <div class="formacion">
+                <!-- <form action="" method="post"> -->
+                <div class="contenido">
+                    <div id="formacion" class="contenido">
+                        <div class="content-titular">
+                            <div class="movertitulo1">
+                                <h3 class="h3-seccion alto">Formación</h3>
+                            </div>
+                            <span>
+                                <label class="swtich-container2 mod">
+                                    <input type="checkbox" id="nombre-centro">
+                                    <div class="slider2">
+                                        <span class="on">Si</span>
+                                        <span class="off">No</span>
+                                    </div>
+                                </label>
+                            </span>
                         </div>
-                        <span>
-                            <label class="swtich-container2 mod">
-                                <input type="checkbox" id="nombre-centro">
-                                <div class="slider2">
-                                    <span class="on">Si</span>
-                                    <span class="off">No</span>
-                                </div>
-                            </label>
-                        </span>
                     </div>
-                </div>
-                <div class="izquierda">
-
-                    <label>Nivel académico: <input type="text" name="nivel-academico"><span>
-                            <!-- Sinaí 2024-01-09 -->
-                            <!-- Cambiar elemento de switch por texto -->
-                            <label class="swtich-container2">
+                    <div class="izquierda">
+                        <label>Nivel académico: <p class="p"> Diplomado</p>
+                            <label class="swtich-container2 sw5">
                                 <input type="checkbox" id="nivel-academico">
                                 <div class="slider2">
                                     <span class="on">Si</span>
                                     <span class="off">No</span>
                                 </div>
                             </label>
+                            
+                        </label>
+                        <label>Nombre del centro: <p class="p"> Universidad de Las Palmas</p><span>
+                                <label class="swtich-container2">
+                                    <input type="checkbox" id="nombre-centro">
+                                    <div class="slider2">
+                                        <span class="on">Si</span>
+                                        <span class="off">No</span>
+                                    </div>
+                                </label>
+                            </span>
+                        </label>
+                        <label>Fecha inicio: <p class="p"> 28-03-2018</p><span>
+                                <label class="swtich-container2 sw6">
+                                    <input type="checkbox" id="fecha-inicio">
+                                    <div class="slider2">
+                                        <span class="on">Si</span>
+                                        <span class="off">No</span>
+                                    </div>
+                                </label>
+                            </span>
+                        </label>
+                        <label>Fecha fin: <p class="p"> 06-04-2022</p><span>
+                                <label class="swtich-container2 sw7">
+                                    <input type="checkbox" id="fecha-inicio">
+                                    <div class="slider2">
+                                        <span class="on">Si</span>
+                                        <span class="off">No</span>
+                                    </div>
+                                </label>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="button-guardar">
+                        <button class="guardar">Guardar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="idiomas">
+                <div id="idiomas" class="contenido">
+                    <div class="content-titular">
+                        <div class="movertitulo">
+                            <h3 class="h3-seccion alto">Idiomas</h3>
+                        </div>
+                        <span>
+                            <label class="swtich-container2 mod">
+                                <input type="checkbox" id="fecha-inicio">
+                                <div class="slider2">
+                                    <span class="on">Si</span>
+                                    <span class="off">No</span>
+                                </div>
+                            </label>
                         </span>
-                    </label>
-                    <label>Nombre del centro: <input type="text" name="nombre-centro"><span>
-                            <label class="swtich-container2">
+                    </div>
+                    <div class="izquierda">
+
+                        <label>Idiomas: <p class="p"> Inglés</p>
+                            <span>
+                                <label class="swtich-container2 sw1">
+                                    <input type="checkbox" id="fecha-inicio">
+                                    <div class="slider2">
+                                        <span class="on">Si</span>
+                                        <span class="off">No</span>
+                                    </div>
+                                </label>
+                            </span>
+                        </label>
+                        <label>Nivel de escritura: <p class="p"> Alto</p><span>
+                                <label class="swtich-container2 sw2">
+                                    <input type="checkbox" id="fecha-inicio">
+                                    <div class="slider2">
+                                        <span class="on">Si</span>
+                                        <span class="off">No</span>
+                                    </div>
+                                </label>
+                            </span>
+                        </label>
+                        <label>Nivel oral: <p class="p"> Medio</p><span>
+                                <label class="swtich-container2 sw3">
+                                    <input type="checkbox" id="fecha-inicio">
+                                    <div class="slider2">
+                                        <span class="on">Si</span>
+                                        <span class="off">No</span>
+                                    </div>
+                                </label>
+                            </span>
+                        </label>
+                        <label>Nivel lectura: <p class="p"> Alto</p><span>
+                                <label class="swtich-container2 sw4">
+                                    <input type="checkbox" id="fecha-inicio">
+                                    <div class="slider2">
+                                        <span class="on">Si</span>
+                                        <span class="off">No</span>
+                                    </div>
+                                </label>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class=" button-guardar">
+                    <button class="guardar">Guardar</button>
+                </div>
+                <!-- </form> -->
+            </div>
+            <div class="experiencia-laboral">
+                <!-- <form action="" method="post"> -->
+                <div class="content-titular">
+                    <div class="movertitulo">
+                        <h3 class="h3-seccion alto">Experiencia Laboral</h3>
+                    </div>
+                    <span>
+                        
+                        <label class="swtich-container2 mod-titular">
+                            <input type="checkbox" id="nombre-centro">
+                            <div class="slider2">
+                                <span class="on">Si</span>
+                                <span class="off">No</span>
+                            </div>
+                        </label>
+                    </span>
+                </div>
+    
+                <div class="contenido izquierda">
+                    <label>Nombre de la empresa: <p class="p"> Codafish Iberia S.L</p>
+                        <span>
+                            <label class="swtich-container2 sw8">
                                 <input type="checkbox" id="nombre-centro">
                                 <div class="slider2">
                                     <span class="on">Si</span>
@@ -135,9 +294,10 @@
                             </label>
                         </span>
                     </label>
-                    <label>Fecha inicio: <input type="text" name="fecha-inicio"><span>
-                            <label class="swtich-container2">
-                                <input type="checkbox" id="fecha-inicio">
+                    <label>Sector: <p class="p"> Tecnológico</p>
+                        <span>
+                            <label class="swtich-container2 sw9">
+                                <input type="checkbox" id="nombre-centro">
                                 <div class="slider2">
                                     <span class="on">Si</span>
                                     <span class="off">No</span>
@@ -145,9 +305,34 @@
                             </label>
                         </span>
                     </label>
-                    <label>Fecha fin: <input type="text" name="fecha-fin"><span>
-                            <label class="swtich-container2">
-                                <input type="checkbox" id="fecha-inicio">
+                    <label>Puesto de trabajo: <p class="p"> Desarrollador junior</p>
+                        <span>
+                            <label class="swtich-container2 sw10">
+                                <input type="checkbox" id="nombre-centro">
+                                <div class="slider2">
+                                    <span class="on">Si</span>
+                                    <span class="off">No</span>
+                                </div>
+                            </label>
+                        </span>
+                    </label>
+                    <label>Duración del contrato: <p class="p"> 1 año</p>
+                        <span>
+                            <label class="swtich-container2 sw11">
+                                <input type="checkbox" id="nombre-centro">
+                                <div class="slider2">
+                                    <span class="on">Si</span>
+                                    <span class="off">No</span>
+                                </div>
+                            </label>
+                        </span>
+                    </label>
+                    <label>Descripción:
+                        <p class="p">Desarrollar páginas web con herramientas como WordPress o 
+                            Drupal y lenguajes de marca como JS y CSS.</p>
+                        <span>
+                            <label class="swtich-container2 sw12">
+                                <input type="checkbox" id="nombre-centro">
                                 <div class="slider2">
                                     <span class="on">Si</span>
                                     <span class="off">No</span>
@@ -156,261 +341,117 @@
                         </span>
                     </label>
                 </div>
+                <div class=" button-guardar">
+                    <button class="guardar">Guardar</button>
+                </div>
+    
+                <!-- </form> -->
+            </div>
+            <div class="otros">
+                <div class="content-titular">
+                    <div class="movertitulo">
+                        <h3 class="h3-seccion alto">Otros</h3>
+                    </div>
+                    <span>
+                        <label class="swtich-container2 mod-titular">
+                            <input type="checkbox" id="nombre-centro">
+                            <div class="slider2">
+                                <span class="on">Si</span>
+                                <span class="off">No</span>
+                            </div>
+                        </label>
+                    </span>
+                </div>
+    
+                <!-- <div class="hab-com"> -->
+                <div class="content-titular">
+                    <h4 class="h4-habilidades">Habilidades</h4>
+                    <span>
+                        <label class=" swtich-container2 mod-titular">
+                            <input type="checkbox" id="nombre-centro">
+                            <div class="slider2">
+                                <span class="on">Si</span>
+                                <span class="off">No</span>
+                            </div>
+                        </label>
+                    </span>
+                </div>
+                <ul class="lista">
+                    <li>Trabajo en equipo</li>
+                    <li>Iniciativa</li>
+                    <li>Control de estrés</li>
+                    <!-- <div class="habilidad3"> -->
+                    <!-- </div> -->
+                </ul><br>
+                <div class="content-titular">
+                    <h4 class="h4-competencias">Competencias</h4>
+                    <span>
+                        <label class=" swtich-container2 mod-titular">
+                            <input type="checkbox" id="nombre-centro">
+                            <div class="slider2">
+                                <span class="on">Si</span>
+                                <span class="off">No</span>
+                            </div>
+                        </label>
+                    </span>
+                </div>
+                <ul class="lista">
+                    <li>Base de datos</li>
+                    <li>JavaScript</li>
+                </ul>
+                <!-- </div> -->
                 <div class="button-guardar">
                     <button class="guardar">Guardar</button>
                 </div>
             </div>
         </div>
-        <div class="idiomas">
-            <div id="idiomas" class="contenido">
-                <div class="content-titular">
-                    <div class="movertitulo">
-                        <h3 class="h3-seccion">Idiomas</h3>
+    <footer class="footer-Reg">
+        <div>
+            <div class="footer2-Reg">
+                <!-- Sección de datos de la Fulp -->
+                <div class="footerlinks-Reg">
+                    <img class="logo" src="img/Logo FULP nueva web_0_0.png" alt="Logo FULP">
+                    <br><br>
+                    <div>
+                        <p><a href="https://www.google.com/maps?q=Calle+Juan+de+Quesada,+29" target="_blank">C/ Juan de
+                                Quesada, 29</a></p>
+                        <p>35001 Las Palmas de Gran Canaria</p>
+                        <p><a href="mailto:info@fdivp.es">info@fdivp.es</a></p>
+                        <p><a href="tel:626009577">626 009 577</a> / <a href="tel:608732801">608 732 801</a></p>
                     </div>
-                    <span>
-                        <label class="swtich-container2 mod">
-                            <input type="checkbox" id="fecha-inicio">
-                            <div class="slider2">
-                                <span class="on">Si</span>
-                                <span class="off">No</span>
-                            </div>
-                        </label>
-                    </span>
+                    <div>
+                        <a href="#"><i class=""></i></a>
+                        <a href="#"><i class=""></i></a>
+                        <a href="#"><i class=""></i></a>
+                        <a href="#"><i class=""></i></a>
+                        <a href="#"><i class=""></i></a>
+                    </div>
                 </div>
-                <label>Idiomas: <input type="text" name="idiomas">
-                    <span>
-                        <label class="swtich-container2">
-                            <input type="checkbox" id="fecha-inicio">
-                            <div class="slider2">
-                                <span class="on">Si</span>
-                                <span class="off">No</span>
-                            </div>
-                        </label>
-                    </span>
-                </label>
-                <label>Nivel de escritura: <input type="text" name="nivel-escritura"><span>
-                        <label class="swtich-container2">
-                            <input type="checkbox" id="fecha-inicio">
-                            <div class="slider2">
-                                <span class="on">Si</span>
-                                <span class="off">No</span>
-                            </div>
-                        </label>
-                    </span>
-                </label>
-                <label>Nivel oral: <input type="text" name="nivel-oral"><span>
-                        <label class="swtich-container2">
-                            <input type="checkbox" id="fecha-inicio">
-                            <div class="slider2">
-                                <span class="on">Si</span>
-                                <span class="off">No</span>
-                            </div>
-                        </label>
-                    </span>
-                </label>
-                <label>Nivel lectura: <input type="text" name="nivel-lectura"><span>
-                        <label class="swtich-container2">
-                            <input type="checkbox" id="fecha-inicio">
-                            <div class="slider2">
-                                <span class="on">Si</span>
-                                <span class="off">No</span>
-                            </div>
-                        </label>
-                    </span>
-                </label>
-            </div>
-            <div class=" button-guardar">
-                <button class="guardar">Guardar</button>
-            </div>
-            <!-- </form> -->
-        </div>
-        <div class="experiencia-laboral">
-            <!-- <form action="" method="post"> -->
-            <div class="content-titular">
-                <div class="movertitulo">
-                    <h3 class="h3-seccion">Experiencia Laboral</h3>
+                <!-- Sección de las políticas -->
+                <div class="footerlinks-Reg">
+                    <h4 class="titulo-Reg">Políticas</h4>
+                    <ul>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
                 </div>
-                <span>
-                    <label class="swtich-container2 mod-titular">
-                        <input type="checkbox" id="nombre-centro">
-                        <div class="slider2">
-                            <span class="on">Si</span>
-                            <span class="off">No</span>
-                        </div>
-                    </label>
-                </span>
-            </div>
-
-            <div class="contenido">
-                <label>Nombre de la empresa: <input type="text" name="nombre-empresa">
-                    <span>
-                        <label class="swtich-container2">
-                            <input type="checkbox" id="nombre-centro">
-                            <div class="slider2">
-                                <span class="on">Si</span>
-                                <span class="off">No</span>
-                            </div>
-                        </label>
-                    </span>
-                </label>
-                <label>Sector: <input type="text" name="sector">
-                    <span>
-                        <label class="swtich-container2">
-                            <input type="checkbox" id="nombre-centro">
-                            <div class="slider2">
-                                <span class="on">Si</span>
-                                <span class="off">No</span>
-                            </div>
-                        </label>
-                    </span>
-                </label>
-                <label>Puesto de trabajo: <input type="text" name="puesto-trabajo">
-                    <span>
-                        <label class="swtich-container2">
-                            <input type="checkbox" id="nombre-centro">
-                            <div class="slider2">
-                                <span class="on">Si</span>
-                                <span class="off">No</span>
-                            </div>
-                        </label>
-                    </span>
-                </label>
-                <label>Duración del contrato: <input type="text" name="duracion-contrato">
-                    <span>
-                        <label class="swtich-container2">
-                            <input type="checkbox" id="nombre-centro">
-                            <div class="slider2">
-                                <span class="on">Si</span>
-                                <span class="off">No</span>
-                            </div>
-                        </label>
-                    </span>
-                </label>
-                <label>Descripción:
-                    <textarea id="mensaje" name="mensaje" cols="1" rows="3" required
-                        placeholder="Descripción de tu experiencia laboral"></textarea>
-                    <span>
-                        <label class="swtich-container2">
-                            <input type="checkbox" id="nombre-centro">
-                            <div class="slider2">
-                                <span class="on">Si</span>
-                                <span class="off">No</span>
-                            </div>
-                        </label>
-                    </span>
-                </label>
-            </div>
-            <div class=" button-guardar">
-                <button class="guardar">Guardar</button>
-            </div>
-
-            <!-- </form> -->
-        </div>
-        <div class="otros">
-            <div class="content-titular">
-                <div class="movertitulo">
-                    <h3 class="h3-seccion">Otros</h3>
+                <!-- Sección Contáctanos -->
+                <div class="footerlinks-Reg">
+                    <h4>Contáctanos</h4>
+                    <ul>
+                        <li><a href="#">Contacta con nosotros</a></li>
+                        <li><a href="#">Quejas y sugerencias</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
                 </div>
-                <span>
-                    <label class="swtich-container2 mod-titular">
-                        <input type="checkbox" id="nombre-centro">
-                        <div class="slider2">
-                            <span class="on">Si</span>
-                            <span class="off">No</span>
-                        </div>
-                    </label>
-                </span>
-            </div>
-
-            <!-- <div class="hab-com"> -->
-            <div class="content-titular">
-                <h4 class="h4-habilidades">Habilidades</h4>
-                <span>
-                    <label class=" swtich-container2 mod-titular">
-                        <input type="checkbox" id="nombre-centro">
-                        <div class="slider2">
-                            <span class="on">Si</span>
-                            <span class="off">No</span>
-                        </div>
-                    </label>
-                </span>
-            </div>
-            <ul>
-                <li>Habilidad 1</li>
-                <li>Habilidad 2</li>
-                <li>Habilidad 3</li>
-                <!-- <div class="habilidad3"> -->
-                <!-- </div> -->
-            </ul><br>
-            <div class="content-titular">
-                <h4 class="h4-competencias">Competencias</h4>
-                <span>
-                    <label class=" swtich-container2 mod-titular">
-                        <input type="checkbox" id="nombre-centro">
-                        <div class="slider2">
-                            <span class="on">Si</span>
-                            <span class="off">No</span>
-                        </div>
-                    </label>
-                </span>
-            </div>
-            <ul>
-                <li>Competencia 1</li>
-                <li>Competencia 2</li>
-            </ul>
-            <!-- </div> -->
-            <div class="button-guardar">
-                <button class="guardar">Guardar</button>
+                <!-- Imágenes de la parte inferior del footer -->
+                <div>
+                    <img src="" alt="">
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
+    <script src="js/switch3Posiciones.js"></script>
 </body>
-<footer class="footer-Reg">
-    <div>
-        <div class="footer2-Reg">
-            <!-- Sección de datos de la Fulp -->
-            <div class="footerlinks-Reg">
-                <img class="logo" src="img/Logo FULP nueva web_0_0.png" alt="Logo FULP">
-                <br><br>
-                <div>
-                    <p><a href="https://www.google.com/maps?q=Calle+Juan+de+Quesada,+29" target="_blank">C/ Juan de
-                            Quesada, 29</a></p>
-                    <p>35001 Las Palmas de Gran Canaria</p>
-                    <p><a href="mailto:info@fdivp.es">info@fdivp.es</a></p>
-                    <p><a href="tel:626009577">626 009 577</a> / <a href="tel:608732801">608 732 801</a></p>
-                </div>
-                <div>
-                    <a href="#"><i class=""></i></a>
-                    <a href="#"><i class=""></i></a>
-                    <a href="#"><i class=""></i></a>
-                    <a href="#"><i class=""></i></a>
-                    <a href="#"><i class=""></i></a>
-                </div>
-            </div>
-            <!-- Sección de las políticas -->
-            <div class="footerlinks-Reg">
-                <h4 class="titulo-Reg">Políticas</h4>
-                <ul>
-                    <li><a href="#">Privacidad</a></li>
-                    <li><a href="#">Aviso legal</a></li>
-                    <li><a href="#">Cookies</a></li>
-                </ul>
-            </div>
-            <!-- Sección Contáctanos -->
-            <div class="footerlinks-Reg">
-                <h4>Contáctanos</h4>
-                <ul>
-                    <li><a href="#">Contacta con nosotros</a></li>
-                    <li><a href="#">Quejas y sugerencias</a></li>
-                    <li><a href="#">Preguntas frecuentes</a></li>
-                </ul>
-            </div>
-            <!-- Imágenes de la parte inferior del footer -->
-            <div>
-                <img src="" alt="">
-            </div>
-        </div>
-    </div>
-</footer>
-
 </html>

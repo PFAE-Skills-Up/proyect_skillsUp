@@ -1,88 +1,218 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área Personal</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Estructura del Area Personal</title>
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 <body>
-    <div class="">
-        <!-- Colocar una clase en los div -->
-        <div>
-            <!-- En css hay que quitarle los puntos  -->
-            <ul>
-                <li>Nombre:<p id="">Alejandro Mejía </p>
-                </li>
-                <li>Edad:<p id="">23 años</p>
-                </li>
-                <li>Ciudad:<p id="">Las Palmas de Gran Canaria</p>
-                </li>
-                <li>Fecha de nacimiento:<p id="">12-10-1974</p>
-                </li>
-                <li>Telefono:<p id="">654415098</p>
-                </li>
-            </ul>
+    <!-- Header -->
+    <header>
+        <div class="header">
+            <img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo">
         </div>
-    </div>
-    <div class="">
-        <div>
-            <h5>Formación</h5>
-            <ul>
-                <li>Nivel académico:<p id="">Universitario</p>
-                </li>
-                <li>Nombre del centro:<p id="">Universidad de las Palmas</p>
-                </li>
-                <li>Fecha inicio:<p id="">13-01-1998</p>
-                </li>
-                <li>Fecha fin:<p id="">24-12-2000</p>
-                </li>
+        <nav class="nav">
+            <ul class="nav2">
+                <li class="li"><a href="" class="menu">Área Personal</a></li>
+                <li class="li"><a href="" class="menu">Orientador Virtual</a></li>
+                <li class="li"><a href="" class="menu">Recomendaciones</a></li>
+                <li class="li"><a href="" class="menu">Propuestas de Formación</a></li>
+                <li class="li"><a href="" class="menu">Comparador de Usuarios</a></li>
+                <li class="li"><a href="" class="menu">Perfiles Públicos</a></li>
+                <li class="li" id="last-li"><a href="" class="menu">Mensajería</a></li>
             </ul>
-            <h5>Idiomas</h5>
-            <ul>
-                <li>Idiomas:<p id="">Ingles,Frances,Castellano</p>
-                </li>
-                <li>Nivel de escritura:<p id="">Nivel alto</p>
-                </li>
-                <li>Nivel oral:<p id="">Nivel alto</p>
-                </li>
-                <li>Nivel lectura:<p id="">Nivel bajo</p>
-                </li>
-            </ul>
+        </nav>
         </div>
-        <div class="">
-            <div>
-                <h5>Experiencia laboral</h5>
-                <ul>
-                    <li>Nombre de la empresa:<p id="">Hospital Negrín</p>
-                    </li>
-                    <li>Sector:<p id="">Las Reoyas</p>
-                    </li>
-                    <li>Puesto de trabajo:<p id="">Medico Cirujano </p>
-                    </li>
-                    <li>Duración del contenido:<p id="">250 horas</p>
-                    </li>
-                    <li>Descripción:<p id=""> Especialista en condiciones de trabajo y enfermedades o accidentes que se
-                            producen por causa de la actividad laboral.</p>
-                    </li>
+    </header>
+    <!-- Fin header -->
+
+    <!-- Contenido -->
+    <div class="grid-container body-perfil_usuario">
+        <div class="informacion-personal grid2por2 info-per">
+            <div class="h3-seccion-datos">
+                <h3 class="h3-datos">Datos personales</h3>
+            </div>
+            <div class="contenedor_switch switch_area">
+                <span class="editar">Editar perfil</span>
+                <div class="switch3Posiciones switch3Posiciones_var1">
+                    <input type="radio" id="switch1" name="switch3Posiciones" class="switchOption"/>
+                    <label for="switch1"></label>
+                    <input type="radio" id="switch2" name="switch3Posiciones" class="switchOption" checked/>
+                    <label for="switch2"></label>
+                    <input type="radio" id="switch3" name="switch3Posiciones" class="switchOption"/>
+                    <label for="switch3"></label>
+                    <div class="switch3Posiciones__inner"></div>
+                </div>
+                <span class="editar">Ed. perfil público</span>
+            </div>
+            <!-- <div class="nec"> -->
+                <div class="nec1 nec1_var">
+                    <p class="p"><b>Nombre:</b> Felipe Jimenez Rodriguez</p>
+                    <p class="p"><b>Edad:</b> 22 años</p>
+                    <p class="p"><b>Ciudad:</b> Las Palmas de Gran Canaria</p>
+                </div>
+                <div class="nec1 nec1_varvar">
+                    <p class="p"><b>Fecha de nacimiento:</b> 23-12-2000</p>
+                    <p class="p"><b>Email:</b> felipe@gmail.com</p>
+                </div>
+            <!-- </div> -->
+            <!-- insertar html switch -->
+        </div>
+        <div class="formacion-idiomas formacion">
+            <div class="">
+                <h3 class="h3-seccion1 h3-area">Puestos que aspira</h3>
+                    <select class="boton-desplegable desplegable" id="#">
+                        <option value="">Seleccionar Puesto</option>
+                        <option value="desarrollador-web">Desarrollador web</option>
+                        <option value="maquetador-web">Maquetador web</option>
+                    </select>
+            </div>
+            <div class="form-idms">
+                <div class="contenido">
+                    <h3 class="h3-seccion h3-secc h3-area">Formación</h3>
+                    <div class="contenido-1">
+                        <p class="p"><b>Nivel académico:</b> Diplomado</p><br>
+                        <p class="p"><b>Nombre del centro:</b> Universidad de Las Palmas</p><br>
+                        <p class="p"><b>Fecha inicio:</b> 28-03-2018</p><br>
+                        <p class="p"><b>Fecha fin:</b> 06-04-2022</p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="idiomas1">
+                    <div class="contenido">
+                        <h3 class="h3-seccion h3-secc idio">Idiomas</h3>
+                        <div class="contenido-1">
+                            <p class="p"><b>Idiomas:</b> Inglés</p><br>
+                            <p class="p"><b>Nivel de escritura:</b> Alto</p><br>
+                            <p class="p"><b>Nivel oral:</b> Medio</p><br>
+                            <p class="p"><b>Nivel lectura:</b> Alto</p><br>
+                        </div>
+                    </div>
+                </div>
+        <div class="experiencia-laboral experiencia">
+            <div class="experiencia-lab">
+                <h3 class="h3-exp h3-area">Experiencia Laboral</h3>
+                <div class="contenido-1">
+                    <div class="contenido">
+                        <p class="año">2021-2022</p>
+                        <p class="p"><b>Nombre de la empresa:</b> Codafish Iberia S.L </p>
+                        <p class="p"><b>Sector:</b> Tecnológico</p>
+                        <p class="p"><b>Puesto de trabajo:</b> Desarrollador junior </p>
+                        <p class="p"><b>Duración del contrato:</b> 1 año</p>
+                        <p class="p"><b>Descripción:</b> Desarrollar páginas web con
+                            herramientas como WordPress o Drupal
+                            y lenguajes de marca como JS y CSS.</p>
+                        <br><br>
+                        <p class="año">2022-2023</p>
+                        <p class="prraf p"><b>Nombre de la empresa:</b> Tecnologi S.L.</p>
+                        <p class="p"><b>Sector:</b> Tecnológico</p>
+                        <p class="p"><b>Puesto de trabajo:</b> Desarrollador junior </p>
+                        <p class="p"><b>Duración del contrato:</b> 1 año</p>
+                        <p class="p"><b>Descripción:</b> Desarrollar páginas web con
+                            frameworks como React, lenguajes de marca como JS, CSS y HTML</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="otros otro">
+            <h3 class="h3-seccion1 h3-seccion1-otros h3-area">Otros</h3>
+            <h4 class="h4-habilidades habili marg-com">Habilidades</h4>
+            <div class="contenido-1">
+                <ul class="lista1">
+                    <li class="lis">Trabajo en equipo</li>
+                    <li class="lis">Iniciativa</li>
+                    <li class="lis">Control de estrés</li>
+                </ul><br>
+            </div>
+            <h4 class="h4-competencias competen marg-com">Competencias</h4>
+            <div class="contenido-1">
+                <ul class="lista1">
+                    <li class="lis">Base de datos</li>
+                    <li class="lis">JavaScript</li>
                 </ul>
             </div>
-            <div class="">
-                <div>
-                    <h5>Otros</h5>
+        </div>
+    </div>
+    </div>
+    <!-- Fin contenido -->
+
+    <!-- Footer -->
+
+
+    <!-- <footer class="footer">
+        <div class="">
+            <div class="footer2">
+                <div class="footerlinks"> -->
+
+
+    <!-- Sección de datos de la Fulp -->
+
+
+    <!-- <div>
+                        <img src="" alt="logo fulp">
+                        <br><br>
+                        <ul>
+                            <li>C/ Juan de Quesada, 29</li>
+                            <li>35001 Las Palmas de Gran Canaria</li>
+                            <li>info@fulp.es</li>
+                            <li><a href="#">626 009 577 / 608 732 801</a></li>
+                        </ul>
+                        <div>
+                            <a href="#"><i class=""></i></a>
+                            <a href="#"><i class=""></i></a>
+                            <a href="#"><i class=""></i></a>
+                            <a href="#"><i class=""></i></a>
+                            <a href="#"><i class=""></i></a>
+                        </div>
+                    </div>
+                </div> -->
+
+
+    <!-- Sección de las políticas -->
+
+
+    <!-- <div class="footerlinks">
+                    <h4 class="titulo">Políticas</h4>
                     <ul>
-                                                    <h6>Habilidades</h6>
-                        <li>
-                            <p id=""></p>
-                        </li>
-                        <h6>Competencias</h6º>
-                        <li>
-                            <p id="">Hospital Negrín</p>
-                        </li>
+                        <li><a href=" #">Privacidad</a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Cookies</a></li>
                     </ul>
+                </div> -->
+
+
+    <!-- Sección Contáctanos -->
+
+
+    <!-- <div class="footerlinks">
+                    <h4>Contáctanos</h4>
+                    <ul>
+                        <li><a href="#">Contacta con nosotros</a></li>
+                        <li><a href="#">Quejas y sugerencias</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </div> -->
+
+
+    <!-- Imágenes de la parte inferior del footer -->
+
+
+    <!-- <div>
+                    <img src="" alt="">
                 </div>
+            </div>
+        </div>
+    </footer> -->
+
+
+    <!-- Fin de footer -->
+
+
+    <script src="js/switch3Posiciones.js"></script>
 </body>
 </html>
