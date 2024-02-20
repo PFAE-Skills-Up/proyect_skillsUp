@@ -1,3 +1,5 @@
+// document.body.classList.add('fade');
+
 let urls = ["./edPerfilUsuario.html", "./areaPersonal.html", "./edPerfilPublicoUsuario.html"]; // array de los url de cada página
 let options = document.querySelectorAll(".switchOption"); //captura en la variable option la clase switchOption
 // Recuperar el estado del interruptor del almacenamiento local al cargar la página
@@ -17,3 +19,9 @@ options.forEach(function(option, index) { //recorre el array de opciones con dos
         }
     });
 });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     window.setTimeout(function() {
+//         document.body.classList.remove('fade');
+//     }, 100);
+// });
