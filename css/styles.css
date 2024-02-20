@@ -413,7 +413,6 @@ label {
     border-radius: 5px;
     height: 4.6%;
     width: 45%;
-    font-size: 25px;
     text-align: center;
     justify-content: space-around;
     margin-top: 10px;
@@ -1406,10 +1405,8 @@ footer {
     background-color: var(--gris);
     padding: 1em;
     border-radius: 5px;
-    height: 25%;
     width: 45%;
     text-align: left;
-    font-size: 20px;
 }
 
 .puestos {
