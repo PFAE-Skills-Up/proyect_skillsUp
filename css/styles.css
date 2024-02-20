@@ -3,7 +3,7 @@ Creación 2024-01-09: Hugo Gordillo.
 Rev: 1
 Vicky: 2024-01-18 - 8c5634b
 Sinaí: 2024-01-23
-Jennifer: 2024-02-19
+Jennifer: 2024-02-20
 Hugo Gordillo: 2024-02-07
 Marlene Menaza: 2024-02-09
 */
@@ -165,7 +165,7 @@ input {
     height: 30px;
     margin: 10px; */
     /* border-radius: 8px; */
-    background-color: #d5effa;
+    /* background-color: #d5effa; */
     color: var(--negro);
     border-color: var(--negro);
 }
@@ -175,6 +175,37 @@ label {
 }
 
 /* FIN MODAL DE REGISTRO CORTO HOME*/
+
+/*CSS Autora: Jennifer 2024-02-19*/
+/*BODY TRANSICIÓN SWITCH*/
+
+/* body {
+    opacity: 1;
+    transition-duration: 0.7ms;
+    transition-property: opacity;
+}
+
+body.fade {
+    opacity: 0;
+} */
+
+body {
+    animation: fadeInAnimation ease 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*FIN BODY TRANSICIÓN SWITCH*/
+
 
 /* TARJETAS ASIDE PROPUESTAS INFORMATIVAS*/
 /* aside {  // Borrar posiblemente.
@@ -222,7 +253,7 @@ label {
     text-align: center;
     margin-bottom: 0.5em;
     font-size: 25px;
-    padding: 4px 4px 4px 10px;
+    padding: 3px 4px 4px 7px;
     /* height: 44%; */
 }
 
@@ -300,7 +331,11 @@ label {
 }
 
 .h3-seccion1-otros{
-    height: 54%;
+    height: 35%;
+}
+
+.h3-seccion1-otro{
+    height: 56%;
 }
 
 .marg-com{
@@ -309,21 +344,26 @@ label {
 
 .textarea-perfil_usuario{
     padding: 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.6rem;
     resize: none;
+    height: auto;
+    color: var(--negro);
+    border-color: var(--negro);
 }
 
 .input-datos{
     width: 15em;
+    padding: 0.2rem;
 }
 
 .input-form_idm {
     width: 17em;
+    padding: 0.2rem;
     /* font-size: 1em; */
 }
 
 .p{
-    font-weight: 100;
+    font-weight: 500;
     padding-bottom: 0.8em;
     padding-left: 0.5em;
 }
@@ -356,6 +396,7 @@ label {
 
 .h3-area{
     margin-left: -15px;
+    margin-top: 8px;
 }
 
 /*FIN ÁREA PERSONAL*/
@@ -1142,10 +1183,12 @@ p a {
 
 .colinput{
     width: 20em;
+    padding: 0.2rem;
 }
 
 .colocarinput2 {
     width: 17em;
+    padding: 0.2rem;
     /* top: 20px; */
 }
 
@@ -1161,12 +1204,17 @@ p a {
     border-bottom-right-radius: 3px;
     position: relative;
     left: -24px;
-    width: 400px;
+    top: 3px;
+    width: 22.7em;
     height: 2.5em;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
     padding-left: 0.5em;
+}
+
+.movertitulo3{
+    top: -15px;
 }
 
 /* es para mover un elemento a hacia la izquierda  */
@@ -1186,6 +1234,7 @@ p a {
     border-bottom-right-radius: 3px;
     position: relative;
     left: -24px;
+    bottom: 23.9px;
     width: 400px;
     height: 2.5em;
     display: flex;
@@ -1199,7 +1248,8 @@ p a {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     position: relative;
-    left: -16px;
+    left: -32px;
+    bottom: 16px;
     width: 400px;
     height: 2.5em;
     display: flex;
@@ -1692,8 +1742,8 @@ footer {
 .switch_contenedor{ /* switch de editar perfil */
     gap: 1em;
     position: relative;
-    bottom: 5em;
-    right: inherit;
+    bottom: 4.7em;
+    left: 0.2em;
 }
 
 .switch-contenedor{ /* switch de editar perfil público */
@@ -1701,7 +1751,7 @@ footer {
     position: relative;
     top: 1em;
     /* right: inherit; */
-    left: 40em;
+    left: 44.4em;
 }
 
 .switch3Posiciones {
@@ -1768,11 +1818,11 @@ footer {
     position: absolute;
     display: block;
     content: "";
-    width: 25px;
+    width: 23px;
     /*20*/
-    height: 25px;
+    height: 23px;
     /*25*/
-    top: 0;
+    top: 1.4px;
     left: 0;
     background-color: var(--gris);
     border: solid 1px var(--grisInactivo);
@@ -1990,7 +2040,7 @@ input:checked+.slider {
 }
 
 .desplegable{
-    background-color: var(--col_aside);
+    background-color: var(--blanco);
 }
 
 .nec {
@@ -2039,7 +2089,7 @@ input:checked+.slider {
 
 .nec label input {
     margin-left: 1em;
-    height: 20px;
+    height: 1.5rem;
 }
 
 .nacTel {
@@ -2169,23 +2219,23 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 }
 
 .sw8{
-    left: 20.2em;
+    left: 24.9em;
 }
 
 .sw9{
-    left: 31.1em;
+    left: 35.7em;
 }
 
 .sw10{
-    left: 22.5em;
+    left: 27em;
 }
 
 .sw11{
-    left: 26.8em;
+    left: 31.3em;
 }
 
 .sw12{
-    left: -2em;
+    left: 0.6em;
 }
 
 .sw13{
@@ -2200,15 +2250,35 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     left: 5em;
 }
 
+.sw16{
+    top: -1.4em;
+}
+
+.sw17{
+    top: -1.4em;
+}
+
+.sw18{
+    top: -1.7em;
+}
+
+.sw19{
+    top: -1.4em;
+}
+
+.puesto{
+    padding: 0.2rem;
+}
+
 .contenido label input {
     margin-left: 1em;
     margin-right: 2em;
-    height: 20px;
+    height: 1.5rem;
 }
 
 .contenido label textarea {
     font-size: 1em;
-    width: 19.2em;
+    width: 19.7em;
     margin-left: 1em;
     margin-right: 1.9em
     /* flex: 1; */
@@ -2221,8 +2291,8 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 .icon1 {
     position: absolute;
-    right: 2.5em;
-    top: 38em;
+    right: 3.5em;
+    top: 40em;
     font-size: 22px;
     color: var(--negro);
 }
@@ -2255,19 +2325,20 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     font-size: 22px;
     color: var(--negro);
     left: 64.4em;
-    top: 11em;
+    top: 12em;
 }
 
 .icon6{
     position: absolute;
     padding-left: 17.5em;
+    bottom: 7.4em; 
     font-size: 20px;
 }
 
 .icon7{
     position: relative;
-    left: 22em;
-    bottom: 1.8em;
+    left: 23em;
+    bottom: 1.3em;
     font-size: 20px;
 }
 
@@ -2315,7 +2386,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 16px;
-    background-color: var(--grisaceo);
+    background-color: var(--verde);
     grid-area: guarda;
 }
 
@@ -2339,7 +2410,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 16px;
-    background-color: var(--grisaceo);
+    background-color: var(--verde);
 }
 
 .otros-boton{
@@ -2361,7 +2432,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 16px;
-    background-color: var(--grisaceo);
+    background-color: var(--verde);
 }
 
 /* FIN BODY PEFIL DE USUARIO */
@@ -4253,7 +4324,7 @@ input:checked+.switch:active::before {
 }
 
 .switch3Posiciones #switch1:checked~.switch3Posiciones__inner::after {
-    left: 0;
+    left: 2px;
     transition: left 200ms ease-in-out;
 }
 
@@ -4268,12 +4339,12 @@ input:checked+.switch:active::before {
 }
 
 .switch3Posiciones #switch3:checked~.switch3Posiciones__inner {
-    background-color: #004e6a;
+    background-color: var(--azul);
     transition: background-color 200ms ease-in-out;
 }
 
 .switch3Posiciones #switch3:checked~.switch3Posiciones__inner::after {
-    left: 40px;
+    left: 39px;
     transition: left 200ms ease-in-out;
 }
 
