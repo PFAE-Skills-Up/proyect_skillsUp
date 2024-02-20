@@ -55,7 +55,7 @@ function cambiarContenido() {
 
         enlaceBtn.addEventListener('click', () => {
             // Redirigir a otra página
-            window.location.href = 'areaPropuestaFormacion.html';
+            window.location.href = 'areaPersonal.html';
         });
     }
     for (let i = 0; i < images.length; i++) {
