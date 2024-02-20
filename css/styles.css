@@ -3,7 +3,7 @@ Creación 2024-01-09: Hugo Gordillo.
 Rev: 1
 Vicky: 2024-01-18 - 8c5634b
 Sinaí: 2024-01-23
-Jennifer: 2024-02-19
+Jennifer: 2024-02-20
 Hugo Gordillo: 2024-02-07
 Marlene Menaza: 2024-02-09
 */
@@ -174,7 +174,6 @@ label {
     font-weight: bold;
 }
 
-
 /* FIN MODAL DE REGISTRO CORTO HOME*/
 
 /*CSS Autora: Jennifer 2024-02-19*/
@@ -339,13 +338,12 @@ label {
     height: 56%;
 }
 
-
 .marg-com{
     margin-left: -16px;
 }
 
 .textarea-perfil_usuario{
-    padding: 0.5rem;
+    padding: 0.5em;
     margin-bottom: 0.6rem;
     resize: none;
     height: auto;
@@ -477,6 +475,10 @@ label {
     font-size: 13px;
     font-weight: bold;
 }
+.h6-caja-1content{
+    padding-left: 1em
+}
+
 
 .p-caja-1 {
     font-size: 10px;
@@ -716,60 +718,44 @@ label {
 
 .footer-Reg {
     background-color: var(--azul);
-    padding: 15px 0;
-    padding-left: 22%;
-    display: flex;
+    padding: 1em;
+    width: -webkit-fill-available;
+    /* width: auto */
 }
 
 .footer2-Reg {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 5em;
+    padding: 2em;
+    padding-left: 15em;
     font-size: 15px;
     color: var(--blanco);
-}
-
-.footerlinks-Reg {
-    padding: 15px;
 }
 
 .footerlinks-Reg h4 {
     font-size: 20px;
     color: var(--naranja);
-    margin-bottom: 25px;
+    margin: 1em;
+    padding-bottom: 0.5em;
     font-weight: 500;
-    border-bottom: 2px solid;
-    padding-bottom: 5px;
-    display: inline-block;
-    margin-left: 33%;
+    border-bottom: 2px solid var(--naranja);
+    width: fit-content;
 }
 
 .footerlinks-Reg ul li a {
     font-size: 15px;
     text-decoration: none;
+    padding-left: 2em;
     color: var(--blanco);
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 1.3em;
     transition: all .3s ease;
-}
-
-.footerlinks-Reg input,
-.footerlinks-Reg textarea {
-    color: var(--blanco);
-    margin-bottom: 15px;
-    border: 1px;
-}
-
-.footerlinks-Reg {
-    margin-right: 80px;
 }
 
 
 .footerlinks-Reg ul {
     list-style: none;
-}
-
-.footerlinks-Reg ul li {
-    margin-bottom: 1px;
 }
 
 p a {
@@ -1509,13 +1495,13 @@ footer {
     border: var(--negro);
     border-style: solid;
     border-width: 1px;
-    height: 20em;
+    /* height: 20em; Se quitó para añadir el Ranking */
     width: 40em;
     font-size: 14px;
     font-weight: 400;
     text-align: start;
-    justify-content: space-around;
-    padding: 15px;
+    /* justify-content: space-around; */
+    padding: 15px 15px 15px 2em;
     margin: 0.4em;
     margin-bottom: 6em;
 }
@@ -1602,8 +1588,39 @@ footer {
 }
 
 .list-caja3{
-    padding-left: 1em;
+    padding-left: 2em;
 }
+
+/* CSS Autora: Marlene 2024-02-19 */
+/* Ranking Orientador Virtual */
+.orientador-ranking{
+    display: flex;
+    justify-content: left;
+    padding-left:2em;
+    padding-top: 1em;
+}
+
+.ori-list-reset{
+    border: 0.5px solid var(--negro);
+    border-radius:5px;
+}
+
+.ori-ranking-li, .ori-ranking-li1{
+    list-style: none;
+    border-bottom: 0.5px solid var(--negro);
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.ori-ranking-li1{
+    border-bottom: none;
+}
+
+
+
+
+
+/* Fin Ranking Orientador Virtual */
 
 /* FIN DEL ORIENTADOR VIRTUAL */
 
@@ -3961,29 +3978,120 @@ h6 {
 
 /*=====>  Clases perdidas en el merge <==========*/
 
+/* -.-.- Modal Preguntas Frecuentes -.-.- */
+
+/* === Añadido 20/02/2024 || Hugo Gordillo === */
+
+.acordeon h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.acordeon-encabezado {
+    background-color: #A9C9D3;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border: 5px solid var(--blanco);
+    border-bottom: none;
+}
+
+/* Establece el ancho del acordeón. Establece el margen a 90px en la parte
+superior e inferior y auto a la izquierda y derecha */
+
+.acordeon {
+    width: 600px;
+    margin: 90px auto;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.acordeon-caja-contenedor {
+    max-height: 450.8px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.acordeon .acordeon-contenedor {
+    position: relative;
+    margin: 10px 10px;
+}
+
+.acordeon-modal-close {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: -webkit-fill-available;
+}
+
+.acordeon-content {
+    padding: 4px;
+    padding: 10px;
+    margin-inline-start: -10px;
+}
+
+/* Posiciona las estiquetas en relación con el contenedor. Añade relleno en la parte
+superior e inferior y aumenta el tamaño de la fuente. También hace 
+que eñ cursor sea un puntero */
+
+.acordeon .acordeon-title {
+    position: relative;
+    padding: 10px 0;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
+
+.acordeon .acordeon-content {
+    position: relative;
+    background: white;
+    display: none;
+    text-align: justify;
+    width: 535px;
+    overflow: hidden;
+}
+
+/* Añade una línea horizontal entre los contenidos */
+
+.acordeon hr {
+    border: 1px solid grey;
+}
+
+.acordeon-hr-encabezado {
+    width: 588.4px;
+    margin-left: 5px;
+}
+
+/* Muestra la parte de contenido cuando está activa. Establece la altura */
+
+.acordeon .acordeon-contenedor.activa .acordeon-content {
+    display: block;
+    animation: modal-show 0.5s ease;
+    border: 5px solid #A9C9D3;
+}
+
+
+
+/* -.-.- Fin Modal Preguntas Frecuentes  -.-.- */
+
+
 /*FIN BODY*/
 /* ======================================================= */
 
 
 /* FOOTER */
-
-.redessociales-Reg {
-    display: inline-block;
-    min-height: 40px;
-    width: 20px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.redessociales {
-    display: inline-block;
-    min-height: 40px;
-    width: 40px;
-    background-color: #4D4953;
-    text-align: center;
-
-}
 
 .logo {
     width: 100px;
@@ -3991,6 +4099,72 @@ h6 {
     margin-left: 1%;
     margin-right: 0;
 }
+
+/* Añadida clase .footer-img-cont para las imagenes 
+de la parte inferior del footer */
+
+.footer-img-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img-cont img {
+    height: 50px;
+    min-width: 150px;
+}
+
+.footer-section {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    gap: 3em;
+}
+
+.footer-img-logo {
+    padding: 1em;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    padding-left: 1em;
+}
+
+.footer-text i {
+    margin-right: 0.5em;
+}
+
+/* Redes sociales footer */
+
+.social-networks {
+    padding: 1em;
+    width: 250px;
+    display: flex;
+    gap: 0.5em;
+}
+
+.social-networks a {
+    color: var(--naranja);
+    text-decoration: none;
+}
+
+.social-networks i {
+    font-size: 20px;
+}
+
+.social-networks-int {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Fin Redes sociales footer */
 
 /* FIN FOOTER */
 /* ======================================================= */
@@ -4012,29 +4186,35 @@ h6 {
 
 
 /* FOOTER */
-.footerlinks ul li a:hover {
-    color: white;
-    padding-left: 6px;
+
+/* modal preguntas frecuentes */
+
+.acordeon .acordeon-title::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    right: -5px;
+    font-size: 30px;
 }
 
-.footerlinks ul li a {
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-    display: block;
-    margin-bottom: 15px;
-    transition: all .3s ease;
+.acordeon-caja-contenedor::-webkit-scrollbar {
+    display: none;
 }
 
-.footerlinks h4 {
-    font-size: 20px;
-    color: #FF7918;
-    margin-bottom: 25px;
-    font-weight: 500;
-    border-bottom: 2px solid;
-    padding-bottom: 10px;
-    display: inline-block;
+/* Cambia el signo positivo a negativo una vez activado */
+
+.acordeon .acordeon-contenedor.activa .acordeon-title::before {
+    content: '-';
+    font-size: 30px;
 }
+
+/* Redes sociales Footer */
+
+.fab:hover {
+    color: #FFF
+}
+
+/* Fin Redes sociales Footer */
 
 
 
