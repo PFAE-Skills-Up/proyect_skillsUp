@@ -4013,8 +4013,8 @@ superior e inferior y auto a la izquierda y derecha */
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .acordeon .acordeon-contenedor {
