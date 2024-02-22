@@ -25,3 +25,16 @@ options.forEach(function(option, index) { //recorre el array de opciones con dos
 //         document.body.classList.remove('fade');
 //     }, 100);
 // });
+
+
+//funcion para escribir en el input un puesto y añadirla al select
+function añadirpuesto(){
+    let puesto = document.getElementById("puesto");
+    let inputpuesto = document.getElementById("inputpuesto").value;
+    inputpuesto = inputpuesto.charAt(0).toUpperCase() + inputpuesto.slice(1)
+    console.log(inputpuesto)
+    let option = document.createElement("option");
+    option.text = inputpuesto;
+    puesto.add(option);
+    document.getElementById("inputpuesto").value = ''
+}

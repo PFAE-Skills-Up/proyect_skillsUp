@@ -2333,9 +2333,9 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 }
 
 .icon6{
-    position: absolute;
+    /* position: absolute;
     padding-left: 17.5em;
-    bottom: 7.4em; 
+    bottom: 7.4em;  */
     font-size: 20px;
 }
 
@@ -2348,6 +2348,9 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 .pst{
     padding-bottom: 1.5em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
 }
 
 /* .puesto-aspira{
