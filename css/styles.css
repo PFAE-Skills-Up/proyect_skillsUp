@@ -4084,6 +4084,204 @@ que eñ cursor sea un puntero */
 
 /* -.-.- Fin Modal Preguntas Frecuentes  -.-.- */
 
+/* -.-.- Perfil Público de Otro Usuario -.-.- */
+
+/* === Añadido 22/02/2024 || Hugo Gordillo === */
+
+.perf-usuario-contenedor {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+.flecha-contenedor {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.tarjeta-perfil-usuario-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.tarjeta-perfil-user {
+    background-color: var(--blanco);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.tarjeta-perfil-user-part-inf {
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+
+.tarjeta-perfil-user-1 {
+    border-radius: 5px;
+    height: 30%;
+}
+
+.tarjeta-perfil-user-2 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 5px;
+    width: 50%;
+    height: 100%;
+
+}
+
+.tarjeta-perfil-user-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 5px;
+    width: 50%;
+    height: 100%;
+}
+
+.perf-user-formacion {
+    background-color: var(--gris);
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.perf-user-idiomas {
+    background-color: var(--gris);
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.perf-user-exp-laboral {
+    background-color: var(--gris);
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.tarjeta-parte-sup {
+    background-color: var(--gris);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas-int-parte-inf {
+    background-color: var(--gris);
+    width: 100%;
+    border-radius: 5px;
+    min-height: 50%;
+    max-height: 50%;
+}
+
+.tarjetas-int-parte-inf h2 {
+    padding-left: 20px;
+}
+
+.tarjeta-contenido-int {
+    padding-left: 30px;
+    line-height: 2em;
+    padding-right: 2em;
+}
+
+.titulo-tarjeta-int {
+    height: auto;
+    width: 75%;
+    background-color: var(--celeste);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 20px;
+}
+
+.interior-texto {
+    margin-top: 20px;
+    height: 180px;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+}
+
+.tarjeta-int-otros {
+    display: flex;
+    flex-direction: column;
+    height: 267.6px;
+}
+
+.tarjeta-contenido-int ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2em;
+    padding: 10px 20px 10px 20px;
+    height: 70px;
+    overflow-y: scroll;
+}
+
+.list-personal-data {
+    width: 500px;
+    display: flex;
+    column-gap: 2em;
+    margin-top: 10px;
+    line-height: 2em;
+}
+
+.list-personal-data li {
+    list-style: none;
+}
+
+.perf-user-pub-icono {
+    font-size: 24px;
+    color: #000000;
+    left: 2em;
+    position: fixed;
+    border-radius: 10px;
+    background-color: #33ABA4;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 5px 5px 3px #707070;
+    padding-top: 2px;
+}
+
+.perf-user-pub-icono a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.tarjeta-parte-sup .titulo-tarjeta-int {
+    width: 463.962px;
+}
+
+.tarjeta-parte-sup .titulo-tarjeta-int h2 {
+    padding-left: 20px;
+}
+
+.personal-data-cont {
+    padding: 1.5em;
+}
+
+.personal-data-title-cont {
+    width: 100%;
+}
+
+/* -.-.- Perfil Público de Otro Usuario -.-.- */
+
 
 /*FIN BODY*/
 /* ======================================================= */
@@ -4396,3 +4594,13 @@ input:checked+.switch:active::before {
 /* FIN INACTIVO */
 /* FIN BOTON ENVIAR */
 /* ====== FIN RECOMENDACIONES ACCIONES DE MEJORA ===== */
+
+/* -.-.- Perfil Público de Otro Usuario -.-.- */
+
+/* === Añadido 22/02/2024 || Hugo Gordillo === */
+
+.scroll-none::-webkit-scrollbar {
+    display: none;
+}
+
+/* -.-.- Fin Perfil Público de Otro Usuario -.-.- */
