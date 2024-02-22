@@ -4001,7 +4001,7 @@ h6 {
 superior e inferior y auto a la izquierda y derecha */
 
 .acordeon {
-    width: 600px;
+    width: 630px;
     margin: 90px auto;
     color: black;
     background-color: white;
@@ -4013,8 +4013,7 @@ superior e inferior y auto a la izquierda y derecha */
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
-    padding-right: 15px;
+
 }
 
 .acordeon .acordeon-contenedor {
@@ -4029,10 +4028,12 @@ superior e inferior y auto a la izquierda y derecha */
     width: -webkit-fill-available;
 }
 
-.acordeon-content {
+
+
+.acordeon-content2{
+    border: 4px solid #A9C9D3;
     padding: 4px;
-    padding: 10px;
-    margin-inline-start: -10px;
+    margin: 2px;
 }
 
 /* Posiciona las estiquetas en relación con el contenedor. Añade relleno en la parte
@@ -4059,23 +4060,10 @@ que eñ cursor sea un puntero */
     overflow: hidden;
 }
 
-/* Añade una línea horizontal entre los contenidos */
-
-.acordeon hr {
-    border: 1px solid grey;
-}
 
 .acordeon-hr-encabezado {
-    width: 588.4px;
+    width: 618px;
     margin-left: 5px;
-}
-
-/* Muestra la parte de contenido cuando está activa. Establece la altura */
-
-.acordeon .acordeon-contenedor.activa .acordeon-content {
-    display: block;
-    animation: modal-show 0.5s ease;
-    border: 5px solid #A9C9D3;
 }
 
 
@@ -4185,24 +4173,12 @@ de la parte inferior del footer */
 
 /* modal preguntas frecuentes */
 
-.acordeon .acordeon-title::before {
-    content: '+';
-    color: black;
-    position: absolute;
-    right: -5px;
-    font-size: 30px;
-}
+
 
 .acordeon-caja-contenedor::-webkit-scrollbar {
     display: none;
 }
 
-/* Cambia el signo positivo a negativo una vez activado */
-
-.acordeon .acordeon-contenedor.activa .acordeon-title::before {
-    content: '-';
-    font-size: 30px;
-}
 
 /* Redes sociales Footer */
 
