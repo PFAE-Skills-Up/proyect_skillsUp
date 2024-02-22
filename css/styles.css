@@ -52,6 +52,7 @@ y quedan mal a la hora de aplicarlos en la página (Hugo Gordillo) */
 
 textarea {
     font-size: 20px;
+    resize: none;
 }
 
 * {
@@ -1120,6 +1121,10 @@ p a {
 /* Creación 2024-01-09: Hugo Gordillo. */
 /* ÁREA DE PERFILES PÚBLICOS */
 
+.std-container{ /*Añadida para separar los contenedores del Footer. Marlene Menaza: 2024/02/22*/
+    margin: 1em;
+    }
+
 .perfiles-contenedor {
     display: flex;
     flex-wrap: wrap;
@@ -1129,6 +1134,8 @@ p a {
     margin: 10px;
     line-height: 75px;
 }
+
+
 
 .tarjeta {
     padding: 15px 20px 15px 20px;
@@ -3518,6 +3525,12 @@ un tamaño de fuente determinado... */
     margin-top: 5px;
 }
 
+/*Clase para destacar el usuario de la lista que se va a seleccionar.  Marlene Menaza 2024/02/22*/
+
+.comp-ranking-li:hover{
+    background-color: var(--verdeHover);
+}
+
 /* Clase para que los li tengan una distancia y estén alineados */
 
 .comp-ranking-li li {
@@ -3827,11 +3840,12 @@ h6 {
     display: block;
 }
 
-.select-buscador {
+/*  Ésta clase se debe eliminar, ya que el Select del buscador se ha eliminado en HTML. Marlene Menaza 2024/02/22
+ .select-buscador {  
     margin-left: -185px;
     width: 150px;
     border: none;
-}
+} */
 
 /* -.-.- fin css select dentro del buscador mensajeria -.-.- */
 
