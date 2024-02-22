@@ -3566,6 +3566,10 @@ un tamaño de fuente determinado... */
     gap: 3em;
 }
 
+.perf-pub-cont a {
+    color: var(--negro);
+}
+
 .perf-pub-cont>div {
     margin-left: 30px;
     margin-right: 30px;
