@@ -71,18 +71,18 @@
             <div class="puesto-aspira">
                 <h3 class="h3-seccion1">Puestos que aspira</h3>
                 <form action="" method="post" class="formulario formulario1">
-                    <label class="pst"> Escriba el puesto: <input type="text" name="puesto" class="puesto">
+                    <label for="nuevopuesto" class="pst"> Escriba el puesto: <input type="text" name="puesto" value="" class="puesto" id="inputpuesto" onclick = "if(this.value=='') this.value=''">
                         <div class="icon6">
-                            <i class="fa-solid fa-circle-plus"></i>
+                            <i class="fa-solid fa-circle-plus" onclick="añadirpuesto()"></i>
                         </div>
                     </label>
-                    <h4>Puestos elegidos</h4>
-                    <select class="boton-desplegable desplegable" id="#">
+                    <label for="puesto">Puestos elegidos</label>
+                    <select class="boton-desplegable desplegable" id="puesto">
                         <option value="">Seleccionar Puesto</option>
                         <option value="desarrollador-web">Desarrollador web</option>
                         <option value="maquetador-web">Maquetador web</option>
                     </select>
-                    <div class="icon7">
+                    <div class="icon7" id="mas">
                         <i class="fas fa-trash-alt"></i>
                     </div>
                 </form>
