@@ -62,11 +62,11 @@ function cambiarContenido() {
         const currentImage = images[i];
 
         if (i === indice) {
-            currentImage.style.display = "inline-flex";
+            currentImage.style.opacity = "1";
             contenido.innerHTML = contenidoArray[i];
             contenido2.innerHTML = contenidoArray2[i];
         } else {
-            currentImage.style.display = "none";
+            currentImage.style.opacity = "0";
         }
     }
 }
