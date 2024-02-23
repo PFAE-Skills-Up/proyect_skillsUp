@@ -1107,7 +1107,7 @@ p a {
 /* ÁREA DE PERFILES PÚBLICOS */
 
 .std-container{ /*Añadida para separar los contenedores del Footer. Marlene Menaza: 2024/02/22*/
-    margin: 1em;
+    margin: 2em;
     }
 
 .perfiles-contenedor {
@@ -3053,7 +3053,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     justify-content: center;
     gap: 3em;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .formacion-contenedor h1 {
@@ -3986,15 +3986,19 @@ h6 {
 /* -.-.- CSS de los select del Área de propuestas de 
     formación y de el Área de Perfiles Públicos-.-.- */
 .btn-filtro-propuestas {
-    margin-top: 45px;
+    /* margin-top: 45px; */
     margin-left: 5px;
     margin-right: 5px;
     border: 1px solid var(--negro);
-    padding: 5px auto 5px auto;
+    /* padding: 5px auto 5px auto; */
     border-radius: 10px;
     max-width: max-content;
     font-size: 12px;
     font-weight: bold;
+}
+
+.btn-filtro-propuestas-vario {
+    margin-top: 45px;
 }
 
 .btn-filtro-propuestas select {
