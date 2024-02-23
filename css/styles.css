@@ -3424,11 +3424,16 @@ textarea {
 .comp-main {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 3em;
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
+    /* margin-top: 2.5em;
+    margin-bottom: 2.5em; */
+    padding: 2em;
+    background-image: url(../img/2fondo-propuesta.png);
+    background-size: 100% 100%;
 }
 
 /* Css de la tarjetas grandes para ambos perfiles */
