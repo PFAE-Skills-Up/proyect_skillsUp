@@ -3853,12 +3853,12 @@ h6 {
     display: block;
     width: 600px;
     overflow: hidden;
-    resize: both;
     min-height: 40px;
     line-height: 20px;
     border: 1px solid #ccc;
     padding: 1px 6px;
     font-size: inherit;
+    background-color: var(--col_aside);
 }
 
 .textarea[contenteditable]:empty::before {
