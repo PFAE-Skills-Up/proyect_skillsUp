@@ -412,8 +412,8 @@ label {
     align-content: center;
     background-color: var(--gris);
     border-radius: 5px;
-    height: 4.6%;
     width: 45%;
+    height: 4.6%;
     text-align: center;
     justify-content: space-around;
     margin-top: 10px;
@@ -1356,7 +1356,7 @@ footer {
     display: grid;
     grid:
         "aside orientador" 1fr / 1fr 4fr;
-    gap: 8px;
+    /* gap: 8px; */
 }
 
 .formulario {
@@ -1372,9 +1372,12 @@ footer {
     gap: 8px;
     align-items: center;
     font-size: 1em;
-    overflow: scroll;
+    overflow-y: scroll;
     height: 100vh;
     grid-area: orientador;
+    background-image: url(../img/2fondo-propuesta.png);
+    background-size: 120% 100%;
+    background-position-x: center;
 }
 
 .text-destacable {
