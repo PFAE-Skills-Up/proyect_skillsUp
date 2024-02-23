@@ -2518,7 +2518,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    color: var(--h4NoReg);
+    color: var(--negro);
     padding: 3em;
     border: 2px solid var(--negro);
     background-color: var(--gris);
