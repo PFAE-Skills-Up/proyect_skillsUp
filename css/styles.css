@@ -412,8 +412,8 @@ label {
     align-content: center;
     background-color: var(--gris);
     border-radius: 5px;
-    height: 2em;
     width: 45%;
+    height: 4.6%;
     text-align: center;
     justify-content: space-around;
     margin-top: 10px;
@@ -1358,7 +1358,7 @@ footer {
     display: grid;
     grid:
         "aside orientador" 1fr / 1fr 4fr;
-    gap: 8px;
+    /* gap: 8px; */
 }
 
 .formulario {
@@ -1373,9 +1373,13 @@ footer {
     flex-direction: column;
     gap: 8px;
     align-items: center;
+    font-size: 1em;
     overflow-y: scroll;
-    /* height: 100vh; */
+    height: 100vh;
     grid-area: orientador;
+    background-image: url(../img/2fondo-propuesta.png);
+    background-size: 120% 100%;
+    background-position-x: center;
 }
 
 .text-destacable {
@@ -3429,11 +3433,16 @@ textarea {
 .comp-main {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 3em;
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
+    /* margin-top: 2.5em;
+    margin-bottom: 2.5em; */
+    padding: 2em;
+    background-image: url(../img/2fondo-propuesta.png);
+    background-size: 100% 100%;
 }
 
 /* Css de la tarjetas grandes para ambos perfiles */
@@ -3623,6 +3632,8 @@ un tamaño de fuente determinado... */
     background-color: #D9D9D9;
     border-radius: 70px;
     margin-right: 1em;
+    background-image: url(../img/img-perf-user3.png);
+    background-size: cover;
 }
 
 .perf-pub-text-cont {
