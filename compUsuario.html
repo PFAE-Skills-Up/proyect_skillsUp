@@ -32,15 +32,15 @@
         <aside class="comp-aside">
             <div class="comp-aside-cont">
                 <div class="aside-select">
-                    <select name="Programacion avanzada" id="Formacion" form="Propuestasfor" placeholder="Filtro">
+                    <select name="Programacion avanzada" id="Formacion" placeholder="Filtro">
                         <option value="">Puestos de trabajo</option>
-                        <option value="">Desarrollador web</option>
-                        <option value="">Maquetador Web</option>
+                        <option value="desarrollador-web">Desarrollador web</option>
+                        <option value="maquetador-web">Maquetador Web</option>
                     </select>
                 </div>
                 <div class="comp-puesto-sel">
                     <h4>Puesto seleccionado:</h4>
-                    <p>Desarrollador Web</p>
+                    <p id="cajatexto"></p>
                 </div>
                 <div class="comp-puesto-sel">
                     <h5>Estos son los 10 mejores perfiles:</h5>
@@ -285,5 +285,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/compUsuario.js"></script>
 </body>
 </html>

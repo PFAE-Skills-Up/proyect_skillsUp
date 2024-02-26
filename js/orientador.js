@@ -46,7 +46,8 @@ document.getElementById('incr').addEventListener("click", function () {
     // document.getElementById('firstpan').firstChild; // recoge el elemento de el primer hijo en el html y lo muestra debajo del elemento padre
     document.getElementById("firstpan").style.display="flex";
     //se le añadió a la clase actual de este elemento "display: none;" y se creo una clase nueva llamada 'analisis-show' para añadirle un "display: block;", se llama a la id del encabezado y se añade la nueva clase 
-    document.getElementById('analisiscompleto').classList.add('analisis-show'); 
+    document.getElementById('analisiscompleto').classList.add('analisis-show');
+    document.querySelector(".cajas-2-3").style.display="none";
     document.getElementById("secondpan").style.display="flex";
     document.getElementById("thirdpan").style.display="flex";
     // INTENTO de crear un elemento al hacer el click
