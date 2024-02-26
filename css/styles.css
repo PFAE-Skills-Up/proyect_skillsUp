@@ -3535,7 +3535,7 @@ el select que hay en el aside */
 
 /* CSS del select del aside */
 
-.aside-select select {
+.aside-select select, .aside-select select:focus-visible {
     background-color: var(--gris);
     max-width: 160px;
     border: none;

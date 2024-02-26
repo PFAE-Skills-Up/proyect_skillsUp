@@ -15,7 +15,10 @@ function opciones2(padre, hijo) {
 console.log(document.getElementById("Formacion").value)
 
 
-document.getElementById('Formacion').addEventListener("change", opciones2(selector, caja))
+document.getElementById('Formacion').addEventListener("change", (event) => {
+    opciones2(selector, caja)
+    
+})
 document.getElementById('Formacion').addEventListener("change", function(){
     
     console.log(document.getElementById("Formacion").value)
