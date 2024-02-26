@@ -1012,7 +1012,7 @@ p a {
 .modal-content {
     position: relative;
     width: 1000px;
-    height: 345px;
+    height: 360px;
     padding-left: 98px;
     padding-right: 98px;
     padding-bottom: 34px;
@@ -1088,14 +1088,18 @@ p a {
 
 .botonRegistro {
     width: 200px;
-    height: 35px;
+    height: 30px;
     margin: 10px;
-    margin-left: 200px;
-    margin-right: 180px;
+    margin-left: 80%;
     margin-bottom: 20px;
     background-color: var(--grisaceo);
     border-radius: 10px;
     font-weight: lighter;
+}
+
+.enlaceRegistro{
+    margin-top: 50px;
+    margin-left: -170px;
 }
 
 #tituloRegistro {
