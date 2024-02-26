@@ -17,13 +17,13 @@
 <header>
     <div class="header">
         <a href="home.html"><img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo"></a>
-        </div>
+    </div>
     </div>
     <nav class="nav">
         <ul class="nav2">
             <li class="li"><a href="areaPersonal.html" class="menu">Área Personal</a></li>
             <li class="li"><a href="orientadorVirtual.html" class="menu">Orientador Virtual</a></li>
-            <li class="li li-uso" ><a href="#" class="menu">Recomendaciones</a></li>
+            <li class="li li-uso"><a href="#" class="menu">Recomendaciones</a></li>
             <li class="li"><a href="areaPropuestaFormacion.html" class="menu">Propuestas de Formación</a></li>
             <li class="li"><a href="compUsuario.html" class="menu">Comparador de Usuarios</a></li>
             <li class="li"><a href="areaPerfilesPublicos.html" class="menu">Perfiles Públicos</a></li>
@@ -34,102 +34,103 @@
 </header>
 <!-- FIN HEADER -->
 
-<body>
+<body class="body-propuesta propuesta1">
+    <main class="std-container">
+        <!-- SELECCIONAR select -->
+        <div class="div_select">
+            <select id="select-puestos" class="select-opciones" onfocus="turnOff()">
 
-    <!-- SELECCIONAR select -->
-    <div class="div_select">
-        <select id="select-puestos" class="select-opciones" onfocus="turnOff()">
+                <!-- CUANDO NO TIENE PUESTOS AÑADIDOS -->
 
-            <!-- CUANDO NO TIENE PUESTOS AÑADIDOS -->
+                <option value="0">SELECCIONA PUESTO:</option>
+                <option value="diseñador">Diseñador</option>
+                <option value="maquetador">Maquetador</option>
+                <option value="abogado">Abogado</option>
+                <option value="desarrollador">Puesto</option>
+                <option value="seleccionar">Puesto</option>
+                <option value="diseñador">Puesto</option>
+                <option value="maquetador">Puesto</option>
+                <option value="abogado">Puesto</option>
+            </select>
+        </div>
+        <!-- FIN PUESTOS AÑADIDOS -->
 
-            <option value="0">SELECCIONA PUESTO:</option>
-            <option value="diseñador">Diseñador</option>
-            <option value="maquetador">Maquetador</option>
-            <option value="abogado">Abogado</option>
-            <option value="desarrollador">Puesto</option>
-            <option value="seleccionar">Puesto</option>
-            <option value="diseñador">Puesto</option>
-            <option value="maquetador">Puesto</option>
-            <option value="abogado">Puesto</option>
-        </select>
-    </div>
-    <!-- FIN PUESTOS AÑADIDOS -->
-
-    <!-- PÁRRAFO CON MENSAJE QUE APARECE -->
-    <div class="div_select">
-        <p id="parrafo-recomend"></p>
-    </div>
-
-    <!-- PREGUNTA SOBRE REALIZACIÓN DE CURSOS -->
-    <div class="preguntas-recomendaciones">
-        <p class="pregunta"><b>¿Estás realizando curso/s de formación?</b></p>
-        <div class="radio">
-            <input class="input-recomend" type="radio" id="radio1" name="radio1">
-            <label class="label-recomend" for="radio1">Sí<span class="radio-button"></span></label>
+        <!-- PÁRRAFO CON MENSAJE QUE APARECE -->
+        <div class="div_select">
+            <p id="parrafo-recomend"></p>
         </div>
 
-        <div class="radio">
-            <input class="input-recomend" type="radio" id="radio2" name="radio1">
-            <label class="label-recomend" for="radio2">No<span class="radio-button"> </span></label>
+        <!-- PREGUNTA SOBRE REALIZACIÓN DE CURSOS -->
+        <div class="preguntas-recomendaciones">
+            <p class="pregunta"><b>¿Estás realizando curso/s de formación?</b></p>
+            <div class="radio">
+                <input class="input-recomend" type="radio" id="radio1" name="radio1">
+                <label class="label-recomend" for="radio1">Sí<span class="radio-button"></span></label>
+            </div>
 
+            <div class="radio">
+                <input class="input-recomend" type="radio" id="radio2" name="radio1">
+                <label class="label-recomend" for="radio2">No<span class="radio-button"> </span></label>
+
+            </div>
         </div>
-    </div>
 
 
-    <!-- INTRODUCIR CURSOS -->
-    <div class="preguntas-recomendaciones">
-        <p class="pregunta"><b>¿Cuáles? Escríbelos abajo:</b></p>
-    </div>
-    <div class="textarea-recomend">
-        <textarea id="inside-textarea" placeholder="Separa cada curso con una coma. Ejemplo: Curso de Javascript, Curso de Diseño UX..." name="textarea" rows="10"
-            cols="50"></textarea>
-    </div>
-
-    <!-- PREGUNTA SOBRE REGISTRO EN PORTAL EMPLEO ((RESPUESTA NO)) -->
-    <div class="preguntas-recomendaciones">
-        <p class="pregunta"><b>¿Estás inscrito en algún portal o bolsa de empleo?</b></p>
-        <div class="radio">
-            <input class="input-recomend" type="radio" id="radio3" name="radio2">
-            <label class="label-recomend" for="radio3">Sí<span class="radio-button"></span></label>
-
+        <!-- INTRODUCIR CURSOS -->
+        <div class="preguntas-recomendaciones">
+            <p class="pregunta"><b>¿Cuáles? Escríbelos abajo:</b></p>
         </div>
-        <div class="radio">
-            <input class="input-recomend" type="radio" id="radio4" name="radio2">
-            <label class="label-recomend" for="radio4">No<span class="radio-button"> </span></label>
+        <div class="textarea-recomend">
+            <textarea id="inside-textarea"
+                placeholder="Separa cada curso con una coma. Ejemplo: Curso de Javascript, Curso de Diseño UX..."
+                name="textarea" rows="10" cols="50"></textarea>
         </div>
-    </div>
 
-    <!-- PREGUNTA SOBRE ENVÍO C.V. A EMPRESAS -->
-    <div class="preguntas-recomendaciones">
-        <p class="pregunta"><b>¿Has enviado recientemente tu C.V. a alguna empresa?</b></p>
-        <div class="radio">
-            <input class="input-recomend" type="radio" id="radio5" name="radio3">
-            <label class="label-recomend" for="radio5">Sí<span class="radio-button"></span></label>
+        <!-- PREGUNTA SOBRE REGISTRO EN PORTAL EMPLEO ((RESPUESTA NO)) -->
+        <div class="preguntas-recomendaciones">
+            <p class="pregunta"><b>¿Estás inscrito en algún portal o bolsa de empleo?</b></p>
+            <div class="radio">
+                <input class="input-recomend" type="radio" id="radio3" name="radio2">
+                <label class="label-recomend" for="radio3">Sí<span class="radio-button"></span></label>
 
+            </div>
+            <div class="radio">
+                <input class="input-recomend" type="radio" id="radio4" name="radio2">
+                <label class="label-recomend" for="radio4">No<span class="radio-button"> </span></label>
+            </div>
         </div>
-        <div class="radio">
-            <input class="input-recomend" type="radio" id="radio6" name="radio3">
-            <label class="label-recomend" for="radio6">No<span class="radio-button"> </span></label>
+
+        <!-- PREGUNTA SOBRE ENVÍO C.V. A EMPRESAS -->
+        <div class="preguntas-recomendaciones">
+            <p class="pregunta"><b>¿Has enviado recientemente tu C.V. a alguna empresa?</b></p>
+            <div class="radio">
+                <input class="input-recomend" type="radio" id="radio5" name="radio3">
+                <label class="label-recomend" for="radio5">Sí<span class="radio-button"></span></label>
+
+            </div>
+            <div class="radio">
+                <input class="input-recomend" type="radio" id="radio6" name="radio3">
+                <label class="label-recomend" for="radio6">No<span class="radio-button"> </span></label>
+            </div>
         </div>
-    </div>
-    <div class="preguntas-recomendaciones">
+        <div class="preguntas-recomendaciones">
 
-        <!-- INTRODUCIR EMPRESAS -->
-        <p class="pregunta"><b>¿A cuáles? Escríbelas abajo:</b></p>
-    </div>
-    <div class="textarea-recomend">
-        <textarea id="inside-textarea" placeholder="Separa cada empresa con una coma" name="textarea" rows="10"
-            cols="50"></textarea>
-    </div>
+            <!-- INTRODUCIR EMPRESAS -->
+            <p class="pregunta"><b>¿A cuáles? Escríbelas abajo:</b></p>
+        </div>
+        <div class="textarea-recomend">
+            <textarea id="inside-textarea" placeholder="Separa cada empresa con una coma" name="textarea" rows="10"
+                cols="50"></textarea>
+        </div>
 
-    <!-- BOTÓN ENVIAR -->
-    <div class="boton-recomend">
-        <a href="mensaje de recomendaciones.html">
-            <button id="buton-recomend"><b>ENVIAR</b></button>
-        </a>
-    </div>
-    </div>
-
+        <!-- BOTÓN ENVIAR -->
+        <div class="boton-recomend">
+            <a href="mensaje de recomendaciones.html">
+                <button id="buton-recomend"><b>ENVIAR</b></button>
+            </a>
+        </div>
+        </div>
+    </main>
     <!-- ////// FOOTER ////// -->
     <footer class="footer-Reg">
         <!--Modal de registro inicial corto-->
@@ -303,7 +304,7 @@
             </div>
         </div>
     </footer>
-    </body>
-    <script src="js/recomendaciones.js"></script>
+</body>
+<script src="js/recomendaciones.js"></script>
 
 </html>

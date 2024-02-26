@@ -412,11 +412,12 @@ label {
     align-content: center;
     background-color: var(--gris);
     border-radius: 5px;
-    height: 4.6%;
     width: 45%;
+    height: 35px;
     text-align: center;
     justify-content: space-around;
     margin-top: 10px;
+    margin-bottom: 1em;
 }
 
 .h5-caja {
@@ -439,7 +440,7 @@ label {
 }
 
 .h5-orientador {
-    display: flex;
+    /* display: flex; */
     border-radius: 30px;
     width: 47%;
     text-align: center;
@@ -480,12 +481,12 @@ label {
 }
 
 
-.p-caja-1 {
+/* .p-caja-1 {
     font-size: 10px;
-}
+} */
 
 .h6-hard-skills {
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .h5-pregunta-caja1 {
@@ -496,7 +497,7 @@ label {
     border-radius: 15px;
     /* height: 4.6%; */
     /* width: 25%; */
-    font-size: 15px;
+    /* font-size: 15px; */
     text-align: center;
     /* justify-content: space-around; */
     border: var(--negro);
@@ -514,8 +515,8 @@ label {
     border-radius: 16px;
     height: 97.9%;
     padding: 5px;
-    width: 62%;
-    font-size: 10px;
+    width: 55%;
+    font-size: 14px;
     text-align: left;
     font-weight: 500;
     justify-content: space-between;
@@ -532,7 +533,7 @@ label {
     height: 93.9%;
     padding: 10px;
     width: 53%;
-    font-size: 10px;
+    font-size: 14px;
     text-align: left;
     font-weight: 500;
     border: var(--negro);
@@ -551,7 +552,7 @@ label {
     height: 3em;
     width: 30em;
     padding: 8px;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: 400;
     text-align: center;
     justify-content: space-around;
@@ -565,7 +566,7 @@ label {
     height: 3.7em;
     padding: 13px;
     width: 28%;
-    font-size: 10px;
+    /* font-size: 10px; */
     text-align: left;
     font-weight: 500;
     border: var(--negro);
@@ -585,7 +586,7 @@ label {
     height: 3.8em;
     padding: 12px;
     width: 95%;
-    font-size: 10px;
+    /* font-size: 10px; */
     text-align: left;
     font-weight: 500;
     border: var(--negro);
@@ -604,7 +605,7 @@ label {
     border-width: 1px;
     height: 3em;
     width: 30em;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: 400;
     text-align: center;
     justify-content: space-around;
@@ -622,7 +623,7 @@ label {
     height: 3em;
     width: 30em;
     /* padding: 8px */
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: 400;
     text-align: center;
     justify-content: space-around;
@@ -953,20 +954,21 @@ p a {
     display: flex;
     border-radius: 30px;
     /* width: 100%; */
-    padding: 10px;
-    height: 3.6em;
+    padding: 1em;
+    /* height: 3.6em; */
     color: var(--negro);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     background-color: var(--verde);
+    text-align: left;
 }
 
 .boton-3 { 
     display: flex;
     border-radius: 30px;
     /* width: 100%; */
-    padding: 6px;
-    height: 3.6em;
+    padding: 1em;
+    /* height: 3.6em; */
     color: var(--negro);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -1010,7 +1012,7 @@ p a {
 .modal-content {
     position: relative;
     width: 1000px;
-    height: 345px;
+    height: 360px;
     padding-left: 98px;
     padding-right: 98px;
     padding-bottom: 34px;
@@ -1086,14 +1088,18 @@ p a {
 
 .botonRegistro {
     width: 200px;
-    height: 35px;
+    height: 30px;
     margin: 10px;
-    margin-left: 200px;
-    margin-right: 180px;
+    margin-left: 80%;
     margin-bottom: 20px;
     background-color: var(--grisaceo);
     border-radius: 10px;
     font-weight: lighter;
+}
+
+.enlaceRegistro{
+    margin-top: 50px;
+    margin-left: -170px;
 }
 
 #tituloRegistro {
@@ -1107,7 +1113,7 @@ p a {
 /* ÁREA DE PERFILES PÚBLICOS */
 
 .std-container{ /*Añadida para separar los contenedores del Footer. Marlene Menaza: 2024/02/22*/
-    margin: 1em;
+    margin: 2em;
     }
 
 .perfiles-contenedor {
@@ -1356,7 +1362,7 @@ footer {
     display: grid;
     grid:
         "aside orientador" 1fr / 1fr 4fr;
-    gap: 8px;
+    /* gap: 8px; */
 }
 
 .formulario {
@@ -1371,10 +1377,13 @@ footer {
     flex-direction: column;
     gap: 8px;
     align-items: center;
-    font-size: 1em;
-    overflow: scroll;
-    height: 100vh;
+    /* font-size: 1em; */
+    overflow-y: scroll;
+    /* height: 100vh; */
     grid-area: orientador;
+    background-image: url(../img/2fondo-propuesta.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 .text-destacable {
@@ -1491,10 +1500,14 @@ footer {
     margin: 2em;
 }
 
-.cajas-2-3 {
+.cajas-2-3{
     display: flex;
     gap: 15px;
     margin-bottom: 80px;
+}
+
+.caja-pregunta{
+    display: flex;
 }
 
 .cajas-1-3 {
@@ -1572,11 +1585,11 @@ footer {
 .analisis {
     background-color: var(--celeste);
     font-size: 18px;
-    padding: 4px;
+    padding: 9px;
     font-family: 'Montserrat', sans-serif;
     margin: 0.8em;
     width: 70%;
-    height: 1.6em;
+    /* height: 1.6em; */
     text-align: center;
     display: none;
 }
@@ -2546,7 +2559,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    color: var(--h4NoReg);
+    color: var(--negro);
     padding: 3em;
     border: 2px solid var(--negro);
     background-color: var(--gris);
@@ -3081,7 +3094,7 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
     justify-content: center;
     gap: 3em;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .formacion-contenedor h1 {
@@ -3452,11 +3465,16 @@ textarea {
 .comp-main {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 3em;
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
+    /* margin-top: 2.5em;
+    margin-bottom: 2.5em; */
+    padding: 2em;
+    background-image: url(../img/2fondo-propuesta.png);
+    background-size: 100% 100%;
 }
 
 /* Css de la tarjetas grandes para ambos perfiles */
@@ -3646,6 +3664,8 @@ un tamaño de fuente determinado... */
     background-color: #D9D9D9;
     border-radius: 70px;
     margin-right: 1em;
+    background-image: url(../img/img-perf-user3.png);
+    background-size: cover;
 }
 
 .perf-pub-text-cont {
@@ -4014,15 +4034,19 @@ h6 {
 /* -.-.- CSS de los select del Área de propuestas de 
     formación y de el Área de Perfiles Públicos-.-.- */
 .btn-filtro-propuestas {
-    margin-top: 45px;
+    /* margin-top: 45px; */
     margin-left: 5px;
     margin-right: 5px;
     border: 1px solid var(--negro);
-    padding: 5px auto 5px auto;
+    /* padding: 5px auto 5px auto; */
     border-radius: 10px;
     max-width: max-content;
     font-size: 12px;
     font-weight: bold;
+}
+
+.btn-filtro-propuestas-vario {
+    margin-top: 45px;
 }
 
 .btn-filtro-propuestas select {
