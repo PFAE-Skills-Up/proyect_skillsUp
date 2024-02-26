@@ -413,7 +413,7 @@ label {
     background-color: var(--gris);
     border-radius: 5px;
     width: 45%;
-    height: 4.6%;
+    height: 35px;
     text-align: center;
     justify-content: space-around;
     margin-top: 10px;
@@ -1373,9 +1373,9 @@ footer {
     flex-direction: column;
     gap: 8px;
     align-items: center;
-    font-size: 1em;
+    /* font-size: 1em; */
     overflow-y: scroll;
-    height: 100vh;
+    /* height: 100vh; */
     grid-area: orientador;
     background-image: url(../img/2fondo-propuesta.png);
     background-size: 120% 100%;
