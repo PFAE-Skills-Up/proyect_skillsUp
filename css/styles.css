@@ -3,6 +3,9 @@ Creación 2024-01-09: Hugo Gordillo.
 Rev: 1
 Vicky: 2024-01-18 - 8c5634b
 Sinaí: 2024-01-23
+Jennifer: 2024-02-20
+Hugo Gordillo: 2024-02-07
+Marlene Menaza: 2024-02-09
 */
 
 /* GOOGLE FONTS */
@@ -27,23 +30,18 @@ Sinaí: 2024-01-23
     --h1NoReg: #F38C41;
     --h4NoReg: #4D4C7E;
     --verdeHover: #33ABA4;
+    /* Añadidos colores || Hugo Gordillo 06/02/2024 */
+
+    /* Amarillo de estrellas */
+    --amarillo: #FFC700;
+
+    /* Rojo errores en validaciones del formulario*/
+    --rojo: rgba(255, 0, 0, 0.107);
 }
 
 /* ============================= */
 /*        Estilos de fuentes         */
 /* ================================= */
-h1,
-h2 {
-    font-weight: bolder;
-}
-
-h3,
-h4,
-h5,
-h6 {
-    font-style: italic;
-}
-
 
 /*se eliminó el formato de H1 size enero-09-2024 (Natalie) */
 
@@ -54,6 +52,7 @@ y quedan mal a la hora de aplicarlos en la página (Hugo Gordillo) */
 
 textarea {
     font-size: 20px;
+    resize: none;
 }
 
 * {
@@ -69,7 +68,7 @@ textarea {
 
 
 
-                    /*//////////////////
+                    /*/////////////////
                    ///////BLOQUES/////
                   /////////////////*/
 
@@ -109,12 +108,45 @@ header {
     font-size: 15px;
 }
 
-.li:last-child {
+/* .li:last-child {
     padding-right: none;
+} */
+
+/* .li:first-child {
+    padding-left: none;
+} */
+
+/* ========= Variaciones en el header ===== */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+
+/* Clase de li-doble creada para los headers dobles */
+
+.li-doble {
+    width: 50%;
+    text-align: center;
 }
 
-.li:first-child {
-    padding-left: none;
+/* Clase creada para el menú de navegación
+dentro de la página para dejar ver donde estamos */
+
+.li-uso {
+    background-color: var(--verdeHover);
+}
+
+/* Clases header-no-regis y header-int creadas para el header de no registrados
+que contiene el botón de iniciar sesión */
+
+.header-no-regis {
+    box-sizing: none;
+}
+
+.header-int {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 34.6%;
+    align-items: center;
+
 }
 
 /*FIN HEADER*/
@@ -128,12 +160,13 @@ header {
 /* CSS Autora: Natalie ac 2024-01-09*/
 /* MODAL DE REGISTRO CORTO HOME*/
 
-input { /* revisar no correcto*/
+input {
+    /* revisar no correcto*/
     /* width: 514px;
     height: 30px;
     margin: 10px; */
     /* border-radius: 8px; */
-    background-color: #d5effa;
+    /* background-color: #d5effa; */
     color: var(--negro);
     border-color: var(--negro);
 }
@@ -143,6 +176,37 @@ label {
 }
 
 /* FIN MODAL DE REGISTRO CORTO HOME*/
+
+/*CSS Autora: Jennifer 2024-02-19*/
+/*BODY TRANSICIÓN SWITCH*/
+
+/* body {
+    opacity: 1;
+    transition-duration: 0.7ms;
+    transition-property: opacity;
+}
+
+body.fade {
+    opacity: 0;
+} */
+
+body {
+    animation: fadeInAnimation ease 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*FIN BODY TRANSICIÓN SWITCH*/
+
 
 /* TARJETAS ASIDE PROPUESTAS INFORMATIVAS*/
 /* aside {  // Borrar posiblemente.
@@ -154,7 +218,7 @@ label {
 .aside-perfiles {
     padding: 15px 20px 15px 20px;
     border-radius: 15px;
-    border: 0.5 solid var(--negro);
+    border: 0.5px solid var(--negro);
 }
 
 /* TARJETA ASIDE ORIENTADOR VIRTUAL*/
@@ -170,8 +234,18 @@ label {
 /* CSS Autora: Jennifer  2024-01-09 */
 /* BODY PERFIL USUARIO */
 
+/* CSS Autores: Jennifer y Sinaí 2024-02-09*/
+/*PERFIL DE USUARIO, ÁREA PERSONAL Y PERFIL PÚBLICO 
+(*EN EL ÁREA PERSONAL Y PERFIL DE USUARIO HAY PEQUEÑOS 
+CAMBIOS HECHOS CON AYUDA DE HUGO MOLINA)*/
+
 label {
     font-size: 16px;
+}
+
+.body-perfil_usuario {
+    display: grid;
+    background-color: var(--blanco);
 }
 
 .h3-seccion {
@@ -180,19 +254,43 @@ label {
     text-align: center;
     margin-bottom: 0.5em;
     font-size: 25px;
-    padding: 4px 4px 4px 10px;
-    height: 44%;
+    padding: 3px 4px 4px 7px;
+    /* height: 44%; */
 }
 
+.h3-datos{
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--celeste);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 25px;
+    padding: 6px;
+    width: 14em;
+    height: 1.1em;
+}
+
+.h4-habilidades1,
+.h4-competencias1 {
+    width: 70%;
+    background-color: var(--celeste);
+    display: inline-flex;
+    border-radius: 3px;
+    padding: 9px 4px 4px 10px;
+    /* margin-top: 1, 5px; */
+    /* height: 36%; */
+}
 
 .h4-habilidades,
 .h4-competencias {
     width: 30%;
-    background-color: #54E0FF;
+    background-color: var(--celeste);
     display: inline-flex;
     border-radius: 3px;
     padding: 4px 4px 4px 10px;
+    /* margin-left: -30px; */
     margin-left: -30px;
+    height: 20px;
 }
 
 .form_datos {
@@ -203,6 +301,13 @@ label {
     gap: 2em;
 }
 
+.form_datos1 {
+    padding: 0.5em 0em 1em 0em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
 .form-idms {
     display: flex;
     flex-direction: column;
@@ -210,13 +315,96 @@ label {
     gap: 1.5em;
 }
 
-/* FIN BODY PERFIL USUARIO */
+.b{
+    font-weight: bold;
+}
+
+.h3-seccion1 {
+    background-color: var(--celeste);
+    display: inline-flex;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 25px;
+    padding: 4px 4px 4px 10px;
+    width: 50%;
+}
+
+.h3-seccion1-otros{
+    height: 35%;
+}
+
+.h3-seccion1-otro{
+    height: 56%;
+}
+
+.marg-com{
+    margin-left: -16px;
+}
+
+.textarea-perfil_usuario{
+    padding: 0.5em;
+    margin-bottom: 0.6rem;
+    resize: none;
+    height: auto;
+    color: var(--negro);
+    border-color: var(--negro);
+}
+
+.input-datos{
+    width: 15em;
+    padding: 0.2rem;
+}
+
+.input-form_idm {
+    width: 17em;
+    padding: 0.2rem;
+    /* font-size: 1em; */
+}
+
+.p{
+    font-weight: 500;
+    padding-bottom: 0.8em;
+    padding-left: 0.5em;
+}
+
+/* FIN BODY PERFIL USUARIO, ÁREA PERSONAL Y PERFIL PÚBLICO */
 
 /* FIN PERFIL USUARIO */
 
+/*CSS Autora: Jennifer 2024-02-07*/
+/*ÁREA PERSONAL*/
+
+.h3-secc{
+    background-color: #54E0FF;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 50%;
+}
+
+.h3-exp{
+    display: inline-flex;
+    background-color: #54E0FF;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 25px;
+    text-align: left;
+    padding: 4px 4px 4px 10px;
+    width: 50%;
+    height: 6%;
+}
+
+.h3-area{
+    margin-left: -15px;
+    margin-top: 8px;
+}
+
+/*FIN ÁREA PERSONAL*/
+
 /* BODY ORIENTADOR VIRTUAL */
 
-/* CSS Autora: Jennifer 2024-01-24*/
+/* CSS Autora: Jennifer 2024-01-24 / 2024-02-19*/
 
 .h5-pregunta {
     display: flex;
@@ -224,12 +412,12 @@ label {
     align-content: center;
     background-color: var(--gris);
     border-radius: 5px;
-    height: 4.6%;
     width: 45%;
-    font-size: 25px;
+    height: 35px;
     text-align: center;
     justify-content: space-around;
     margin-top: 10px;
+    margin-bottom: 1em;
 }
 
 .h5-caja {
@@ -240,23 +428,24 @@ label {
     display: flex;
     border-radius: 6px;
     border: none;
-    width: 50%;
-    height: 2.9em;
-    color: #4c4a4a;
+    width: auto;
+    color: #000;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 16px;
-    background-color: var(--grisaceo);
-    margin-left: 37px;
+    background-color: var(--verde);
+    padding: 1em;
+    justify-self: center;
+    justify-content: space-around;
 }
 
 .h5-orientador {
-    display: flex;
+    /* display: flex; */
     border-radius: 30px;
     width: 47%;
     text-align: center;
     padding: 8px;
-    height: 2.5em;
+    /* height: 2.5em; */
     color: var(--negro);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -287,30 +476,36 @@ label {
     font-size: 13px;
     font-weight: bold;
 }
-
-.p-caja-1 {
-    font-size: 10px;
+.h6-caja-1content{
+    padding-left: 1em
 }
 
+
+/* .p-caja-1 {
+    font-size: 10px;
+} */
+
 .h6-hard-skills {
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .h5-pregunta-caja1 {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    /* align-content: center; */
     background-color: var(--gris);
     border-radius: 15px;
-    height: 4.6%;
-    width: 25%;
-    font-size: 15px;
+    /* height: 4.6%; */
+    /* width: 25%; */
+    /* font-size: 15px; */
     text-align: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     border: var(--negro);
     border-style: solid;
     border-width: 1px;
     margin-bottom: 10px;
+    padding: 1em;
+    /* align-self: center; */
 }
 
 .h5-caja2 {
@@ -320,8 +515,8 @@ label {
     border-radius: 16px;
     height: 97.9%;
     padding: 5px;
-    width: 62%;
-    font-size: 10px;
+    width: 55%;
+    font-size: 14px;
     text-align: left;
     font-weight: 500;
     justify-content: space-between;
@@ -338,7 +533,7 @@ label {
     height: 93.9%;
     padding: 10px;
     width: 53%;
-    font-size: 10px;
+    font-size: 14px;
     text-align: left;
     font-weight: 500;
     border: var(--negro);
@@ -357,7 +552,7 @@ label {
     height: 3em;
     width: 30em;
     padding: 8px;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: 400;
     text-align: center;
     justify-content: space-around;
@@ -371,7 +566,7 @@ label {
     height: 3.7em;
     padding: 13px;
     width: 28%;
-    font-size: 10px;
+    /* font-size: 10px; */
     text-align: left;
     font-weight: 500;
     border: var(--negro);
@@ -391,7 +586,7 @@ label {
     height: 3.8em;
     padding: 12px;
     width: 95%;
-    font-size: 10px;
+    /* font-size: 10px; */
     text-align: left;
     font-weight: 500;
     border: var(--negro);
@@ -410,12 +605,11 @@ label {
     border-width: 1px;
     height: 3em;
     width: 30em;
-    /* padding: 8px */
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: 400;
     text-align: center;
     justify-content: space-around;
-    margin-left: 5em;
+    margin-left: 6.5em;
 }
 
 .h5-boton-4 {
@@ -429,7 +623,7 @@ label {
     height: 3em;
     width: 30em;
     /* padding: 8px */
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: 400;
     text-align: center;
     justify-content: space-around;
@@ -441,6 +635,82 @@ label {
 
 /* FIN BODY ORIENTADOR VIRTUAL */
 
+
+/* CSS Autora: Marlene Menaza - 2024/01/02 */
+/* ====== RECOMENDACIONES ACCIONES DE MEJORA ===== */
+/* CÓDIGO PARA LOS SELECT DE RECOMENDACIONES */
+.div_select {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+.select-opciones {
+    width: 290px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    background-color: var(--gris);
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* FIN CÓDIGO PARA LOS SELECT DE RECOMENDACIONES */
+
+/* PREGUNTAS SOBRE RECOMENDACIONES */
+.input-recomend {
+    grid-area: radio;
+}
+
+/* FIN PREGUNTAS SOBRE RECOMENDACIONES */
+
+/* RADIO BUTTON ACTIVADOS/SELECCIONADOS */
+.input-recomend {
+    display: none;
+
+}
+
+.label-recomend {
+    display: flex;
+    gap: 10px;
+    margin-top: 0.5em;
+
+
+}
+
+/* FIN RADIO BUTTON ACTIVADOS/SELECCIONADOS */
+
+/* RADIO BUTTON INACTIVOS(DISABLED) */
+.input-recomend[disabled]+.label-recomend .radio-button {
+    background-color: var(--gris);
+    border: 2px solid var(--grisInactivo);
+}
+
+/* FIN RADIO BUTTON INACTIVOS(DISABLED) */
+
+/* TEXTAREA NOMBRES DE EMPRESAS */
+.textarea-recomend {
+    display: flex;
+    justify-content: center;
+}
+
+/* FIN TEXTAREA NOMBRES DE EMPRESAS */
+
+/* RESULTADO DE RECOMENDACIONES */
+.select-recomend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#h4-recomend {
+    text-align: left;
+}
+
+/* FIN RESULTADO DE RECOMENDACIONES */
+/* ====== FIN RECOMENDACIONES ACCIONES DE MEJORA ===== */
+
 /* FIN BODY */
 /* ======================================================= */
 
@@ -448,60 +718,44 @@ label {
 
 .footer-Reg {
     background-color: var(--azul);
-    padding: 15px 0;
-    padding-left: 22%;
-    display: flex;
+    padding: 1em;
+    width: -webkit-fill-available;
+    /* width: auto */
 }
 
 .footer2-Reg {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 5em;
+    padding: 2em;
+    padding-left: 15em;
     font-size: 15px;
     color: var(--blanco);
-}
-
-.footerlinks-Reg {
-    padding: 15px;
 }
 
 .footerlinks-Reg h4 {
     font-size: 20px;
     color: var(--naranja);
-    margin-bottom: 25px;
+    margin: 1em;
+    padding-bottom: 0.5em;
     font-weight: 500;
-    border-bottom: 2px solid;
-    padding-bottom: 5px;
-    display: inline-block;
-    margin-left: 33%;
+    border-bottom: 2px solid var(--naranja);
+    width: fit-content;
 }
 
 .footerlinks-Reg ul li a {
     font-size: 15px;
     text-decoration: none;
+    padding-left: 2em;
     color: var(--blanco);
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 1.3em;
     transition: all .3s ease;
-}
-
-.footerlinks-Reg input,
-.footerlinks-Reg textarea {
-    color: var(--blanco);
-    margin-bottom: 15px;
-    border: 1px;
-}
-
-.footerlinks-Reg {
-    margin-right: 80px;
 }
 
 
 .footerlinks-Reg ul {
     list-style: none;
-}
-
-.footerlinks-Reg ul li {
-    margin-bottom: 1px;
 }
 
 p a {
@@ -535,10 +789,82 @@ p a {
     text-decoration: none;
 }
 
+/* -.-.-.- Clase botón inicio de sesión -.-.-.-.- */
+
+/* Añadido: 06/02/2024 || Hugo Gordillo*/
+
+.btn-inicio {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px var(--negro);
+    text-decoration: none;
+}
+
+/* -.-.-.- Clase botón inicio de sesión -.-.-.-.- */
+
+/* Añadido: 27/02/2024 || Hugo Gordillo*/
+
+.header-fijo {
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
 /* FIN HEADER */
 /* ======================================================= */
 
 /* BODY */
+
+/* ======== Body Propuestas de fondo (Hay que selecionar menos y renombrarlas) ======== */
+
+.body-propuesta {
+    background-size: 100% 100%;
+    /* añadido para hacer el fondo fijo */
+    background-attachment: fixed;
+    width: auto;
+    height: auto;
+}
+
+.propuesta1 {
+    background-image: url(../img/fondo-propuesta.png);
+}
+
+.propuesta2 {
+    background-image: url(../img/2fondo-propuesta.png);
+}
+
+.propuesta3 {
+    background-image: url(../img/3fondo-propuesta.png);
+}
+
+.propuesta4 {
+    background-image: url(../img/4fondo-propuesta.png);
+}
+
+.propuesta5 {
+    background-image: url(../img/5fondo-propuesta.png);
+}
+
+.propuesta6 {
+    background-image: url(../img/6fondo-propuesta.png);
+}
+
+.propuesta-tutorial {
+    overflow-x: hidden;
+    background-image: url(../img/fondo-tutorial.png);
+}
+
+.propuesta-home {
+    background-image: url(../img/fondo-home.png);
+}
+
+/* ======== Fin body Propuestas de fondo ======== */
+
+
 
 /* BOTONES */
 
@@ -603,9 +929,9 @@ p a {
     border-radius: 7px;
     width: 120px;
     height: 2em;
-    color: black;
+    color: var(--negro);
     font-weight: bold;
-    background-color: #01c38e;
+    background-color: var(--verde);
     grid-area: guarda;
     margin-right: -26.6em;
 }
@@ -637,9 +963,22 @@ p a {
 .boton-2 {
     display: flex;
     border-radius: 30px;
-    width: 100%;
-    padding: 10px;
-    height: 3.6em;
+    /* width: 100%; */
+    padding: 1em;
+    /* height: 3.6em; */
+    color: var(--negro);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: var(--verde);
+    text-align: left;
+}
+
+.boton-3 { 
+    display: flex;
+    border-radius: 30px;
+    /* width: 100%; */
+    padding: 1em;
+    /* height: 3.6em; */
     color: var(--negro);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -678,12 +1017,13 @@ p a {
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     animation: modal-show 0.5s 1 forwards;
+    z-index: 2;
 }
 
 .modal-content {
     position: relative;
     width: 1000px;
-    height: 345px;
+    height: 360px;
     padding-left: 98px;
     padding-right: 98px;
     padding-bottom: 34px;
@@ -697,12 +1037,22 @@ p a {
 }
 
 .modal-show {
-    display: inline-block;
+    /* display: inline-block;
     padding: 12px;
     background-color: var(--h1NoReg);
     color: var(--blanco);
     font-size: 18px;
     text-decoration: none;
+    box-shadow: 0px 4px 4px 0px var(--grisInactivo); */
+    display: inline-block;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: #f38C41;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px 0px var(--grisInactivo);
+    margin-top: 1.5em;
 }
 
 .modal-hide {
@@ -748,15 +1098,19 @@ p a {
 }
 
 .botonRegistro {
-    width: 180px;
-    height: 35px;
+    width: 200px;
+    height: 30px;
     margin: 10px;
-    margin-left: 200px;
-    margin-right: 180px;
+    margin-left: 80%;
     margin-bottom: 20px;
     background-color: var(--grisaceo);
     border-radius: 10px;
     font-weight: lighter;
+}
+
+.enlaceRegistro{
+    margin-top: 50px;
+    margin-left: -170px;
 }
 
 #tituloRegistro {
@@ -769,6 +1123,10 @@ p a {
 /* Creación 2024-01-09: Hugo Gordillo. */
 /* ÁREA DE PERFILES PÚBLICOS */
 
+.std-container{ /*Añadida para separar los contenedores del Footer. Marlene Menaza: 2024/02/22*/
+    margin: 2em;
+    }
+
 .perfiles-contenedor {
     display: flex;
     flex-wrap: wrap;
@@ -778,6 +1136,8 @@ p a {
     margin: 10px;
     line-height: 75px;
 }
+
+
 
 .tarjeta {
     padding: 15px 20px 15px 20px;
@@ -809,6 +1169,7 @@ p a {
 }
 
 /* Sinaí 29-01-2024 */
+/*Jennifer y Hugo Molina hicieron pequeños cambios al perfil público*/
 
 .movertelefono {
     margin-top: -20px;
@@ -824,9 +1185,19 @@ p a {
 }
 
 .colocarinput {
-    width: 150px;
-    top: 20px;
+    width: 17em;
+    /* top: 20px; */
+}
 
+.colinput{
+    width: 20em;
+    padding: 0.2rem;
+}
+
+.colocarinput2 {
+    width: 17em;
+    padding: 0.2rem;
+    /* top: 20px; */
 }
 
 .aline {
@@ -837,9 +1208,12 @@ p a {
 /* Es para colocar el titulo de datos personales hacia la izquierda  */
 .movertitulo2 {
     background-color: var(--celeste);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     position: relative;
     left: -24px;
-    width: 400px;
+    top: 3px;
+    width: 22.7em;
     height: 2.5em;
     display: flex;
     flex-wrap: wrap;
@@ -847,25 +1221,48 @@ p a {
     padding-left: 0.5em;
 }
 
+.movertitulo3{
+    top: -15px;
+}
+
 /* es para mover un elemento a hacia la izquierda  */
 .izquierda {
-    display: flex;
-    flex-wrap: wrap;
     flex-grow: 3;
-    margin-right: 4em;
+    display: flex;
+    /* margin-right: 4em; */
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3em;
 }
 
 /* Esto es para poder colocar bien los nombres de cada seccion  */
 .movertitulo {
     background-color: var(--celeste);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     position: relative;
     left: -24px;
+    bottom: 23.9px;
     width: 400px;
     height: 2.5em;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
     margin-left: -6px;
+}
+
+.movertitulo1{ /*Esto se añade a div formación ya que se ve muy pegado al borde*/
+    background-color: var(--celeste);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: relative;
+    left: -32px;
+    bottom: 16px;
+    width: 400px;
+    height: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
 }
 
 .mod-titular {
@@ -895,7 +1292,7 @@ p a {
 
 .idiomas {
     display: grid;
-    background-color: #d9d9d9;
+    background-color: var(--gris);
     padding: 1em;
     border-radius: 8px;
     font-weight: bold;
@@ -904,7 +1301,7 @@ p a {
 
 .formacion {
     display: grid;
-    background-color: #d9d9d9;
+    background-color: var(--gris);
     padding: 1em;
     border-radius: 8px;
     font-weight: bold;
@@ -913,6 +1310,10 @@ p a {
 
 .colocarbot {
     position: absolute;
+}
+
+.alto{
+    height: 44%;
 }
 
 .swtich-container2 {
@@ -929,6 +1330,7 @@ p a {
     left: 10px;
     top: -7px;
 }
+
 .grid-container2 {
     display: grid;
     grid:
@@ -962,26 +1364,22 @@ footer {
     width: 100%;
 }
 
-
-
-
-
 /* Fin Sinai */
 
-/* CSS Autora: Jennifer 2024-01-24 */
+/* CSS Autora: Jennifer 2024-01-24 / 2024-02-19*/
 /* ORIENTADOR VIRTUAL */
 
 .orientador-virtual {
     display: grid;
     grid:
         "aside orientador" 1fr / 1fr 4fr;
-    gap: 8px;
+    /* gap: 8px; */
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    /* gap: 12px; */
     grid-area: formulario;
 }
 
@@ -990,10 +1388,13 @@ footer {
     flex-direction: column;
     gap: 8px;
     align-items: center;
-    font-size: 1em;
-    overflow: scroll;
-    height: 100vh;
+    /* font-size: 1em; */
+    overflow-y: scroll;
+    /* height: 100vh; */
     grid-area: orientador;
+    background-image: url(../img/2fondo-propuesta.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 .text-destacable {
@@ -1016,24 +1417,37 @@ footer {
     background-color: var(--gris);
     padding: 1em;
     border-radius: 5px;
-    height: 25%;
     width: 45%;
     text-align: left;
-    font-size: 20px;
 }
 
 .puestos {
     display: flex;
     flex-direction: column;
     background-color: var(--gris);
-    width: 80%;
-    height: 60px;
+    width: auto;
+    /* height: 60px; */
     border-style: solid;
     border-color: black;
     border-width: 1px;
     text-indent: 8px;
     font-size: 12px;
+    padding: 0.6em;
 }
+
+/* .puestos1{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    width: 96%;
+    /* height: 60px; 
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    text-indent: 8px;
+    font-size: 12px;
+    padding: 0.6em;
+} */
 
 .boton-desplegable {
     display: flex;
@@ -1049,11 +1463,25 @@ footer {
     padding-left: 0.5em;
 }
 
+/* .boton-desplegable1{
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    height: 2em;
+    color: var(--negro);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: var(--gris);
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+} */
+
 .puesto-boton {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-left: 40px;
+    margin: 2em;
 }
 
 .presentacion-orientador {
@@ -1083,10 +1511,14 @@ footer {
     margin: 2em;
 }
 
-.cajas-2-3 {
+.cajas-2-3{
     display: flex;
     gap: 15px;
     margin-bottom: 80px;
+}
+
+.caja-pregunta{
+    display: flex;
 }
 
 .cajas-1-3 {
@@ -1103,13 +1535,13 @@ footer {
     border: var(--negro);
     border-style: solid;
     border-width: 1px;
-    height: 20em;
+    /* height: 20em; Se quitó para añadir el Ranking */
     width: 40em;
     font-size: 14px;
     font-weight: 400;
     text-align: start;
-    justify-content: space-around;
-    padding: 15px;
+    /* justify-content: space-around; */
+    padding: 15px 15px 15px 2em;
     margin: 0.4em;
     margin-bottom: 6em;
 }
@@ -1164,19 +1596,136 @@ footer {
 .analisis {
     background-color: var(--celeste);
     font-size: 18px;
-    padding: 4px;
+    padding: 9px;
     font-family: 'Montserrat', sans-serif;
     margin: 0.8em;
-    width: 36%;
-    height: 5em;
+    width: 70%;
+    /* height: 1.6em; */
     text-align: center;
+    display: none;
 }
 
+.analisis-show{
+    display: block;
+}
+
+#firstpan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#secondpan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#thirdpan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-caja3{
+    padding-left: 2em;
+}
+
+/* CSS Autora: Marlene 2024-02-19 */
+/* Ranking Orientador Virtual */
+.orientador-ranking{
+    display: flex;
+    justify-content: left;
+    padding-left:2em;
+    padding-top: 1em;
+}
+
+.ori-list-reset{
+    border: 0.5px solid var(--negro);
+    border-radius:5px;
+}
+
+.ori-ranking-li, .ori-ranking-li1{
+    list-style: none;
+    border-bottom: 0.5px solid var(--negro);
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.ori-ranking-li1{
+    border-bottom: none;
+}
+
+
+
+
+
+/* Fin Ranking Orientador Virtual */
 
 /* FIN DEL ORIENTADOR VIRTUAL */
 
 /* FIN ÁREA DE PERFILES PÚBLICOS */
 
+/* CSS Autora: Jennifer 2024-02-07 */
+/* ÁREA PERSONAL */
+
+.prrafo{
+    padding-top: 1em;
+}
+
+.año{
+    font-weight: 300;
+    font-size: 14px;
+    /* padding-right: 20em; */
+    padding-bottom: 1em;
+}
+
+.lis{
+    font-weight: 100;
+}
+
+/* .info-per{
+    padding-top: 1em;
+} */
+
+.grid2por2{
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.experiencia{
+    padding: 1.5em 1em 1em 0em;
+}
+
+.otro{
+    padding: 1.5em 1em 1em 0em;
+}
+
+.habili .competen {
+    margin-top: 15px; 
+}
+
+.lista1 {
+    padding-left: 2em;
+}
+
+.contenido1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    align-items: flex-start;
+    /* padding-left: 1.5em; */
+}
+
+.contenido-1{
+    padding: 1.5em 1em 4em 1em;
+}
+
+.idio{
+    height: 6%;
+}
+
+/* FIN ÁREA PERSONAL */
 
 /* PERFIL USUARIO */
 
@@ -1185,7 +1734,6 @@ footer {
     background: var(--verde);
     background: var(--grisaceo);
 }
-
 
 /* SWITCH UNO */
 
@@ -1222,6 +1770,29 @@ footer {
 .contenedor_switch {
     display: flex;
     justify-content: flex-end;
+    /* bottom: 4.3em; */
+    /* right: inherit; */
+}
+
+.switch_area{ /*switch del área personal*/
+    gap: 1em;
+    padding-top: 2.4em;
+    padding-right: 7em;
+}
+
+.switch_contenedor{ /* switch de editar perfil */
+    gap: 1em;
+    position: relative;
+    bottom: 4.7em;
+    left: 0.2em;
+}
+
+.switch-contenedor{ /* switch de editar perfil público */
+    gap: 1em;
+    position: relative;
+    top: 1em;
+    /* right: inherit; */
+    left: 44.4em;
 }
 
 .switch3Posiciones {
@@ -1231,6 +1802,10 @@ footer {
     height: 25px;
     /*25*/
     border-radius: 20px;
+}
+
+.switch3Posiciones_var1{
+    bottom: -0.3em;
 }
 
 .switch3Posiciones #switch1,
@@ -1284,11 +1859,11 @@ footer {
     position: absolute;
     display: block;
     content: "";
-    width: 25px;
+    width: 23px;
     /*20*/
-    height: 25px;
+    height: 23px;
     /*25*/
-    top: 0;
+    top: 1.4px;
     left: 0;
     background-color: var(--gris);
     border: solid 1px var(--grisInactivo);
@@ -1350,9 +1925,7 @@ input:checked+.slider2 {
 
 .slider2 {
     border-radius: 17px;
-} 
-
-
+}
 
 .slider2:before {
     border-radius: 50%;
@@ -1381,7 +1954,7 @@ input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-} 
+}
 
 .switch {
     position: relative;
@@ -1445,7 +2018,6 @@ input:checked+.slider {
 .informacion-personal {
     display: grid;
     background-color: var(--gris);
-
     font-weight: bold;
     grid-area: info;
 }
@@ -1455,7 +2027,6 @@ input:checked+.slider {
     background-color: var(--gris);
     padding: 1em;
     border-radius: 8px;
-
     font-weight: bold;
     grid-area: formacion;
 }
@@ -1465,7 +2036,6 @@ input:checked+.slider {
     background-color: var(--gris);
     padding: 1em;
     border-radius: 8px;
-
     font-weight: bold;
     grid-area: expe;
 }
@@ -1476,7 +2046,6 @@ input:checked+.slider {
     padding: 1em;
     font-size: 16px;
     border-radius: 8px;
-
     font-weight: bold;
     grid-area: otros;
 }
@@ -1484,9 +2053,9 @@ input:checked+.slider {
 .grid-container {
     display: grid;
     grid:
-        'info info info info info' 0.6fr
+        'info info info info info' 0.4fr
         'formacion formacion expe expe expe' 1fr
-        'formacion formacion otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
+        'idiomas idiomas otros otros otros' 1fr /1fr 1fr 1fr 1fr 1fr;
     gap: 0.6em;
 }
 
@@ -1497,28 +2066,71 @@ input:checked+.slider {
 .contenido {
     display: flex;
     flex-direction: column;
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
     padding-right: 3em;
     /* margin-bottom: 1em;
     margin-right: 4em; */
 }
 
+.experiencia-rellenar{
+    padding-left: 1em;
+}
+
+.experiencia-rellenado{
+    padding-left: 1em;
+}
+
+.desplegable{
+    background-color: var(--blanco);
+}
+
 .nec {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+.nec1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    align-self: center;
+    padding-bottom: 2em;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.nec2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    align-self: center;
+    padding-bottom: 2em;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.nec1_var{
+    align-self: center;
+    justify-self: right;
+    padding-right: 3em;
+    padding-bottom: 1em;
+}
+
+.nec1_varvar{
+    padding-bottom: 1em;
 }
 
 .nec label {
     display: flex;
-    justify-content: space-between;
-    flex: 0 0 1.4em;
+    /* justify-content: flex-end; */
+    /* flex: 0 0 1.4em; */
     margin-bottom: 0.5em;
 }
 
 .nec label input {
     margin-left: 1em;
-    height: 20px;
+    height: 1.5rem;
 }
 
 .nacTel {
@@ -1537,22 +2149,19 @@ input:checked+.slider {
     width: 120px;
     height: 2em;
     color: var(--negro);
-
     font-weight: bold;
     background-color: var(--verde);
     grid-area: guarda;
 }
 
-.cancelar {
+/*.cancelar {
     border-radius: 7px;
     color: var(--blanco);
     width: 120px;
     height: 2em;
-
     font-weight: bold;
     background-color: var(--grisInactivo);
     grid-area: cancela;
-
 }
 
 .grid-button {
@@ -1567,18 +2176,153 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 .contenido label {
     display: flex;
     justify-content: right;
-    flex: 1 0 1.4em;
-    margin-bottom: 0.5em;
+    /* flex: 1 0 1.4em; REVISAR EN EL PERFIL PÚBLICO */
+    margin-bottom: 0.2em;
 }
 
 .contenido textarea {
     width: 71.5%;
 }
 
+.h3-seccion-datos{
+    padding-top: 1em;
+}
+
+.formacion1 {
+    display: grid;
+    background-color: var(--gris);
+    padding: 1.5em 1em 1em 0em;
+    border-radius: 8px;
+    font-weight: bold;
+    grid-area: formacion;
+}
+
+.idiomas1{
+    display: grid;
+    background-color: var(--gris);
+    padding: 1.5em 1em 1em 0em;
+    border-radius: 8px;
+    font-weight: bold;
+    grid-area: idiomas;
+}
+
+.experiencia-laboral1 {
+    display: grid;
+    background-color: var(--gris);
+    padding: 1.5em 1em 1em 0em;
+    border-radius: 8px;
+    font-weight: bold;
+    grid-area: expe;
+}
+
+.otros1 {
+    display: grid;
+    background-color: var(--gris);
+    padding: 1.5em 1em 1em 0em;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    grid-area: otros;
+}
+
+.conte {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.sw1{
+    left: 10em;
+}
+
+.sw2{
+    left: 6.5em;
+}
+
+.sw3{
+    left: 9.3em;
+}
+
+.sw4{
+    left: 8.9em;
+}
+
+.sw5{
+    left: 9em;
+}
+
+.sw6{
+    left: 10.7em;
+}
+
+.sw7{
+    left: 12.1em;
+}
+
+.sw8{
+    left: 24.9em;
+}
+
+.sw9{
+    left: 35.7em;
+}
+
+.sw10{
+    left: 27em;
+}
+
+.sw11{
+    left: 31.3em;
+}
+
+.sw12{
+    left: 0.6em;
+}
+
+.sw13{
+    left: 1.6em;
+}
+
+.sw14{
+    left: 11em;
+}
+
+.sw15{
+    left: 5em;
+}
+
+.sw16{
+    top: -1.4em;
+}
+
+.sw17{
+    top: -1.4em;
+}
+
+.sw18{
+    top: -1.7em;
+}
+
+.sw19{
+    top: -1.4em;
+}
+
+.puesto{
+    padding: 0.2rem;
+}
+
 .contenido label input {
     margin-left: 1em;
     margin-right: 2em;
-    height: 20px;
+    height: 1.5rem;
+}
+
+.contenido label textarea {
+    font-size: 1em;
+    width: 19.7em;
+    margin-left: 1em;
+    margin-right: 1.9em
+    /* flex: 1; */
 }
 
 /* .hab-com{
@@ -1588,19 +2332,2101 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 .icon1 {
     position: absolute;
-    right: 1em;
+    right: 3.5em;
+    top: 40em;
+    font-size: 22px;
     color: var(--negro);
 }
 
 .icon2 {
     position: absolute;
     right: 1em;
+    font-size: 22px;
     color: var(--negro);
+}
+
+.icon3{
+    position: relative;
+    font-size: 22px;
+    color: var(--negro);
+    right: -20.2em;
+    top: -3em;
+}
+
+.icon4{
+    position: relative;
+    font-size: 22px;
+    color: var(--negro);
+    right: -20em;
+    top: -3em;
+}
+
+.icon5{
+    position: relative;
+    font-size: 22px;
+    color: var(--negro);
+    left: 64.4em;
+    top: 12em;
+}
+
+.icon6{
+    /* position: absolute;
+    padding-left: 17.5em;
+    bottom: 7.4em;  */
+    font-size: 20px;
+}
+
+.icon7{
+    position: relative;
+    left: 23em;
+    bottom: 1.3em;
+    font-size: 20px;
+}
+
+.pst{
+    padding-bottom: 1.5em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+/* .puesto-aspira{
+    padding-left: 1em;
+} */
+
+.puesto-aspira form{
+    padding-left: 1em;
+}
+
+.contenido-text textarea {
+    /* text-align: start;
+    font-size: medium;
+    width: 20em;
+    display: flex;
+    justify-content: right; */
+    display: flex;
+    justify-content: right;
+    /* flex: 0 0 1.4em; */
+    margin-bottom: 1em;
+}
+
+.prrf{
+    padding-top: 4em;
+}
+
+.linea{
+    border-bottom: var(--grisInactivo) solid 1px;
+    margin-left: 2em;
+    margin-top: 1em;
+    /* padding: 1.4em; */
+    width: 50em;
+}
+
+.guardar-exp{ 
+    border-radius: 7px;
+    width: 120px;
+    height: 2em;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--verde);
+    grid-area: guarda;
+}
+
+.exp-boton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.datos-boton{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+.guardar-datos{
+    border-radius: 7px;
+    width: 120px;
+    height: 2em;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--verde);
+}
+
+.otros-boton{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.form-idms-boton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.guardar-form-idms{
+    border-radius: 7px;
+    width: 120px;
+    height: 2em;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--verde);
 }
 
 /* FIN BODY PEFIL DE USUARIO */
 
 /* FIN PERFIL USUARIO */
+
+
+/* CSS Autora: Marlene Menaza- 2024/01/02 */
+/* ====== RECOMENDACIONES ACCIONES DE MEJORA ===== */
+
+/* PREGUNTAS SOBRE RECOMENDACIONES */
+.preguntas-recomendaciones {
+    display: grid;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    grid-template-areas:
+        'parrafo parrafo'
+        'radio radio';
+}
+
+.pregunta {
+    grid-area: parrafo;
+}
+
+/* FIN PREGUNTAS RECOMENDACIONES */
+
+
+/* RADIO BUTTON ACTIVADOS/SELECCIONADOS */
+.radio {
+    padding-left: 2.5em;
+}
+
+.radio-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--gris);
+    cursor: pointer;
+    position: relative;
+    border: 2px solid var(--verde);
+    margin-left: 10px;
+    /* margin-top: 1em; */
+}
+
+/* FIN RADIO BUTTON ACTIVADOS/SELECCIONADOS */
+
+/* TEXTAREA NOMBRES DE EMPRESAS */
+#inside-textarea {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+    resize: none;
+    width: 300px;
+    height: 130px;
+    font-size: 16px;
+}
+
+/* FIN TEXTAREA NOMBRES DE EMPRESAS */
+
+
+/* BOTON ENVIAR */
+/* ACTIVADO */
+.boton-recomend {
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+#buton-recomend {
+    background-color: var(--verde);
+    font-family: 'Montserrat', sans-serif;
+    width: 150px;
+    height: 40px;
+    border: 1px solid var(--negro);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+}
+
+/* FIN ACTIVADO */
+/* FIN BOTON ENVIAR */
+
+/* RESULTADO DE RECOMENDACIONES */
+.result-recomend {
+
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    color: var(--negro);
+    padding: 3em;
+    border: 2px solid var(--negro);
+    background-color: var(--gris);
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+    margin: 3em auto 3em auto;
+    gap: 1em;
+}
+
+#lista-recomend {
+    list-style-type: none;
+    padding-left: 2em;
+}
+
+/* FIN RESULTADO DE RECOMENDACIONES */
+
+/* TARJETA RECOMEDACIONES */
+.recomend-tarjeta-propuesta {
+    display: none;
+    padding: 15px 20px 15px 20px;
+    width: 264.5px;
+    height: 100.8px;
+    background-color: var(--blanco);
+    font-size: 12px;
+
+}
+
+.recomend-tarjeta-propuesta-enseñar {
+    display: block;
+    position: absolute;
+    float: inline-end;
+    z-index: 9;
+    left: 35%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* FIN TARJETA RECOMENDACIONES */
+
+  /* PARRAFO RECOMENDACIONES (SUPUESTO DE SIN PUESTO AÑADIDO) */
+    #parrafo-recomend{
+    color: red;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    opacity: 0;
+    font-weight: bold;
+}
+
+.parrafo-fades{
+    display:block;
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 8s linear forwards;
+
+
+}
+
+@-webkit-keyframes fadeinout {
+0%,100% { opacity: 0;
+}
+50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+0%,100% { opacity: 0;}
+50% { opacity: 1; }
+}
+
+  /* FIN PARRAFO RECOMENDACIONES (SUPUESTO DE SIN PUESTO AÑADIDO) */
+
+/* ====== FIN RECOMENDACIONES ACCIONES DE MEJORA ===== */
+
+/*=====> Clases perdidas en el merge <==========*/
+
+/* ========== PANTALLA HOME ============= */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+
+.home-contenido{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 150px;
+}
+
+.home-titulo {
+    color: var(--naranja);
+    text-shadow: 4px 4px 4px var(--negro);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* margin-top: 60px; */
+}
+
+.home-contenedor {
+    display: flex;
+}
+
+.home-img {
+    position: absolute;
+    right: 50px;
+    top: 200px;
+    z-index: -1;
+}
+
+.home-caja {
+    width: 30%;
+    text-align: center;
+    padding: 40px 5px 40px 5px;
+    margin-left: 35px;
+    color: var(--azul);
+    font-size: 22px;
+}
+
+.botonRegistro a{
+    text-decoration: none;
+    color: var(--negro)
+}
+
+/*Clase del input modal registro corto*/
+
+.inputRegistroCorto {
+    width: 514px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 3px;
+    background-color: #d5effa;
+}
+/* .-.-.-.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* === Apartado de inicio de sesión === */
+
+/*  Añadido 06/02/2024 || Hugo Gordillo */
+
+/* Clase creada para centar el contenido en la página */
+
+.inicio{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio-contenedor{
+    width: 1000px;
+    height: 345px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio-label {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.inicio-input {
+    width: 400px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #d5effa;
+    color: var(--negro);
+    border-color: var(--negro);
+}
+
+.inicio-columna1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio-columna2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2em;
+    background-color: rgba(135, 135, 135, 0.104);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.inicio-columna2 label{
+    align-items: start;
+}
+
+.inicio-modal-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--h4NoReg);
+    margin-top: 10px;
+}
+
+.inicio-columnas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6em;
+}
+
+.inicio-btn {
+    width: 200px; 
+    height: 35px;
+    margin: 10px;
+    margin-bottom: 10px;
+    background-color: var(--grisaceo);
+    border-radius: 10px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.inicio-btn a{
+    text-decoration: none;
+    color: var(--negro)
+}
+
+#inicio-titulo {
+    text-align: center;
+    color: var(--naranja);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* === Fin apartado de inicio de sesión === */
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* === Modal con el mensaje final del registro corto === */
+
+/* Añadido 06/02/2024 || Vicky y Dulce || Hugo Gordillo */
+
+/*Efecto*/
+
+.msj-reCort-modalmask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/*Formato de la ventana*/
+
+.msj-reCort-modalbox {
+    width: 600px;
+    height: auto;
+    position: relative;
+    padding: 1.5em;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+    border-radius: 10px;
+    border: 1px solid var(--negro);
+}
+
+.msj-reCort-modalbox-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+.msj-reCort-modalbox-content h2 {
+    color: var(--naranja);
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.msj-reCort-modalbox-content p {
+    color: var(--h4NoReg);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.msj-reCort-modalbox-cont-int {
+    margin-left: 110px; 
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.msj-reCort-icono {
+    position: absolute;
+    bottom: 40%;
+    left: 15%;
+    font-size: 35px;
+}
+
+.msj-reCort-btn-modal-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    margin: 15px;
+    font-weight: lighter;
+}
+
+.msj-reCort-btn-modal {
+    background-color: var(--grisaceo);
+    padding: 5px 50px 5px 50px;
+    text-decoration: none;
+    color: var(--negro);
+    font-weight: 400;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+    border: 1px solid var(--negro);
+}
+
+/* === Fin Modal con el mensaje final del registro corto === */
+
+/* ========== FIN PANTALLA HOME ============= */
+
+
+/* ======================================================= */
+
+/* ============= Área del tutorial ============= */
+
+/*  Creación 15/01/2024 || Añadido 06/02/2024 || Hugo Gordillo */
+
+.tutorial-contenedor {
+    display: grid;
+    margin: 1em
+}
+
+.tutorial-contenedor button {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    padding: 20px;
+}
+
+.tutorial-img {
+    display: flex;
+    column-gap: 1em;
+    height: 100px;
+    justify-content: space-between;
+    padding: 5px 50px;
+}
+
+.tutorial-grid-item {
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-flecha {
+    width: 60px;
+    display: inline-flex;
+}
+
+#img-flecha-1,
+#img-flecha-2,
+#img-flecha-3,
+#img-flecha-4,
+#img-flecha-5,
+#img-flecha-6 {
+    /* display: none; */
+    opacity: 0;
+}
+
+#img-flecha{
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+#img-flecha-1{
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+#img-flecha-2{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#img-flecha-3{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#img-flecha-4{
+    margin-left: 70px;
+    margin-right: 80px;
+}
+
+#img-flecha-5{
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+#img-flecha-6{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+.tutorial-caja1-contenedor {
+    padding: 0px 70px 70px;
+    display: flex;
+    gap: 5em;
+    margin-top: 10px;
+    min-height: 306px;
+}
+
+.tutorial-caja2-contenedor {
+    align-self: flex-end;
+    margin-top: 110px;
+}
+
+.tutorial-caja-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 2em;
+    width: fit-content;
+    font-size: 14px;
+    height: fit-content;
+    border: 1px solid var(--negro);
+    background: linear-gradient(316deg, rgba(0, 78, 106, 0.75) -23.86%, #E7F8FE 36.44%);
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px var(--grisInactivo);
+}
+
+.tutorial-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+}
+
+.tutorial-btn button {
+    border-radius: 15px;
+    background-color: var(--naranja);
+    padding: 16px;
+    color: var(--blanco);
+    border: none;
+    box-shadow: 3px 3px 8px var(--negro);
+}
+
+.tutorial-cont-lista{
+    font-weight: bold;
+    padding-left: 2em;
+}
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* === Modal de el final del tutorial === */
+
+.tutorial-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    animation: modal-show 0.5s 1 forwards;
+    z-index: 2;
+}
+
+.tutorial-modal-posicion {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutorial-modal-content {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 120px;
+    padding: 1.5em;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.btn-modal-tutorial {
+    display: flex;
+    margin-top: 25px;
+}
+
+.btn-modal {
+    width: 200px;
+    height: 35px;
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    background-color: var(--naranja);
+    color: var(--blanco);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    box-shadow: 3px 3px 2px var(--grisInactivo);
+    font-weight: bold;
+}
+
+.btn-modal a {
+    text-decoration: none;
+    color: white;
+}
+
+#tutorial-modal-title {
+    text-align: center;
+    color: var(--negro);
+}
+
+/* === Fin modal del final del tutorial === */
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* ============= Fin área del tutorial ============= */
+
+/* ====================================== */
+
+/* ============ Área de Propuestas de Formación ============ */
+
+/* Añadido 06/02/2024 || Hugo Gordillo */
+
+.formacion-contenedor {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 3em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.formacion-contenedor h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.propuesta-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.tarjeta-propuesta {
+    padding: 1.5em;
+    width: 264.5px;
+    height: 139.8px;
+    background-color: var(--gris);
+    font-size: 12px;
+
+}
+
+.tarjeta-propuesta a {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.btn-add-propuestas {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: flex-end;
+}
+
+.btn-add-propuestas button {
+    background-color: var(--grisaceo);
+    border: none;
+    border-radius: 10px;
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+    box-shadow: 3px 3px 5px lightblue;
+}
+
+.btn-add-propuestas a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.cont-tarjeta {
+    /* margin-top: 0.5em; */
+    max-height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* -.-.- Propuesta de Formación -.-.- */
+
+/* === Creación 11/01/2024 || Añadido 06/02/2024 || Hugo Gordillo === */
+
+.prop-form-title {
+    text-align: center;
+}
+
+.prop-form-cont {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.prop-form-tarjeta {
+    padding: 2em;
+    width: 840px;
+    border-radius: 10px;
+    height: auto;
+    background-color: var(--grisaceo);
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+}
+
+.prop-form-tarjeta a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.prop-form-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 20px;
+}
+
+.prop-form-subtitulo {
+    border-bottom: 1px solid var(--negro);
+    width: fit-content;
+}
+
+.prop-form-subtitulo h4,
+h3 {
+    margin-block-end: 0.5em;
+}
+
+.prop-form-list {
+    list-style: none;
+    line-height: 30px;
+    padding-inline-start: 10px;
+}
+
+.resena-valora-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.resena-valora {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    padding: 14px;
+    width: 240px;
+    height: 153px;
+    background-color: var(--gris);
+    font-size: 14px;
+    border-radius: 6px;
+    opacity: 0.75;
+    justify-content: space-evenly;
+}
+
+.resena-valora p {
+    margin-top: 3px;
+}
+
+.resena-comentario {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+
+.resena-img {
+    width: 35px;
+    height: 35px;
+    background-color: var(--grisInactivo);
+    border-radius: 20px;
+    margin: auto;
+}
+
+.resena-texto-int {
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+}
+
+/* -.-.- Fin propuesta de Formación -.-.- */
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* -.-.- Propuesta de Formación (Reseñas) -.-.- */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+
+.prop-resena-contenedor {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 50px 50px 50px;
+}
+
+.prop-formacion-tarjeta {
+    background-color: var(--grisaceo);
+    padding: 1.5em;
+    width: 30%;
+    border-radius: 15px;
+}
+
+/* Añadida clase 08/02/2024 */
+
+.prop-formacion-tarjeta a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.prop-resenas-tarjeta {
+    width: 1000px;
+    max-height: 521px;
+    overflow-y: scroll;
+}
+
+/* -.-.-.-.- Se reutilizan clases de otra Pantallas -.-.-.-.- */
+
+/* -.-.- Fin propuesta de Formación (Reseñas) -.-.- */
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* -.-.- Añadir Reseña de la formación -.-.- */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+
+.resena-contenedor {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 3em;
+}
+
+.add-resen-tarjeta {
+    width: 35%;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: var(--gris);
+    height: auto;
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+}
+
+.add-resen-tarjeta h4 {
+    margin-top: 10px;
+}
+
+.add-resena-textarea {
+    border-radius: 5px;
+    min-width: 450px;
+    min-height: 132px;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid black;
+    font-size: 1em;
+}
+
+.add-resena-valo-cont {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.add-resena-iconos-cont {
+    margin-top: 20px;
+}
+
+.add-resena-valo-icon-caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+
+.add-resena-valo-icon-caja i {
+    font-size: 30px;
+    color: var(--amarillo);
+}
+
+.add-resena-btn-cont {
+    display: flex;
+    justify-content: center;
+
+}
+
+.add-resena-btn {
+    padding: 10px 15px 10px 15px;
+    background-color: var(--grisaceo);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* -.-.-.-.- Se reutilizan clases de otra Pantallas -.-.-.-.- */
+
+/* -.-.- Fin añadir Reseña de la formación -.-.- */
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* -.-.- Añadir Propuesta de la formación -.-.- */
+
+/* === Creación 12/01/2024 || Añadido 06/02/2024 || Hugo Gordillo === */
+
+.add-propuestas-contenedor {
+    display: flex;
+    gap: 10em;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-add-pro {
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px 15px 10px;
+}
+
+.add-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.add-datos h3 {
+    margin-top: 0.5em;
+}
+
+
+.add-datos input,
+textarea {
+    border: 1px solid var(--gris);
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--blanco);
+}
+
+.add-datos textarea {
+    min-height: 75px;
+    font-size: 1em;
+}
+
+.lista-formacion {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tarjeta-propuesta-form {
+    padding: 1.5em;
+    width: 264.5px;
+    height: auto;
+    background-color: var(--gris);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* -.-.- Fin añadir Propuesta de la formación -.-.- */
+
+/* ============ Fin Área de Propuestas de Formación ============ */
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* ============ Comparador de Usuarios  ============ */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+
+.comp-contenedor {
+    display: flex;
+    height: 100%;
+}
+
+/* Contenedor del Aside de la pantalla comparador de usuarios */
+
+.comp-aside {
+    width: 400px;
+    height: auto;
+    background-color: var(--grisaceo);
+}
+
+/* Contenedor del main de la pantalla comparador de usuarios */
+
+.comp-main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 3em;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 2.5em;
+    margin-bottom: 2.5em; */
+    padding: 2em;
+    background-image: url(../img/2fondo-propuesta.png);
+    background-size: 100% 100%;
+}
+
+/* Css de la tarjetas grandes para ambos perfiles */
+
+.comp-perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 450px;
+    height: auto;
+    background-color: var(--gris);
+    padding: 2em;
+    border-radius: 15px;
+    border: 1px solid var(--negro);
+}
+
+/* Clase para poner el h4 de la tarjeta de perfil en
+el centro */
+
+.comp-perfil h4 {
+    text-align: center;
+}
+
+/* Contenedor de las dos tarjetas pequeñas que hay dentro de
+las grandes*/
+
+.comp-tarj-cont {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    row-gap: 1em;
+}
+
+/* CSS de las tarjetas pequeñas */
+
+.comp-tarj-int {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: auto;
+    background-color: var(--gris);
+    width: 350px;
+    padding: 1em;
+    border: 1px solid var(--negro);
+    border-radius: 15px;
+}
+
+.comp-tarj-int ul {
+    padding-left: 2em;
+}
+
+/* Contenedor interno del aside para ubicar las cosas
+donde es necesario*/
+
+.comp-aside-cont {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2em;
+}
+
+/* Clase para el div que contiene 
+el select que hay en el aside */
+
+.aside-select {
+    margin-top: 10px;
+    text-align: center;
+    background-color: var(--gris);
+    padding: 10px 20px 10px 20px;
+    border: 1px solid var(--negro);
+    border-radius: 10px;
+}
+
+/* CSS del select del aside */
+
+.aside-select select, .aside-select select:focus-visible {
+    background-color: var(--gris);
+    max-width: 160px;
+    border: none;
+}
+
+/* CSS para el apartado de puesto seleccionado y
+estos son los 10 mejores perfiles */
+
+.comp-puesto-sel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: var(--gris);
+    padding: 1em;
+    border: 1px solid var(--negro);
+}
+
+/* CSS div contenedor del ranking */
+
+.comp-ranking {
+    background-color: var(--gris);
+    border: 1px solid var(--negro);
+    border-radius: 5px;
+}
+
+/* Clase para resetear el ol, ponerle un width,
+un tamaño de fuente determinado... */
+
+.list-reset {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    /*Sirve para que la linea coja todo el contenido*/
+    width: 230px;
+    font-size: 18px;
+}
+
+/* Clase para los div de la lista */
+
+.comp-ranking-li {
+    border-bottom: 1px solid var(--negro);
+    margin-top: 5px;
+}
+
+/*Clase para destacar el usuario de la lista que se va a seleccionar.  Marlene Menaza 2024/02/22*/
+
+.comp-ranking-li:hover{
+    background-color: var(--verdeHover);
+}
+
+/* Clase para que los li tengan una distancia y estén alineados */
+
+.comp-ranking-li li {
+    margin-left: 40px;
+}
+
+/* ============ Fin comparador de Usuarios  ============ */
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* ============ Área de Perfiles Públicos  ============ */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+
+.perf-pub-title-cont {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1em;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+
+.perf-pub-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+}
+
+.perf-pub-cont a {
+    color: var(--negro);
+}
+
+.perf-pub-cont>div {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.perf-pub-tarjeta {
+    padding: 15px 20px 15px 20px;
+    border-radius: 15px;
+    border: 0.5px solid black;
+    background-color: #A9C9D3;
+    width: 290px;
+    height: 170px;
+    font-size: 14px;
+    display: inline-flex;
+}
+
+.perf-user-ft {
+    width: 89.1px;
+    height: 90px;
+    flex-shrink: 0;
+    background-color: #D9D9D9;
+    border-radius: 70px;
+    margin-right: 1em;
+    background-size: cover;
+}
+
+.pers1{
+    background-image: url(../img/persona1.jpg);
+}
+.pers2{
+    background-image: url(../img/persona2.jpg);
+}
+.pers3{
+    background-image: url(../img/persona3.jpg);
+}
+.pers4{
+    background-image: url(../img/persona4.jpg);
+}
+.pers5{
+    background-image: url(../img/persona5.jpg);
+}
+.pers6{
+    background-image: url(../img/persona6.jpg);
+}
+.pers7{
+    background-image: url(../img/persona7.jpg);
+}
+.pers8{
+    background-image: url(../img/persona8.jpg);
+}
+.pers9{
+    background-image: url(../img/persona9.jpg);
+}
+.pers10{
+    background-image: url(../img/persona9.jpg);
+}
+
+.perf-pub-text-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.perf-pub-text-cont h4 {
+    margin-top: 0.5em;
+}
+
+.perf-pub-text {
+    display: flex;
+    gap: 1em;
+}
+
+.perf-pub-btn-sig {
+    text-align: right;
+    margin-top: 0.5em;
+}
+
+/* ============ Fin área de Perfiles Públicos  ============ */
+
+/* -.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* ============ Mensajería  ============ */
+
+/* === Añadido 06/02/2024 || Vicky, Dulce, Hugo Gordillo === */
+
+.mensajeria-container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    column-gap: 5em;
+}
+
+.mensajes-cont {
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    height: 600px;
+    gap: 0.5em;
+}
+
+.mensaje-buscador {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: 1em;
+}
+
+.search-container {
+    display: flex;
+}
+
+.chats-usuarios {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3em;
+    overflow-y: scroll;
+}
+
+.chats-usuarios-caja {
+    display: flex;
+    padding: 1.5em;
+    background-color: white;
+    justify-content: space-between;
+    border: 1px solid black;
+    height: 150px;
+}
+
+.chats-usuario-cont {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.chats-usuario-icono {
+    width: 3%;
+}
+
+.imagen-contenedor {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-usuario {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+}
+
+.imgpers1{
+    background-image: url(../img/persona10.jpg);
+}
+.imgpers2{
+    background-image: url(../img/persona11.jpg);
+}
+.imgpers3{
+    background-image: url(../img/persona12.jpg);
+}
+.imgpers4{
+    background-image: url(../img/persona13.jpg);
+}
+.imgpers5{
+    background-image: url(../img/persona14.jpg);
+}
+.imgpers6{
+    background-image: url(../img/persona15.jpg);
+}
+
+.mensajeria-chat-cont {
+    height: 600px;
+    max-width: 55%;
+    border: 1px solid black;
+    background-color: var(--col_aside);
+    border-radius: 10px;
+}
+
+.chat-part-superior {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--negro);
+}
+
+.chat-part-superior h4 {
+    margin-left: 20px;
+}
+
+.img-user-chat-cont {
+    display: flex;
+    align-items: center;
+}
+
+.chat-part-inferior {
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--negro);
+    border-radius: 10px;
+}
+
+.input-chat-class {
+    padding: 10px;
+    width: 600px;
+    background-color: var(--col_aside);
+    border: none;
+}
+
+.btn-chat-enviar {
+    margin-right: 15px;
+}
+
+.chat-cont {
+    height: 480px;
+    min-width: 55%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 1em;
+    padding: 10px 10px 10px 10px;
+}
+
+.mensaje-recibido {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mensaje-enviado {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mensaje {
+    width: fit-content;
+    max-width: 50%;
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+    height: fit-content;
+}
+
+.mensaje p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.msj-recibido {
+    border-radius: 5px 5px 5px 0px;
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.msj-enviado {
+    border-radius: 5px 5px 0px 5px;
+    background-color: var(--grisaceo);
+}
+
+.mensaje-titulo h1,
+h6 {
+    margin-block-start: 0px;
+}
+
+.msj-hora-envio {
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--negro);
+}
+
+.msj-hora-envio p {
+    margin-block-start: 0px;
+    margin-block-end: 2px;
+}
+
+.input-chat {
+    height: fit-content;
+}
+
+.btn-chat-cont button {
+    background-color: #33ABA4;
+    font-size: 20px;
+    border-radius: 7px;
+    color: var(--negro);
+    border: 1px solid black;
+    width: 40px;
+    padding: 5px;
+}
+
+.img-user-chat i {
+    background-color: #33ABA4;
+    border-radius: 50%;
+    padding: 7px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+/* Clases para el textarea del chat */
+.textarea {
+    display: block;
+    width: 600px;
+    overflow: hidden;
+    min-height: 40px;
+    line-height: 20px;
+    border: 1px solid #ccc;
+    padding: 1px 6px;
+    font-size: inherit;
+    background-color: var(--col_aside);
+}
+
+.textarea[contenteditable]:empty::before {
+    content: "Escribir el mensaje...";
+    color: gray;
+}
+
+/* -.-.- CSS select dentro del buscador mensajeria -.-.- */
+.buscador-input:focus+.select-container {
+    display: block;
+}
+
+/*  Ésta clase se debe eliminar, ya que el Select del buscador se ha eliminado en HTML. Marlene Menaza 2024/02/22
+ .select-buscador {  
+    margin-left: -185px;
+    width: 150px;
+    border: none;
+} */
+
+/* -.-.- fin css select dentro del buscador mensajeria -.-.- */
+
+/* -.-.- Modal eliminar mensaje/chat -.-.- */
+
+/* === Creación (?) || Añadido 06/02/2024 || Vicky === */
+
+/* -.-.-.-.- Se reutilizan clases de otra Pantallas -.-.-.-.- */
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.btn-left {
+    margin-left: 100px;
+}
+
+.btn-right {
+    margin-right: 110px;
+}
+
+/* icono eliminar */
+.chats-usuarios button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin-bottom: auto;
+}
+
+.chats-usuarios button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -.-.- Fin modal eliminar mensaje/chat -.-.- */
+
+/* ============ Fin mensajería  ============ */
+
+/* -.-.- CSS buscador general y/o Area de Perfiles Publicos || Mensajeria -.-.- */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+.buscador {
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+}
+
+.buscador input {
+    border: none;
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    background-color: var(--blanco);
+}
+
+
+.buscador input:focus {
+    outline: none;
+}
+
+.buscador button {
+    width: 70px;
+    height: 35px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
+
+/* -.-.- Fin buscador-.-.- */
+
+/* -.-.- Sección de las estrellas de las tarjetas de
+    propuesta de Formación y reseñas de los usuarios -.-.- */
+.icon-cont {
+    display: flex;
+    justify-content: space-between;
+    max-height: 20px;
+    align-items: baseline;
+}
+
+.icon-cont-star {
+    display: flex;
+    margin-right: 10px;
+}
+
+.icon-nom-user h5 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.icon-form-star {
+    color: var(--amarillo);
+    font-size: 15px;
+}
+
+/* -.-.-.-.-.- Fin de la sección estrellas -.-.-.-.-.-. */
+
+/* -.-.- CSS de los select del Área de propuestas de 
+    formación y de el Área de Perfiles Públicos-.-.- */
+.btn-filtro-propuestas {
+    /* margin-top: 45px; */
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid var(--negro);
+    /* padding: 5px auto 5px auto; */
+    border-radius: 10px;
+    max-width: max-content;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-filtro-propuestas-vario {
+    margin-top: 45px;
+}
+
+.btn-filtro-propuestas select {
+    border: none;
+    background-color: transparent;
+}
+
+.btn-filtro-propuestas-int {
+    padding: 10px 10px 10px 10px;
+}
+
+.btn-perfiles-color {
+    background-color: var(--grisaceo);
+
+}
+
+.btn-perfiles-color select {
+    background-color: var(--grisaceo);
+}
+
+/* -.-.-.-.-.-.-.- Fin de los select -.-.-.-.-.-.-.-.-.-. */
+
+/*=====>  Clases perdidas en el merge <==========*/
+
+/* -.-.- Modal Preguntas Frecuentes -.-.- */
+
+/* === Añadido 20/02/2024 || Hugo Gordillo === */
+
+.acordeon h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.acordeon-encabezado {
+    background-color: #A9C9D3;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border: 5px solid var(--blanco);
+    border-bottom: none;
+}
+
+/* Establece el ancho del acordeón. Establece el margen a 90px en la parte
+superior e inferior y auto a la izquierda y derecha */
+
+.acordeon {
+    width: 630px;
+    margin: 90px auto;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.acordeon-caja-contenedor {
+    max-height: 450.8px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.acordeon .acordeon-contenedor {
+    position: relative;
+    margin: 10px 10px;
+}
+
+.acordeon-modal-close {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: -webkit-fill-available;
+}
+
+
+
+.acordeon-content2{
+    border: 4px solid #A9C9D3;
+    padding: 4px;
+    margin: 2px;
+}
+
+/* Posiciona las estiquetas en relación con el contenedor. Añade relleno en la parte
+superior e inferior y aumenta el tamaño de la fuente. También hace 
+que eñ cursor sea un puntero */
+
+.acordeon .acordeon-title {
+    position: relative;
+    padding: 10px 0;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
+
+.acordeon .acordeon-content {
+    position: relative;
+    background: white;
+    display: none;
+    text-align: justify;
+    width: 535px;
+    overflow: hidden;
+}
+
+
+.acordeon-hr-encabezado {
+    width: 618px;
+    margin-left: 5px;
+}
+
+
+
+/* -.-.- Fin Modal Preguntas Frecuentes  -.-.- */
+
+/* -.-.- Perfil Público de Otro Usuario -.-.- */
+
+/* === Añadido 22/02/2024 || Hugo Gordillo === */
+
+.perf-usuario-contenedor {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+.flecha-contenedor {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.tarjeta-perfil-usuario-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.tarjeta-perfil-user {
+    background-color: var(--blanco);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.tarjeta-perfil-user-part-inf {
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+
+.tarjeta-perfil-user-1 {
+    border-radius: 5px;
+    height: 30%;
+}
+
+.tarjeta-perfil-user-2 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 5px;
+    width: 50%;
+    height: 100%;
+
+}
+
+.tarjeta-perfil-user-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 5px;
+    width: 50%;
+    height: 100%;
+}
+
+.perf-user-formacion {
+    background-color: var(--gris);
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.perf-user-idiomas {
+    background-color: var(--gris);
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.perf-user-exp-laboral {
+    background-color: var(--gris);
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.tarjeta-parte-sup {
+    background-color: var(--gris);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas-int-parte-inf {
+    background-color: var(--gris);
+    width: 100%;
+    border-radius: 5px;
+    min-height: 50%;
+    max-height: 50%;
+}
+
+.tarjetas-int-parte-inf h2 {
+    padding-left: 20px;
+}
+
+.tarjeta-contenido-int {
+    padding-left: 30px;
+    line-height: 2em;
+    padding-right: 2em;
+}
+
+.titulo-tarjeta-int {
+    height: auto;
+    width: 75%;
+    background-color: var(--celeste);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 20px;
+}
+
+.interior-texto {
+    margin-top: 20px;
+    height: 180px;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+}
+
+.tarjeta-int-otros {
+    display: flex;
+    flex-direction: column;
+    height: 267.6px;
+}
+
+.tarjeta-contenido-int ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2em;
+    padding: 10px 20px 10px 20px;
+    height: 70px;
+    overflow-y: scroll;
+}
+
+.list-personal-data {
+    width: 500px;
+    display: flex;
+    column-gap: 2em;
+    margin-top: 10px;
+    line-height: 2em;
+}
+
+.list-personal-data li {
+    list-style: none;
+}
+
+.perf-user-pub-icono {
+    font-size: 24px;
+    color: #000000;
+    left: 2em;
+    position: fixed;
+    border-radius: 10px;
+    background-color: #33ABA4;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 5px 5px 3px #707070;
+    padding-top: 2px;
+}
+
+.perf-user-pub-icono a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.tarjeta-parte-sup .titulo-tarjeta-int {
+    width: 463.962px;
+}
+
+.tarjeta-parte-sup .titulo-tarjeta-int h2 {
+    padding-left: 20px;
+}
+
+.personal-data-cont {
+    padding: 1.5em;
+}
+
+.personal-data-title-cont {
+    width: 100%;
+}
+
+/* -.-.- Perfil Público de Otro Usuario -.-.- */
+
 
 /*FIN BODY*/
 /* ======================================================= */
@@ -1608,27 +4434,78 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 
 /* FOOTER */
 
-.redessociales-Reg {
-    display: inline-block;
-    min-height: 40px;
-    width: 20px;
-    text-align: center;
-}
-.redessociales {
-    display: inline-block;
-    min-height: 40px;
-    width: 40px;
-    background-color: #4D4953;
-    text-align: center;
-
-}
-
 .logo {
     width: 100px;
     height: 50px;
     margin-left: 1%;
     margin-right: 0;
 }
+
+/* Añadida clase .footer-img-cont para las imagenes 
+de la parte inferior del footer */
+
+.footer-img-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img-cont img {
+    height: 50px;
+    min-width: 150px;
+}
+
+.footer-section {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    gap: 3em;
+}
+
+.footer-img-logo {
+    padding: 1em;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    padding-left: 1em;
+}
+
+.footer-text i {
+    margin-right: 0.5em;
+}
+
+/* Redes sociales footer */
+
+.social-networks {
+    padding: 1em;
+    width: 250px;
+    display: flex;
+    gap: 0.5em;
+}
+
+.social-networks a {
+    color: var(--naranja);
+    text-decoration: none;
+}
+
+.social-networks i {
+    font-size: 20px;
+}
+
+.social-networks-int {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Fin Redes sociales footer */
 
 /* FIN FOOTER */
 /* ======================================================= */
@@ -1645,35 +4522,108 @@ y que quede con los botones de guardar y cancelar y añadir además los switch *
 .li:hover {
     background-color: var(--verdeHover);
 }
+
+/* FIN HEADER */
+
+
 /* FOOTER */
-.footerlinks ul li a:hover {
-    color: white;
-    padding-left: 6px;
+
+/* modal preguntas frecuentes */
+
+
+
+.acordeon-caja-contenedor::-webkit-scrollbar {
+    display: none;
 }
 
-.footerlinks ul li a {
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-    display: block;
-    margin-bottom: 15px;
-    transition: all .3s ease;
+
+/* Redes sociales Footer */
+
+.fab:hover {
+    color: #FFF
 }
 
-.footerlinks h4 {
-    font-size: 20px;
-    color: #FF7918;
-    margin-bottom: 25px;
-    font-weight: 500;
-    border-bottom: 2px solid;
-    padding-bottom: 10px;
-    display: inline-block;
-}
+/* Fin Redes sociales Footer */
 
 
 
 /* FIN FOOTER */
 
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* === Modal con el mensaje final del registro corto === */
+
+/* Añadido 06/02/2024 || Vicky y Dulce || Hugo Gordillo */
+
+.msj-reCort-modalmask:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.msj-reCort-modalmask:target .movedown {
+    margin: 18% auto;
+}
+
+/* === Fin Modal con el mensaje final del registro corto === */
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* === Modal con el mensaje final del Tutorial === */
+
+/* Añadido 06/02/2024 || Hugo Gordillo */
+
+.tutorial-modal:target {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* === Fin modal con el mensaje final del Tutorial === */
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* -.-.- Propuesta de Formación -.-.- */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+
+.resena-valora:hover {
+    opacity: 1;
+}
+
+/* -.-.- Fin propuesta de Formación -.-.- */
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* ============ Comparador de Usuarios  ============ */
+
+/* === Añadido 06/02/2024 || Hugo Gordillo === */
+
+/* Clase para quitar el border-bottom del último li */
+
+.comp-ranking-li:last-child {
+    border-bottom: none;
+}
+
+/* ============ Fin comparador de Usuarios  ============ */
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
+/* ============ Mensajería  ============ */
+
+/* === Añadido 06/02/2024 || Vicky, Dulce, Hugo Gordillo === */
+
+.chat-cont::-webkit-scrollbar {
+    display: none;
+}
+
+.input-chat input:focus {
+    outline: 0.5px solid var(--grisInactivo);
+    border-radius: 15px;
+}
+
+/* ============ Fin Mensajería  ============ */
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
 
 /* SWITCH UNO */
 
@@ -1704,7 +4654,7 @@ input:checked+.switch:active::before {
 }
 
 .switch3Posiciones #switch1:checked~.switch3Posiciones__inner::after {
-    left: 0;
+    left: 2px;
     transition: left 200ms ease-in-out;
 }
 
@@ -1719,14 +4669,15 @@ input:checked+.switch:active::before {
 }
 
 .switch3Posiciones #switch3:checked~.switch3Posiciones__inner {
-    background-color: #004e6a;
+    background-color: var(--azul);
     transition: background-color 200ms ease-in-out;
 }
 
 .switch3Posiciones #switch3:checked~.switch3Posiciones__inner::after {
-    left: 40px;
+    left: 39px;
     transition: left 200ms ease-in-out;
 }
+
 /* FIN SWITCH 3 POSICIONES */
 
 
@@ -1735,9 +4686,66 @@ input:checked+.switch:active::before {
 /* FIN PERFIL USUARIO */
 
 /*BORRAR ESTA CLASE: ORIENTADOR VIRTUAL. JENNIFER*/
-.parrafo {
+/* .parrafo {
     font-size: 12px;
     font-weight: bold;
-}
+} */
 
 /* ======================================================= */
+
+/* CSS Autora: Marlene Menaza- 2024/01/02 */
+/* ====== RECOMENDACIONES ACCIONES DE MEJORA ===== */
+/* RADIO BUTTON ACTIVADOS/SELECCIONADOS */
+.radio-button::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--verde);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.input-recomend:checked+.label-recomend .radio-button::after {
+    opacity: 1;
+}
+
+/* FIN RADIO BUTTON ACTIVADOS/SELECCIONADOS */
+
+/* RADIO BUTTON INACTIVOS(DISABLED) */
+.input-recomend[disabled]+.label-recomend .radio-button {
+    background-color: var(--gris);
+    border: 2px solid var(--grisInactivo);
+}
+
+/* FIN RADIO BUTTON INACTIVOS/DISABLED */
+
+
+/* BOTÓN ENVIAR */
+/* INACTIVO */
+#buton-recomend:disabled {
+    background-color: var(--grisInactivo);
+    font-family: 'Montserrat', sans-serif;
+    width: 150px;
+    height: 40px;
+    border: 1px solid var(--negro);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px var(--grisInactivo);
+}
+
+/* FIN INACTIVO */
+/* FIN BOTON ENVIAR */
+/* ====== FIN RECOMENDACIONES ACCIONES DE MEJORA ===== */
+
+/* -.-.- Perfil Público de Otro Usuario -.-.- */
+
+/* === Añadido 22/02/2024 || Hugo Gordillo === */
+
+.scroll-none::-webkit-scrollbar {
+    display: none;
+}
+
+/* -.-.- Fin Perfil Público de Otro Usuario -.-.- */

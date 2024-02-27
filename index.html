@@ -4,68 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Añadir Propuesta de Formación</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="body-propuesta propuesta1">
-    <!-- Header doble -->
+<body class="body-propuesta propuesta-home">
+
     <header class="header-fijo">
-        <div class="header">
-            <a href="home.html"><img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo"></a>
+        <div class="header header-no-regis">
+            <div class="header-int">
+                <img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo">
+                <!-- <button class="btn-inicio">Iniciar Sesión</button> -->
+                <a class="btn-inicio" href="#inicio">Iniciar Sesión</a>
+            </div>
         </div>
         <nav class="nav">
             <ul class="nav2">
                 <li class="li li-doble"><a href="areaPropuestaFormacion.html" class="menu">Propuestas de Formación</a>
                 </li>
-                <li class="li li-doble li-uso"><a href="#" class="menu">Añadir propuesta de Formación</a></li>
+                <li class="li li-doble"><a href="areaPerfilesPublicos.html" class="menu">Perfiles Públicos</a></li>
             </ul>
         </nav>
     </header>
-    <!-- Pantalla Añadir Propuesta de Formación -->
-    <main class="std-container">
-        <div class="add-propuestas-contenedor">
-            <div class="add-datos">
-                <h2>Datos de la Formación</h2>
-                <form> <!--Elimine los label ya que están los h3-->
-                    <h3>Nombre de la formación:</h3>
-                    <input type="text" id="Datos" name="datosFormacion"
-                        placeholder="Ingrese el nombre de la formación" />
-                    <h3>Nombre del centro:</h3>
-                    <input type="text" id="Lugar1" name="Lugar" placeholder="Ingrese el nombre del centro" />
-                    <h3>Resumen del curso/formación:</h3>
-                    <textarea id="cursooformacion" name="cursoFormacion"
-                        placeholder="Redacta un breve resumen"></textarea>
-                    <h3>Competencias:</h3>
-                    <textarea id="compete" name="Competencias"
-                        placeholder="Escribe las competencias separándolas por comas ','"></textarea>
-                    <br><br>
-                    <div class="btn-add-propuestas btn-add-pro">
-                        <button>Añadir Propuesta</button>
-                    </div>
-                </form>
+
+    <!-- Pantalla Home -->
+    <div class="home-contenido">
+        <div class="home-titulo">
+            <h1>¿QUIERES MEJORAR <br>TU EMPLEABILIDAD?</h1>
+        </div>
+        <div class="home-contenedor">
+            <div class="home-caja">
+                <h4>INSCRÍBETE Y ENCUENTRA EMPLEO O PRÁCTICAS ADECUADAS PARA TI</h4>
+                <a class="modal-show" href="#modal" id="inicio">¿QUIERES REGISTRARTE?</a>
             </div>
-            <div class="lista-formacion">
-                <h3>Lista de formación</h3>
-                <div class="lista-formacion tarjeta-propuesta-form">
-                    <h4>Curso de programación avanzada</h4>
-                    <h5>Instituto xyz</h5>
-                    <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
-                    <h4>Comunicación efectiva</h4>
-                    <h4>Resolver Problemas</h4>
+            <!-- <div class="home-img">
+                <img src="/img/imagen_home_sinfondoRES3.png" alt="">
+            </div> -->
+        </div>
+    </div>
+    <!-- Apartado de inicio de sesión -->
+    <div class="inicio">
+        <div class="inicio-contenedor">
+            <form action="" method="post">
+                <div class="inicio-columnas">
+
+                    <div class="inicio-columna1">
+                        <h1 id="inicio-titulo">¿QUIERES SABER QUE TE FALTA PARA TU PUESTO DE TRABAJO?</h1>
+                        <p>NUESTRO ORIENTADOR VIRTUAL TE INDICARÁ LAS COMPETENCIAS QUE DEBES ADQUIRIR</p>
+                        <br>
+                        <h1 id="inicio-titulo">¿QUIERES VER EL PUNTO DE VISTA DE OTRAS PERSONAS?</h1>
+                        <p>COMUNÍCATE CON OTROS USUARIOS A TRAVÉS DE NUESTRO CHAT.</p>
+                    </div>
+
+                    <div class="inicio-columna2">
+                        <label class="inicio-label" for="email">Email:</label> <input class="inicio-input" type="text"
+                            name="apellidos" size="20">
+                        <label class="inicio-label" for="password">Contraseña:</label> <input class="inicio-input"
+                            type="password" name="contrasena" size="20" maxlength="">
+                        <div class="inicio-modal-btn">
+                            <button class="inicio-btn"><a href="areaPersonal.html">INICIAR SESIÓN</a></button>
+                            <div class="p-prueba">
+                                <P><b>¿No estás registrado?</b></P>
+                            </div>
+                            <button class="inicio-btn"><a href="#modal">REGÍSTRATE</a></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="lista-formacion tarjeta-propuesta-form">
-                    <h4>Curso de programación avanzada</h4>
-                    <h5>Instituto xyz</h5>
-                    <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
-                    <h4>Comunicación efectiva</h4>
-                    <h4>Resolver Problemas</h4>
+            </form>
+        </div>
+    </div>
+    <!-- Fin apartado de inicio de sesión -->
+    <!-- ==================== -->
+
+    <!--Modal de registro inicial corto-->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <a class="modal-hide" href="#">x</a>
+            <form action="">
+                <h1 id="tituloRegistro">¡Rellena los campos y únete a nuestra comunidad!</h1>
+                <div class="columnas">
+                    <div class="columna1">
+                        <label class="labelRegistroCorto" for="nombreApellidos">Nombre y Apellidos:</label>
+                        <input class="inputRegistroCorto" type="text" id="nombreApellidos" name="nombreApellidos"
+                            size="20" maxlength="" placeholder="Ej: María García Fernández / Antonio López-Domínguez">
+
+                        <label class="labelRegistroCorto" for="formacion">Formación:</label>
+                        <input class="inputRegistroCorto" type="text" id="formacion" name="formacion" size="20"
+                            placeholder="Ej: FP Grado Superior de Informática">
+
+                        <label class="labelRegistroCorto" for="password">Contraseña:</label>
+                        <input class="inputRegistroCorto" type="password" id="password" name="contrasena" size="20"
+                            maxlength="">
+
+                        <!-- <button type="submit" class="botonRegistro" onclick="validarFormulario(datosFormulario)">REGISTRARSE</button>  -->
+                        <!-- <button class="botonRegistro"><a href="#msj-reCort-modal">REGISTRARSE</a></button>  -->
+                        <button class="botonRegistro" onclick="crearUser()">REGISTRARSE</button>
+                        <!-- href="#msj-reCort-modal" -->
+                    </div>
+
+                    <div class="columna2">
+                        <label class="labelRegistroCorto" for="email">Email:</label>
+                        <input class="inputRegistroCorto" type="text" name="email" id="email" size="20">
+
+                        <label class="labelRegistroCorto" for="puestos">Puestos a los que aspira:</label>
+                        <input class="inputRegistroCorto" type="text" id="puestos" name="puestos" size="20"
+                            placeholder="Ej: Desarrollador web">
+
+                        <label class="labelRegistroCorto" for="passwordConfirma">Confirmar Contraseña:</label>
+                        <input class="inputRegistroCorto" type="password" id="rePassword" name="contrasenaConfirma"
+                            size="20" maxlength="">
+
+                        <a class="enlaceRegistro" href="edPerfilUsuario.html">Si quieres registrar todos los datos
+                            pincha aquí</a>
+                    </div>
                 </div>
+            </form>
+        </div>
+    </div>
+    <!--Final Modal de registro inicial corto-->
+
+    <!-- Mensaje Final Modal Registro Corto -->
+
+    <div id="msj-reCort-modal" class="msj-reCort-modalmask">
+        <div class="msj-reCort-modalbox movedown">
+            <div class="msj-reCort-modalbox-content">
+                <h2>¡Bienvenido a nuestra comunidad!</h2>
+                <div class="msj-reCort-icono">
+                    <i class="fas fa-check" style="color: #00E6A1;"></i>
+                </div>
+                <div class="msj-reCort-modalbox-cont-int">
+                    <p>Felipe, le informamos que sus datos han sido registrados correctamente</p>
+                </div>
+            </div>
+            <div class="msj-reCort-btn-modal-cont">
+                <a class="msj-reCort-btn-modal" href="tutorial.html">ACEPTAR</a>
             </div>
         </div>
-    </main>
+    </div>
     <footer class="footer-Reg">
         <!--Modal de registro inicial corto-->
         <div class="modal" id="modal-preguntas">
@@ -238,6 +315,8 @@
             </div>
         </div>
     </footer>
+    <!--Fin Mensaje Final Modal Registro Corto-->
 </body>
+<script src="js/valprueba.js"></script>
 
 </html>

@@ -4,68 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Añadir Propuesta de Formación</title>
+    <title>Mensaje de Recomendaciones</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="body-propuesta propuesta1">
-    <!-- Header doble -->
-    <header class="header-fijo">
-        <div class="header">
-            <a href="home.html"><img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo"></a>
-        </div>
-        <nav class="nav">
-            <ul class="nav2">
-                <li class="li li-doble"><a href="areaPropuestaFormacion.html" class="menu">Propuestas de Formación</a>
-                </li>
-                <li class="li li-doble li-uso"><a href="#" class="menu">Añadir propuesta de Formación</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Pantalla Añadir Propuesta de Formación -->
-    <main class="std-container">
-        <div class="add-propuestas-contenedor">
-            <div class="add-datos">
-                <h2>Datos de la Formación</h2>
-                <form> <!--Elimine los label ya que están los h3-->
-                    <h3>Nombre de la formación:</h3>
-                    <input type="text" id="Datos" name="datosFormacion"
-                        placeholder="Ingrese el nombre de la formación" />
-                    <h3>Nombre del centro:</h3>
-                    <input type="text" id="Lugar1" name="Lugar" placeholder="Ingrese el nombre del centro" />
-                    <h3>Resumen del curso/formación:</h3>
-                    <textarea id="cursooformacion" name="cursoFormacion"
-                        placeholder="Redacta un breve resumen"></textarea>
-                    <h3>Competencias:</h3>
-                    <textarea id="compete" name="Competencias"
-                        placeholder="Escribe las competencias separándolas por comas ','"></textarea>
-                    <br><br>
-                    <div class="btn-add-propuestas btn-add-pro">
-                        <button>Añadir Propuesta</button>
+<!-- HEADER -->
+<header class="header-fijo">
+    <div class="header">
+        <a href="home.html"><img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo"></a>
+    </div>
+    <nav class="nav">
+        <ul class="nav2">
+            <li class="li"><a href="areaPersonal.html" class="menu">Área Personal</a></li>
+            <li class="li"><a href="orientadorVirtual.html" class="menu">Orientador Virtual</a></li>
+            <li class="li li-uso"><a href="recomendaciones mejora.html" class="menu">Recomendaciones</a></li>
+            <li class="li"><a href="areaPropuestaFormacion.html" class="menu">Propuestas de Formación</a></li>
+            <li class="li"><a href="compUsuario.html" class="menu">Comparador de Usuarios</a></li>
+            <li class="li"><a href="areaPerfilesPublicos.html" class="menu">Perfiles Públicos</a></li>
+            <li class="li" id="last-li"><a href="mensajeria.html" class="menu">Mensajería</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+<!-- FIN HEADER -->
+
+<body class="body-propuesta propuesta5">
+    <!-- RESULTADO DE RECOMENDACIONES -->
+    <div class="result-recomend">
+        <h4 id="h4-recomend">USUARIO, éstas son nuestras recomendaciones para la mejora de tu empleabilidad como
+            DESARROLLADOR:</h4>
+        <div class="recomend-final">
+            <p>NECESITAS ESTAS COMPETENCIAS ADICIONALES:</p><br>
+            <ol id="lista-recomend">
+                <li>Formación en Soft Skills <a class="card-show" id="card-show1" href="#"> Mejor opción</a> <a href="area-propuestas.html">Ver más</a></li>
+                <!-- TARJETA RECOMENDACIONES -->
+                <!--¡¡¡¡¡ LOS TÍTULOS DE LOS CURSOS HAN DE ESTAR LIMITADOS A 1 LÍNEA MEDIANTE VALIDACIÓN DE LOS DATOS DE ENTRADA EN JS !!!! -->
+                <div id="card1" class="recomend-tarjeta-propuesta">
+                    <div class="tarjeta-hover">
+                        <h3>Cursos gratuitos de Soft Skills</h3>
+                        <h4>Impulso_06</h4>
+                    <!--¡¡¡¡¡ LOS PÁRRAFOS DE INFO DEL CURSO HAN DE ESTAR LIMITADOS A 3 LÍNEAS MEDIANTE VALIDACIÓN DE LOS DATOS DE ENTRADA EN JS !!!! -->
+                        <p>Todos nuestros cursos son gratuitos y en línea. Lo que te permite adaptarlos a tu horario y
+                            estilo de vida.</p><br>
+
+                        <h5>Juan Perez</h5>
+                        <!-- Aqui deberia de ir las estrellas de las valoracion que serian unos iconos -->
                     </div>
-                </form>
-            </div>
-            <div class="lista-formacion">
-                <h3>Lista de formación</h3>
-                <div class="lista-formacion tarjeta-propuesta-form">
-                    <h4>Curso de programación avanzada</h4>
-                    <h5>Instituto xyz</h5>
-                    <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
-                    <h4>Comunicación efectiva</h4>
-                    <h4>Resolver Problemas</h4>
                 </div>
-                <div class="lista-formacion tarjeta-propuesta-form">
-                    <h4>Curso de programación avanzada</h4>
-                    <h5>Instituto xyz</h5>
-                    <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
-                    <h4>Comunicación efectiva</h4>
-                    <h4>Resolver Problemas</h4>
+                <!-- FIN TARJETA RECOMENDACIONES -->
+                <li>Programación orientada a objetos (POO) <a class="card-show" id="card-show2" href="#"> Mejor
+                        opción</a> <a href="area-propuestas.html">Ver más</a></li>
+                <!-- TARJETA RECOMENDACIONES -->
+                <div id="card2" class="recomend-tarjeta-propuesta">
+                    <div class="tarjeta-hover">
+                        <h3>Programación orientada a Objetos</h3>
+                        <h4>Udemy</h4>
+                        <p>Aprende programación orientada a Objetos (POO) desde el nivel básico hasta el avanzado de
+                            forma sencilla.</p><br>
+
+                        <h5>Juan Perez</h5>
+                        <!-- Aqui deberían de ir las estrellas de las valoraciones que serian unos iconos -->
+                    </div>
                 </div>
+                <!-- FIN TARJETA RECOMENDACIONES -->
+                <li>Diseño UX/UI <a class="card-show" id="card-show3" href="#"> Mejor opción</a> <a href="area-propuestas.html">Ver más</a></li>
+                <!-- TARJETA RECOMENDACIONES -->
+                <div id="card3" class="recomend-tarjeta-propuesta">
+                    <div class="tarjeta-hover">
+                        <h3>Bootcamp UX/UI Design</h3>
+                        <h4>Neoland</h4>
+                        <p>Curso intensivo en el que aprenderás todo lo necesario para convertirte en UX/UI Designer a
+                            nivel profesional.</p><br>
+                        <h5>Jennifer García</h5>
+                        <!-- Aqui deberia de ir las estrellas de las valoracion que serian unos iconos -->
+                    </div>
+                </div>
+                <!-- FIN TARJETA RECOMENDACIONES -->
+            </ol>
+            <div>
             </div>
         </div>
-    </main>
+        <div class="recomend-final">
+            <p>TE PUEDES INSCIBIR EN ESTOS PORTALES Y BOLSAS DE EMPLEO:</p><br>
+            <ol id="lista-recomend">
+                <li>Infojobs <a href="https://www.infojobs.net/" target="_blank"> Enlace página</a></li>
+                <li>Glassdoor <a href="https://www.glassdoor.es/index.htm" target="_blank"> Enlace página</a></li>
+                <li>Indeed <a href="https://es.indeed.com/" target="_blank"> Enlace página</a></li><br>
+            </ol>
+        </div>
+        <div class="recomend-final">
+            <p>PUEDES ENVIAR TU C.V. A ESTAS EMPRESAS:</p><br>
+            <ol id="lista-recomend">
+                <li>SPEGC <a href="https://www.spegc.org/" target="_blank"> Enlace empresa</a></li>
+                <li>Canarias Excelencia Tecnológica <a href="https://www.canariasexcelenciatecnologica.com/" target="_blank"> Enlace empresa</a></li>
+                <li>Indeed <a href="https://es.indeed.com/" target="_blank"> Enlace empresa</a></li>
+                <li>Deipe <a href="https://deipe.com/" target="_blank"> Enlace empresa</a></li>
+                <li>Secret Source <a href="https://www.secret-source.eu/"> Enlace empresa</a></li>
+                <li>Reboot Academy <a href="https://reboot.academy/"> Enlace empresa</a></li><br>
+            </ol>
+
+
+        </div>
+    </div>
+
+    <!-- FIN RESULTADO DE RECOMENDACIONES -->
+
+    
+    
+    <!-- ////// FOOTER ////// -->
     <footer class="footer-Reg">
         <!--Modal de registro inicial corto-->
         <div class="modal" id="modal-preguntas">
@@ -239,5 +287,6 @@
         </div>
     </footer>
 </body>
-
+<script src="js/recomendaciones.js"></script>
+    
 </html>

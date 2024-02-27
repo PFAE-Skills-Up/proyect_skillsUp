@@ -1,71 +1,247 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Añadir Propuesta de Formación</title>
+    <title>Mensajería</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<body>
+    <!-- HEADER -->
 
-<body class="body-propuesta propuesta1">
-    <!-- Header doble -->
     <header class="header-fijo">
         <div class="header">
             <a href="home.html"><img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo"></a>
         </div>
+        </div>
         <nav class="nav">
             <ul class="nav2">
-                <li class="li li-doble"><a href="areaPropuestaFormacion.html" class="menu">Propuestas de Formación</a>
-                </li>
-                <li class="li li-doble li-uso"><a href="#" class="menu">Añadir propuesta de Formación</a></li>
+                <li class="li"><a href="areaPersonal.html" class="menu">Área Personal</a></li>
+                <li class="li"><a href="orientadorVirtual.html" class="menu">Orientador Virtual</a></li>
+                <li class="li"><a href="recomendaciones mejora.html" class="menu">Recomendaciones</a></li>
+                <li class="li"><a href="areaPropuestaFormacion.html" class="menu">Propuestas de Formación</a></li>
+                <li class="li"><a href="compUsuario.html" class="menu">Comparador de Usuarios</a></li>
+                <li class="li"><a href="areaPerfilesPublicos.html" class="menu">Perfiles Públicos</a></li>
+                <li class="li li-uso" id="last-li"><a href="#" class="menu">Mensajería</a></li>
             </ul>
         </nav>
+        </div>
     </header>
-    <!-- Pantalla Añadir Propuesta de Formación -->
-    <main class="std-container">
-        <div class="add-propuestas-contenedor">
-            <div class="add-datos">
-                <h2>Datos de la Formación</h2>
-                <form> <!--Elimine los label ya que están los h3-->
-                    <h3>Nombre de la formación:</h3>
-                    <input type="text" id="Datos" name="datosFormacion"
-                        placeholder="Ingrese el nombre de la formación" />
-                    <h3>Nombre del centro:</h3>
-                    <input type="text" id="Lugar1" name="Lugar" placeholder="Ingrese el nombre del centro" />
-                    <h3>Resumen del curso/formación:</h3>
-                    <textarea id="cursooformacion" name="cursoFormacion"
-                        placeholder="Redacta un breve resumen"></textarea>
-                    <h3>Competencias:</h3>
-                    <textarea id="compete" name="Competencias"
-                        placeholder="Escribe las competencias separándolas por comas ','"></textarea>
-                    <br><br>
-                    <div class="btn-add-propuestas btn-add-pro">
-                        <button>Añadir Propuesta</button>
+
+    <!-- BODY -->
+
+    <div class="mensajeria-container">
+        <div class="mensajes-cont">
+            <div class="mensaje-titulo">
+                <h1>Mensajes</h1>
+                <div class="mensaje-buscador">
+                    <!-- <h6>Visualización de mensajes enviados y recibidos</h6> -->
+                    <h4>Enviados y recibidos</h4>
+                    <div class="buscador">
+                        <input type="search" placeholder="Buscar..." class="buscador-input">
+                        <!-- <select class="select-buscador">
+                            <option>Nombre 1</option>
+                            <option>Nombre 2</option>
+                            <option>Nombre 3</option>
+                            <option>Nombre 4</option>
+                            <option>Nombre 5</option>
+                            <option>Nombre 6</option>
+                            <option>Nombre 7</option>
+                            <option>Nombre 8</option>
+                            <option>Nombre 9</option>
+                            <option>Nombre 10</option>
+                            <option>Nombre 11</option>
+                            <option>Nombre 12</option>
+                            <option>Nombre 13</option>
+                            <option>Nombre 14</option>
+                            <option>Nombre 15</option>
+                            <option>Nombre 16</option>
+                            <option>Nombre 17</option>
+                            <option>Nombre 18</option>
+                            <option>Nombre 19</option>
+                            <option>Nombre 20</option>
+                            <option>Nombre 21</option>
+                            <option>Nombre 22</option>
+                            <option>Nombre 23</option>
+                            <option>Nombre 24</option>
+                            <option>Nombre 25</option>
+                            <option>Nombre 26</option>
+                            <option>Nombre 27</option>
+                            <option>Nombre 28</option>
+                            <option>Nombre 29</option>
+                            <option>Nombre 30</option>
+                        </select> -->
+                        <button type="submit" class="buscador-button"><i class="fa fa-search"></i></button>
                     </div>
-                </form>
-            </div>
-            <div class="lista-formacion">
-                <h3>Lista de formación</h3>
-                <div class="lista-formacion tarjeta-propuesta-form">
-                    <h4>Curso de programación avanzada</h4>
-                    <h5>Instituto xyz</h5>
-                    <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
-                    <h4>Comunicación efectiva</h4>
-                    <h4>Resolver Problemas</h4>
                 </div>
-                <div class="lista-formacion tarjeta-propuesta-form">
-                    <h4>Curso de programación avanzada</h4>
-                    <h5>Instituto xyz</h5>
-                    <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
-                    <h4>Comunicación efectiva</h4>
-                    <h4>Resolver Problemas</h4>
+            </div>
+            <div class="chats-usuarios">
+                <div class="chats-usuarios-caja">
+                    <div class="imagen-contenedor">
+                        <div class="imagen-usuario imgpers1"></div>
+                    </div>
+                    <div class="chats-usuario-cont">
+                        <h5>Maria Mendez</h5>
+                        <h6>Hace 5 minutos</h6>
+                        <h5>Hola, ¿Cómo estás?</h5>
+                        <h6>No leído</h6>
+                    </div>
+                    <button><a href="#modal1"><span><i class="fa-regular fa-trash-can"></i></span></a></button>
+                    <div id="modal1" class="msj-reCort-modalmask">
+                        <div class="msj-reCort-modalbox movedown">
+                            <div class="msj-reCort-modalbox-content">
+                                <h2>¿Estás seguro/a de que deseas borrar este mensaje?</h2>
+                            </div>
+                            <div class="modal-actions">
+                                <a class="msj-reCort-btn-modal btn-left" href="#modal">Sí</a>
+                                <a class="msj-reCort-btn-modal btn-right" href="#modal">No</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chats-usuarios-caja">
+                    <div class="imagen-contenedor">
+                        <div class="imagen-usuario imgpers2"></div>
+                    </div>
+                    <div class="chats-usuario-cont">
+                        <h5>Andrés Sánchez</h5>
+                        <h6>Hace 10 minutos</h6>
+                        <h5>¿Cómo te va el curso?</h5>
+                        <h6>Leído</h6>
+                    </div>
+                    <div class="chats-usuario-icono">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="chats-usuarios-caja">
+                    <div class="imagen-contenedor">
+                        <div class="imagen-usuario imgpers3"></div>
+                    </div>
+                    <div class="chats-usuario-cont">
+                        <h5>Jonás Benitez</h5>
+                        <h6>Hace 12 minutos</h6>
+                        <h5>Hola Felipe, ¿Me recomiendas alguna empresa?</h5>
+                        <h6>No leído</h6>
+                    </div>
+                    <div class="chats-usuario-icono">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="chats-usuarios-caja">
+                    <div class="imagen-contenedor">
+                        <div class="imagen-usuario imgpers4"></div>
+                    </div>
+                    <div class="chats-usuario-cont">
+                        <h5>Helena Sierra</h5>
+                        <h6>Hace 20 minutos</h6>
+                        <h5>Hola, ¿Cómo estás?</h5>
+                        <h6>No leído</h6>
+                    </div>
+                    <div class="chats-usuario-icono">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="chats-usuarios-caja">
+                    <div class="imagen-contenedor">
+                        <div class="imagen-usuario imgpers5"></div>
+                    </div>
+                    <div class="chats-usuario-cont">
+                        <h5>Juan Nuñes</h5>
+                        <h6>Hace 22 minutos</h6>
+                        <h5>Buenas Felipe, ¿A que puesto aspiras?</h5>
+                        <h6>No leído</h6>
+                    </div>
+                    <div class="chats-usuario-icono">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="chats-usuarios-caja">
+                    <div class="imagen-contenedor">
+                        <div class="imagen-usuario imgpers6"></div>
+                    </div>
+                    <div class="chats-usuario-cont">
+                        <h5>Silvia Ramírez</h5>
+                        <h6>Hace 23 horas</h6>
+                        <h5>Hola, ¿como te encuentras?</h5>
+                        <h6>Leído</h6>
+                    </div>
+                    <div class="chats-usuario-icono">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
+        <div class="mensajeria-chat-cont">
+            <div class="chat-part-superior">
+                <h4>David Fernández</h4>
+            </div>
+            <div class="chat-cont">
+                <div class="mensaje-recibido">
+                    <div class="mensaje msj-recibido">
+                        <p>No es nada, cualquier cosa puedes hablarme.</p>
+                        <div class="msj-hora-envio">
+                            <p>15:59</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mensaje-enviado">
+                    <div class="mensaje msj-enviado">
+                        <p>Vale, te lo agradezco mucho David.</p>
+                        <div class="msj-hora-envio">
+                            <p>Enviado 15:24</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mensaje-recibido">
+                    <div class="mensaje msj-recibido">
+                        <p>No, en estos dias iba recomendar la del Back-end. Estate atento en esta semana.</p>
+                        <div class="msj-hora-envio">
+                            <p>15:19</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mensaje-enviado">
+                    <div class="mensaje msj-enviado">
+                        <p>Ah vale, muchas gracias. ¿Has recomendado alguna de las formaciones?</p>
+                        <div class="msj-hora-envio">
+                            <p>Enviado 14:31</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mensaje-recibido">
+                    <div class="mensaje msj-recibido">
+                        <p>Buenas Felipe, tengo un bootcamp de Full Stack y también hice una de las formaciones recomendada por otro usuario sobre Back-end.</p>
+                        <div class="msj-hora-envio">
+                            <p>14:03</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mensaje-enviado">
+                    <div class="mensaje msj-enviado">
+                        <p>Hola David, en el ranking proporcionado por el orientador virtual estás superior a mi. ¿Me podrías decir cuales son tus formaciones?</p>
+                        <div class="msj-hora-envio">
+                            <p>Enviado 13:24</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-part-inferior">
+                <div class="img-user-chat-cont">
+                    <div class="img-user-chat">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <div class="input-chat">
+                    <textarea class="textarea" role="textbox" contenteditable></textarea>
+                </div>
+                <div class="btn-chat-cont">
+                    <button class="fa-solid fa-paper-plane"></button>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="footer-Reg">
         <!--Modal de registro inicial corto-->
         <div class="modal" id="modal-preguntas">
@@ -238,6 +414,6 @@
             </div>
         </div>
     </footer>
-</body>
-
+    </body>
+    <script src="/js/mensajeria.js"></script>
 </html>

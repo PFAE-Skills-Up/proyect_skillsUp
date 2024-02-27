@@ -1,49 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <!-- Todas las pantallas del tutorial excepto la pantalla final tienen la misma estructura
-    lo unico que cambia es el contenido y donde estan ubicadas las cajas (y eso va con CSS) -->
-    <!-- Esta estructura tiene de texto de ejemplo el de la primera pantalla del tutorial que
-    sería el tutorial del área personal -->
 
-    <!-- body tutorial (area personal) -->
-    <!-- div contenedor -->
-    <div class="">
-        <!-- imagen de flecha de la parte superior -->
-        <div class="">
-            <img src="" alt="imagen de la flecha">
+<body class="body-propuesta propuesta-tutorial">
+    <!-- Todas las pantallas del tutorial excepto la pantalla final tienen la misma estructura
+        lo unico que cambia es el contenido y donde estan ubicadas las cajas (y eso va con CSS) -->
+        <!-- Esta estructura tiene de texto de ejemplo el de la primera pantalla del tutorial que
+        sería el tutorial del área personal -->
+        <header class="header-fijo">
+            <div class="header">
+                <img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo">
+            </div>
+            <nav class="nav">
+                <ul class="nav2">
+                    <li class="li"><a href="" class="menu">Área Personal</a></li>
+                    <li class="li"><a href="" class="menu">Orientador Virtual</a></li>
+                    <li class="li"><a href="" class="menu">Recomendaciones</a></li>
+                    <li class="li"><a href="" class="menu">Propuestas de Formación</a></li>
+                    <li class="li"><a href="" class="menu">Comparador de Usuarios</a></li>
+                    <li class="li"><a href="" class="menu">Perfiles Públicos</a></li>
+                    <li class="li" id="last-li"><a href="" class="menu">Mensajería</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+    
+    
+        <!-- body tutorial (area personal) -->
+        <!-- div contenedor -->
+        <div class="tutorial-contenedor">
+            <!-- imagen de flecha de la parte superior -->
+            <div class="tutorial-img">
+                <div class="tutorial-grid-item">
+                    <img src="img/flecha_sinfondo2.png" class="img-flecha" alt="imagen de la flecha" id="img-flecha">
+                </div>
+                <div class="tutorial-grid-item">
+                    <img src="img/flecha_sinfondo2.png" class="img-flecha" alt="imagen de la flecha" id="img-flecha-1">
+                </div>
+                <div class="tutorial-grid-item">
+                    <img src="img/flecha_sinfondo2.png" class="img-flecha" alt="imagen de la flecha" id="img-flecha-2">
+                </div>
+                <div class="tutorial-grid-item">
+                    <img src="img/flecha_sinfondo2.png" class="img-flecha" alt="imagen de la flecha" id="img-flecha-3">
+                </div>
+                <div class="tutorial-grid-item">
+                    <img src="img/flecha_sinfondo2.png" class="img-flecha" alt="imagen de la flecha" id="img-flecha-4">
+                </div>
+                <div class="tutorial-grid-item">
+                    <img src="img/flecha_sinfondo2.png" class="img-flecha" alt="imagen de la flecha" id="img-flecha-5">
+                </div>
+                <div class="tutorial-grid-item">
+                    <img src="img/flecha_sinfondo2.png" class="img-flecha" alt="imagen de la flecha" id="img-flecha-6">
+                </div>
+            </div>
+            <!-- primera caja de texto -->
+            <div class="tutorial-caja1-contenedor">
+                <div class="tutorial-caja-texto" id="caja1">
+                    <p class="">En esta sección dispones de la posibilidad de generar un perfil en el que definirás los
+                        aspectos más revelantes de tu currículum vitae. </p>
+                    <div>
+                        <ul class="tutorial-cont-lista">
+                            <li class="">Datos personales</li>
+                            <li class="">Conocimientos</li>
+                            <li class="">Formación</li>
+                            <li class="">Idiomas</li>
+                            <li class="">Experiencia</li>
+                        </ul>
+                    </div>
+                    <p class="">Puedes seleccionar los puestos de trabajo de tu interés</p>
+                </div>
+                <!-- segunda caja de texto -->
+                <div class="tutorial-caja2-contenedor">
+                    <div class="tutorial-caja-texto" id="caja2">
+                        <p class="">También puedes definir tu perfil público en base a la información aportada en la
+                            plataforma.</p>
+                        <p class="">Configura tu perfil público seleccionando únicamente aquella información que quieres que
+                            sea visible.</p>
+                        <p class="">La plataforma dispone de un área en la que otros usuarios comparten sus perfiles y los
+                            visitantes solo verán los públicos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tutorial-btn">
+                <button onclick="cambiarContenido()"><b>SIGUIENTE</b></button>
+            </div>
         </div>
-        <!-- primera caja de texto -->
-        <div class="">
-            <p class="">En esta sección dispones de la posibilidad de generar 
-                un perfil en el que definirás los aspectos más revelantes 
-                de tu currículum vitae. </p>
-            <ul class="">
-                <li class="">Datos personales</li>
-                <li class="">Conocimientos</li>
-                <li class="">Formación</li>
-                <li class="">Idiomas</li>
-                <li class="">Experiencia</li>
-            </ul>
-            <p class="">Puedes seleccionar los puestos de trabajo de tu interés</p>
+    
+    
+        <!-- Modal Final -->
+    
+        <div class="tutorial-modal" id="tut-modal">
+            <div class="tutorial-modal-posicion">
+                <div class="tutorial-modal-content">
+                    <h2 id="tutorial-modal-title">¿Necesitas volver a ver el tutorial?</h2>
+                    <div class="btn-modal-tutorial ">
+                        <button class="btn-modal" id="volverBtn"><a href="tutorial.html">VOLVER A VER</a></button>
+                        <button class="btn-modal" id="avanzarBtn">CONTINUAR</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- segunda caja de texto -->
-        <div class="">
-            <p class="">También puedes definir tu perfil público en base a la 
-                información aportada en la plataforma.</p>
-            <p class="">Configura tu perfil público seleccionando únicamente
-                aquella información que quieres que sea visible.</p>
-            <p class="">La plataforma dispone de un área en la que otros
-                usuarios comparten sus perfiles y los visitantes
-                solo verán los públicos.</p>
-        </div>
-        <button>SIGUIENTE</button>
-    </div>
-    <!-- Hay que adaptar el interior de los div dependiendo de su contenido pero la estructura es prácticamente la misma -->
-</body>
+        <footer class="footer-Reg">
+            <!--Modal de registro inicial corto-->
+            <div class="modal" id="modal-preguntas">
+                <div class="acordeon">
+                    <div class="acordeon-encabezado">
+                        <a class="modal-hide acordeon-modal-close" href="#">x</a>
+                        <h1>Preguntas Frecuentes</h1>
+                    </div>
+                    <hr class="acordeon-hr-encabezado">
+                    <div class="acordeon-caja-contenedor">
+                        <details class="acordeon-contenedor">
+                            <summary class="acordeon-title">¿Cómo ayudamos en la mejora de su empleabilidad?</summary>
+                            <div class="acordeon-content2">
+                                <p>Podrá comparar sus competencias y capacidades con las de otros usuarios y así poder
+                                    detectar que necesita usted para mejorar su empleabilidad. Por otro lado, gracias a
+                                    nuestros servicios de mejora laboral personalizados, como el “Orientador virtual”, podrá
+                                    obtener una orientación eficaz que le ayudará a volverse más empleable.</p>
+                                <br>
+                                <p>Recuerde que para poder usar correctamente nuestros servicios debe asegurarse de tener
+                                    todos sus datos correctamente cumplimentados.</p>
+                            </div>
+                        </details>
+                        <hr>
+                        <details class="acordeon-contenedor">
+                            <summary class="acordeon-title">¿Tengo que realizar un registro completo para usar la
+                                plataforma?</summary>
+                            <div class="acordeon-content2">
+                                <p>No es necesario, puede acceder a la plataforma realizando el "registro simple" y terminar
+                                    de cumplimentar sus datos a posteriori pero, para poder usar correctamente nuestros
+                                    servicios de mejora laboral personalizados y obtener una orientación eficaz,
+                                    recomendamos al usuario que se asegure de tener todos sus datos correctamente
+                                    cumplimentados o, en consecuencia, realizar el registro completo correctamente la
+                                    primera vez que acceda a la plataforma.</p>
+                            </div>
+                        </details>
+                        <hr>
+                        <details class="acordeon-contenedor">
+                            <summary class="acordeon-title">¿Puedo configurar la privacidad de mis datos?</summary>
+                            <div class="acordeon-content2">
+                                <p>Si, una vez realizado el registro sus datos estarán automáticamente en privado y podrá
+                                    escoger qué datos quiere mostrar en su perfil público. (Área Personal → Edición del
+                                    Perfil Público).</p>
+                                <br>
+                                <p>Si desea más información lea atentamente nuestra política de privacidad.</p>
+                            </div>
+                        </details>
+                        <hr>
+                        <details class="acordeon-contenedor">
+                            <summary class="acordeon-title">¿Cómo puedo comparar mi perfil con otros perfiles profesionales?
+                            </summary>
+                            <div class="acordeon-content2">
+                                <p>En la sección “Comparador de usuarios” deberá seleccionar el puesto al que quiera optar,
+                                    y se le devolverá un ranking de los 10 mejores perfiles, entre nuestros usuarios
+                                    registrados, para ese puesto en concreto. Podrá seleccionar a cada uno de ellos y
+                                    comparar su perfil con el suyo.</p>
+                            </div>
+                        </details>
+                        <hr>
+                        <details class="acordeon-contenedor">
+                            <summary class="acordeon-title">¿Skills-up ofrece algún servicio de formación?</summary>
+                            <div class="acordeon-content2">
+                                <p>No, en “Propuestas de formación” podrá encontrar formaciones recomendadas por nuestros
+                                    usuarios y si está registrado, podrá publicar las suyas propias. Skills-up pretende ser
+                                    una plataforma de sinergias para encontrar los recursos formativos más favorables,
+                                    fortaleciendo la comunidad.</p>
+                            </div>
+                        </details>
+                        <hr>
+                        <details class="acordeon-contenedor">
+                            <summary class="acordeon-title">¿Skills-up es una plataforma de búsqueda de empleo?</summary>
+                            <div class="acordeon-content2">
+                                <p>No, en esta plataforma le ayudamos a mejorar su cualificación y así poder adquirir las
+                                    competencias más demandadas por las empresas.</p>
+                            </div>
+                        </details>
+                        <hr>
+                        <details class="acordeon-contenedor">
+                            <summary class="acordeon-title">¿Quién puede ver mi perfil una vez registrado/a?</summary>
+                            <div class="acordeon-content2">
+                                <p>Los usuarios registrados podrán acceder a su perfil por completo pero, los usuarios que
+                                    no estén registrados solo verán lo que usted halla puesto en su perfil público.</p>
+                                <br>
+                                <p>Si desea más información lea atentamente nuestra política de privacidad.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            <!--Final Modal de registro inicial corto-->
+            <div class="footer2-Reg">
+                <!-- Sección de datos de la Fulp -->
+                <div class="footerlinks-Reg">
+                    <!-- Añadidido div con clase footer-img-logo -->
+                    <div class="footer-img-logo">
+                        <img class="logo" src="img/logo fulp faldon.png" alt="Logo FULP">
+                    </div>
+                    <!-- <br><br> -->
+                    <!-- Eliminados los <br> -->
+                    <!-- Añadida clase footer-text -->
+                    <div class="footer-text">
+                        <p><a href="https://www.google.com/maps?q=Calle+Juan+de+Quesada,+29" target="_blank">C/ Juan de
+                                Quesada, 29</a></p>
+                        <p>35001 Las Palmas de Gran Canaria</p>
+                        <p><i class="fas fa-envelope"></i><a href="mailto:info@fulp.es">info@fulp.es</a></p>
+                        <p><i class="fas fa-phone"></i><a href="tel:626009577">626 009 577</a> / <a href="tel:608732801">608
+                                732 801</a></p>
+                    </div>
+                    <div class="social-networks">
+                        <a href="https://www.facebook.com/Fundacion.Universitaria.Las.Palmas">
+                            <div class="social-networks-int">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/Fundacion_FULP">
+                            <div class="social-networks-int">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/fundacion_universitaria/">
+                            <div class="social-networks-int">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/company/fundaci-n-universitaria-de-las-palmas">
+                            <div class="social-networks-int">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/user/fundacioncanaria">
+                            <div class="social-networks-int">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Sección de las políticas -->
+                <div class="footer-section">
+                    <div class="footerlinks-Reg">
+                        <!-- Eliminada clase nombrada titulo-Reg porque no se usa -->
+                        <h4>Políticas</h4>
+                        <ul>
+                            <li><a href="https://www.fulp.es/politica-de-privacidad" target="_blank">Privacidad</a></li>
+                            <li><a href="https://www.fulp.es/aviso-legal" target="_blank">Aviso legal</a></li>
+                            <li><a href="https://www.fulp.es/politica-de-cookies" target="_blank">Cookies</a></li>
+                        </ul>
+                        <div class="footer-img-cont">
+                            <div>
+                                <img src="img/sepe.png" alt="Logo del Servicio Público de Empleo Estatal (SEPE)">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sección Contáctanos -->
+                    <div class="footerlinks-Reg">
+                        <h4>Contáctanos</h4>
+                        <ul>
+                            <li><a href="https://www.fulp.es/contacto" target="_blank">Contacta con nosotros</a></li>
+                            <li><a href="https://www.fulp.es/quejas-y-sugerencias" target="_blank">Quejas y
+                                    sugerencias</a>
+                            </li>
+                            <li><a href="#modal-preguntas">Preguntas frecuentes</a></li>
+                        </ul>
+                        <div class="footer-img-cont">
+                            <div>
+                                <img src="img/gob-canarias.png" alt="Logo del Servicio de Empleo del Gobierno de Canarias">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Hay que adaptar el interior de los div dependiendo de su contenido pero la estructura es prácticamente la misma -->
+    </body>
+    <script src="js/tutorial.js"></script>
 </html>

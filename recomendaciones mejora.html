@@ -4,68 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Añadir Propuesta de Formación</title>
+    <title>Recomendaciones de Mejora</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
+
+
 </head>
 
+<!-- HEADER -->
+<header class="header-fijo">
+    <div class="header">
+        <a href="home.html"><img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo"></a>
+    </div>
+    </div>
+    <nav class="nav">
+        <ul class="nav2">
+            <li class="li"><a href="areaPersonal.html" class="menu">Área Personal</a></li>
+            <li class="li"><a href="orientadorVirtual.html" class="menu">Orientador Virtual</a></li>
+            <li class="li li-uso"><a href="#" class="menu">Recomendaciones</a></li>
+            <li class="li"><a href="areaPropuestaFormacion.html" class="menu">Propuestas de Formación</a></li>
+            <li class="li"><a href="compUsuario.html" class="menu">Comparador de Usuarios</a></li>
+            <li class="li"><a href="areaPerfilesPublicos.html" class="menu">Perfiles Públicos</a></li>
+            <li class="li" id="last-li"><a href="mensajeria.html" class="menu">Mensajería</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+<!-- FIN HEADER -->
+
 <body class="body-propuesta propuesta1">
-    <!-- Header doble -->
-    <header class="header-fijo">
-        <div class="header">
-            <a href="home.html"><img src="img/Logo_SU_500.png" alt="logo de proyecto" class="imagenlogo"></a>
-        </div>
-        <nav class="nav">
-            <ul class="nav2">
-                <li class="li li-doble"><a href="areaPropuestaFormacion.html" class="menu">Propuestas de Formación</a>
-                </li>
-                <li class="li li-doble li-uso"><a href="#" class="menu">Añadir propuesta de Formación</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Pantalla Añadir Propuesta de Formación -->
     <main class="std-container">
-        <div class="add-propuestas-contenedor">
-            <div class="add-datos">
-                <h2>Datos de la Formación</h2>
-                <form> <!--Elimine los label ya que están los h3-->
-                    <h3>Nombre de la formación:</h3>
-                    <input type="text" id="Datos" name="datosFormacion"
-                        placeholder="Ingrese el nombre de la formación" />
-                    <h3>Nombre del centro:</h3>
-                    <input type="text" id="Lugar1" name="Lugar" placeholder="Ingrese el nombre del centro" />
-                    <h3>Resumen del curso/formación:</h3>
-                    <textarea id="cursooformacion" name="cursoFormacion"
-                        placeholder="Redacta un breve resumen"></textarea>
-                    <h3>Competencias:</h3>
-                    <textarea id="compete" name="Competencias"
-                        placeholder="Escribe las competencias separándolas por comas ','"></textarea>
-                    <br><br>
-                    <div class="btn-add-propuestas btn-add-pro">
-                        <button>Añadir Propuesta</button>
-                    </div>
-                </form>
+        <!-- SELECCIONAR select -->
+        <div class="div_select">
+            <select id="select-puestos" class="select-opciones" onfocus="turnOff()">
+
+                <!-- CUANDO NO TIENE PUESTOS AÑADIDOS -->
+
+                <option value="0">SELECCIONA PUESTO:</option>
+                <option value="diseñador">Diseñador</option>
+                <option value="maquetador">Maquetador</option>
+                <option value="abogado">Abogado</option>
+                <option value="desarrollador">Puesto</option>
+                <option value="seleccionar">Puesto</option>
+                <option value="diseñador">Puesto</option>
+                <option value="maquetador">Puesto</option>
+                <option value="abogado">Puesto</option>
+            </select>
+        </div>
+        <!-- FIN PUESTOS AÑADIDOS -->
+
+        <!-- PÁRRAFO CON MENSAJE QUE APARECE -->
+        <div class="div_select">
+            <p id="parrafo-recomend"></p>
+        </div>
+
+        <!-- PREGUNTA SOBRE REALIZACIÓN DE CURSOS -->
+        <div class="preguntas-recomendaciones">
+            <p class="pregunta"><b>¿Estás realizando curso/s de formación?</b></p>
+            <div class="radio">
+                <input class="input-recomend" type="radio" id="radio1" name="radio1">
+                <label class="label-recomend" for="radio1">Sí<span class="radio-button"></span></label>
             </div>
-            <div class="lista-formacion">
-                <h3>Lista de formación</h3>
-                <div class="lista-formacion tarjeta-propuesta-form">
-                    <h4>Curso de programación avanzada</h4>
-                    <h5>Instituto xyz</h5>
-                    <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
-                    <h4>Comunicación efectiva</h4>
-                    <h4>Resolver Problemas</h4>
-                </div>
-                <div class="lista-formacion tarjeta-propuesta-form">
-                    <h4>Curso de programación avanzada</h4>
-                    <h5>Instituto xyz</h5>
-                    <p>Aprende los conceptos avanzados de programación y desarrolla habilidades sólidas de lengua</p>
-                    <h4>Comunicación efectiva</h4>
-                    <h4>Resolver Problemas</h4>
-                </div>
+
+            <div class="radio">
+                <input class="input-recomend" type="radio" id="radio2" name="radio1">
+                <label class="label-recomend" for="radio2">No<span class="radio-button"> </span></label>
+
             </div>
+        </div>
+
+
+        <!-- INTRODUCIR CURSOS -->
+        <div class="preguntas-recomendaciones">
+            <p class="pregunta"><b>¿Cuáles? Escríbelos abajo:</b></p>
+        </div>
+        <div class="textarea-recomend">
+            <textarea id="inside-textarea"
+                placeholder="Separa cada curso con una coma. Ejemplo: Curso de Javascript, Curso de Diseño UX..."
+                name="textarea" rows="10" cols="50"></textarea>
+        </div>
+
+        <!-- PREGUNTA SOBRE REGISTRO EN PORTAL EMPLEO ((RESPUESTA NO)) -->
+        <div class="preguntas-recomendaciones">
+            <p class="pregunta"><b>¿Estás inscrito en algún portal o bolsa de empleo?</b></p>
+            <div class="radio">
+                <input class="input-recomend" type="radio" id="radio3" name="radio2">
+                <label class="label-recomend" for="radio3">Sí<span class="radio-button"></span></label>
+
+            </div>
+            <div class="radio">
+                <input class="input-recomend" type="radio" id="radio4" name="radio2">
+                <label class="label-recomend" for="radio4">No<span class="radio-button"> </span></label>
+            </div>
+        </div>
+
+        <!-- PREGUNTA SOBRE ENVÍO C.V. A EMPRESAS -->
+        <div class="preguntas-recomendaciones">
+            <p class="pregunta"><b>¿Has enviado recientemente tu C.V. a alguna empresa?</b></p>
+            <div class="radio">
+                <input class="input-recomend" type="radio" id="radio5" name="radio3">
+                <label class="label-recomend" for="radio5">Sí<span class="radio-button"></span></label>
+
+            </div>
+            <div class="radio">
+                <input class="input-recomend" type="radio" id="radio6" name="radio3">
+                <label class="label-recomend" for="radio6">No<span class="radio-button"> </span></label>
+            </div>
+        </div>
+        <div class="preguntas-recomendaciones">
+
+            <!-- INTRODUCIR EMPRESAS -->
+            <p class="pregunta"><b>¿A cuáles? Escríbelas abajo:</b></p>
+        </div>
+        <div class="textarea-recomend">
+            <textarea id="inside-textarea" placeholder="Separa cada empresa con una coma" name="textarea" rows="10"
+                cols="50"></textarea>
+        </div>
+
+        <!-- BOTÓN ENVIAR -->
+        <div class="boton-recomend">
+            <a href="mensaje de recomendaciones.html">
+                <button id="buton-recomend"><b>ENVIAR</b></button>
+            </a>
+        </div>
         </div>
     </main>
+    <!-- ////// FOOTER ////// -->
     <footer class="footer-Reg">
         <!--Modal de registro inicial corto-->
         <div class="modal" id="modal-preguntas">
@@ -239,5 +305,6 @@
         </div>
     </footer>
 </body>
+<script src="js/recomendaciones.js"></script>
 
 </html>
