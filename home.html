@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -22,11 +22,13 @@
         </div>
         <nav class="nav">
             <ul class="nav2">
-                <li class="li li-doble"><a href="areaPropuestaFormacion.html" class="menu">Propuestas de Formación</a></li>
+                <li class="li li-doble"><a href="areaPropuestaFormacion.html" class="menu">Propuestas de Formación</a>
+                </li>
                 <li class="li li-doble"><a href="areaPerfilesPublicos.html" class="menu">Perfiles Públicos</a></li>
             </ul>
         </nav>
     </header>
+
     <!-- Pantalla Home -->
     <div class="home-contenido">
         <div class="home-titulo">
@@ -35,16 +37,15 @@
         <div class="home-contenedor">
             <div class="home-caja">
                 <h4>INSCRÍBETE Y ENCUENTRA EMPLEO O PRÁCTICAS ADECUADAS PARA TI</h4>
-                <a class="modal-show" href="#modal">¿QUIERES REGISTRARTE?</a>
+                <a class="modal-show" href="#modal" id="inicio">¿QUIERES REGISTRARTE?</a>
             </div>
             <!-- <div class="home-img">
                 <img src="/img/imagen_home_sinfondoRES3.png" alt="">
             </div> -->
         </div>
     </div>
-
     <!-- Apartado de inicio de sesión -->
-    <div class="inicio" id="inicio">
+    <div class="inicio">
         <div class="inicio-contenedor">
             <form action="" method="post">
                 <div class="inicio-columnas">
@@ -64,7 +65,9 @@
                             type="password" name="contrasena" size="20" maxlength="">
                         <div class="inicio-modal-btn">
                             <button class="inicio-btn"><a href="areaPersonal.html">INICIAR SESIÓN</a></button>
-                            <div class="p-prueba"><P><b>¿No estás registrado?</b></P></div>
+                            <div class="p-prueba">
+                                <P><b>¿No estás registrado?</b></P>
+                            </div>
                             <button class="inicio-btn"><a href="#modal">REGÍSTRATE</a></button>
                         </div>
                     </div>
@@ -73,7 +76,6 @@
         </div>
     </div>
     <!-- Fin apartado de inicio de sesión -->
-
     <!-- ==================== -->
 
     <!--Modal de registro inicial corto-->
@@ -84,35 +86,38 @@
                 <h1 id="tituloRegistro">¡Rellena los campos y únete a nuestra comunidad!</h1>
                 <div class="columnas">
                     <div class="columna1">
-                        <label class="labelRegistroCorto" for="nombreApellidos">Nombre y Apellidos:</label> 
-                        <input class="inputRegistroCorto" type="text" id="nombreApellidos" name="nombreApellidos" size="20" maxlength=""
-                        placeholder="Ej: María García Fernández / Antonio López-Domínguez">
+                        <label class="labelRegistroCorto" for="nombreApellidos">Nombre y Apellidos:</label>
+                        <input class="inputRegistroCorto" type="text" id="nombreApellidos" name="nombreApellidos"
+                            size="20" maxlength="" placeholder="Ej: María García Fernández / Antonio López-Domínguez">
 
-                        <label class="labelRegistroCorto" for="formacion">Formación:</label> 
+                        <label class="labelRegistroCorto" for="formacion">Formación:</label>
                         <input class="inputRegistroCorto" type="text" id="formacion" name="formacion" size="20"
-                        placeholder="Ej: FP Grado Superior de Informática">
+                            placeholder="Ej: FP Grado Superior de Informática">
 
-                        <label class="labelRegistroCorto" for="password">Contraseña:</label> 
-                        <input class="inputRegistroCorto" type="password" id="password" name="contrasena" size="20" maxlength="">
+                        <label class="labelRegistroCorto" for="password">Contraseña:</label>
+                        <input class="inputRegistroCorto" type="password" id="password" name="contrasena" size="20"
+                            maxlength="">
 
                         <!-- <button type="submit" class="botonRegistro" onclick="validarFormulario(datosFormulario)">REGISTRARSE</button>  -->
                         <!-- <button class="botonRegistro"><a href="#msj-reCort-modal">REGISTRARSE</a></button>  -->
-                        <button class="botonRegistro" onclick="crearUser()">REGISTRARSE</button> 
+                        <button class="botonRegistro" onclick="crearUser()">REGISTRARSE</button>
                         <!-- href="#msj-reCort-modal" -->
                     </div>
 
                     <div class="columna2">
-                        <label class="labelRegistroCorto" for="email">Email:</label> 
+                        <label class="labelRegistroCorto" for="email">Email:</label>
                         <input class="inputRegistroCorto" type="text" name="email" id="email" size="20">
 
-                        <label class="labelRegistroCorto" for="puestos">Puestos a los que aspira:</label> 
+                        <label class="labelRegistroCorto" for="puestos">Puestos a los que aspira:</label>
                         <input class="inputRegistroCorto" type="text" id="puestos" name="puestos" size="20"
-                        placeholder="Ej: Desarrollador web">
+                            placeholder="Ej: Desarrollador web">
 
-                        <label class="labelRegistroCorto" for="passwordConfirma">Confirmar Contraseña:</label> 
-                        <input class="inputRegistroCorto" type="password" id="rePassword" name="contrasenaConfirma" size="20" maxlength="">
+                        <label class="labelRegistroCorto" for="passwordConfirma">Confirmar Contraseña:</label>
+                        <input class="inputRegistroCorto" type="password" id="rePassword" name="contrasenaConfirma"
+                            size="20" maxlength="">
 
-                        <a class="enlaceRegistro" href="edPerfilUsuario.html">Si quieres registrar todos los datos pincha aquí</a>
+                        <a class="enlaceRegistro" href="edPerfilUsuario.html">Si quieres registrar todos los datos
+                            pincha aquí</a>
                     </div>
                 </div>
             </form>
@@ -310,7 +315,8 @@
             </div>
         </div>
     </footer>
-        <!--Fin Mensaje Final Modal Registro Corto-->
-    </body>
-    <script src="js/valprueba.js"></script>
+    <!--Fin Mensaje Final Modal Registro Corto-->
+</body>
+<script src="js/valprueba.js"></script>
+
 </html>
